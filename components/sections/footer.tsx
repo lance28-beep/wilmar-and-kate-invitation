@@ -404,7 +404,7 @@ export function Footer() {
         <motion.div className="border-t border-white/30 pt-6 sm:pt-7 md:pt-8" variants={fadeInUp}>
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-5 md:gap-6">
             <div className="text-center md:text-left">
-              <p className="text-white/90 font-lora text-xs sm:text-sm">© {year} Bert & Rhods. All rights reserved.</p>
+              <p className="text-white/90 font-lora text-xs sm:text-sm">© {year} Jay & Cha. All rights reserved.</p>
               <p className="text-white/95 font-lora text-xs sm:text-sm mt-0.5 sm:mt-1">
                 Made with 💕 for our special day
               </p>
