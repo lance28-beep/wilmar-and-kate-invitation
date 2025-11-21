@@ -92,7 +92,7 @@ export function Narrative() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="montez-regular text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-normal text-primary mb-6 md:mb-8 text-balance drop-shadow-lg tracking-tight">
+          <h2 className="imperial-script-regular text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-normal text-primary mb-6 md:mb-8 text-balance drop-shadow-lg tracking-tight">
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0A3428] via-[#106552] to-[#C5A572]">Our Love Story:</span>
           </h2>
           

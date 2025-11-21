@@ -117,7 +117,7 @@ export default function Counter({
   }
 
   const defaultCounterStyle: React.CSSProperties = {
-    fontSize: `clamp(${fontSize * 0.7}px, 5vw, ${fontSize}px)`,
+    fontSize,
     display: "flex",
     gap: gap,
     overflow: "hidden",

@@ -9,25 +9,25 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const greatVibes = Great_Vibes({ subsets: ["latin"], weight: "400", variable: "--font-serif" })
 
 export const metadata: Metadata = {
-  title: "Albert & Rodelyn - Wedding Invitation",
+  title: "Jay & Cha - Wedding Invitation",
   description:
-    "Celebrate the simple and faith-filled wedding of Albert Gupit and Rodelyn Ruga on December 8, 2025 at the Southern-Asia Pacific Division (SSD) Worship Hall in Silang, Cavite. RSVP, read the invitation, and get all event details online.",
+    "Celebrate the simple and faith-filled wedding of Jay and Cha on January 23, 2026 at the Farm Hills Garden Tagaytay. RSVP, read the invitation, and get all event details online.",
   keywords:
-    "Albert Rodelyn wedding, Bert Rhods wedding, Cavite wedding, SSD Worship Hall, emerald green beige wedding, RSVP, wedding invitation website, 2025 weddings, Filipino wedding, albertrhods25@gmail.com",
+    "Jay Cha wedding, Jay Cha wedding invitation, Tagaytay wedding, Farm Hills Garden Tagaytay, emerald green beige wedding, RSVP, wedding invitation website, 2026 weddings, Filipino wedding, jaycha26@gmail.com",
   authors: [
-    { name: "Albert Gupit" },
-    { name: "Rodelyn Ruga" },
+    { name: "Jay" },
+    { name: "Cha" },  
   ],
-  creator: "Albert & Rodelyn",
-  publisher: "Albert & Rodelyn",
+  creator: "Jay & Cha",
+  publisher: "Jay & Cha",
   formatDetection: {
     email: false,
     address: false,
     telephone: true,
   },
-  metadataBase: new URL("https://rodelyn-and-albert-invitation.vercel.app/"),
+  metadataBase: new URL("https://jay-and-cha-invitation.vercel.app/"),
   alternates: {
-    canonical: "https://rodelyn-and-albert-invitation.vercel.app/",
+    canonical: "https://jay-and-cha-invitation.vercel.app/",
   },
   icons: {
     icon: [
@@ -49,29 +49,29 @@ export const metadata: Metadata = {
   },
   manifest: "/favicon_io/site.webmanifest",
   openGraph: {
-    title: "Albert & Rodelyn Wedding | December 8, 2025",
+    title: "Jay & Cha Wedding | January 23, 2026",
     description:
-      "Join Albert & Rodelyn as they say “I do” on December 8, 2025 at the SSD Worship Hall in Silang, Cavite. View the invitation, RSVP details, and schedule online.",
-    url: "https://rodelyn-and-albert-invitation.vercel.app/",
-    siteName: "Rodelyn and Albert Wedding",
+      "Join Jay & Cha as they say “I do” on January 23, 2026 at the Farm Hills Garden Tagaytay. View the invitation, RSVP details, and schedule online.",
+    url: "https://jay-and-cha-invitation.vercel.app/",
+    siteName: "Jay and Cha Wedding",
     locale: "en_PH",
     type: "website",
     images: [
       {
-        url: "https://rodelyn-and-albert-invitation.vercel.app/desktop-background/couple (6).jpg",
+        url: "https://jay-and-cha-invitation.vercel.app/desktop-background/couple (6).jpeg",
         width: 1200,
         height: 630,
-        alt: "Albert & Rodelyn Wedding Invitation - December 8, 2025",
+        alt: "Jay & Cha Wedding Invitation - January 23, 2026",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Albert & Rodelyn Wedding Invitation",
+    title: "Jay & Cha Wedding Invitation",
     description:
-      "You're invited to the wedding of Albert & Rodelyn on December 8, 2025 at SSD Worship Hall, Silang, Cavite. RSVP and view the details online. #BertAndRhods",
-    images: ["https://rodelyn-and-albert-invitation.vercel.app/desktop-background/couple (6).jpg"],
-    creator: "@bertandrhods",
+      "You're invited to the wedding of Jay & Cha on January 23, 2026 at the Farm Hills Garden Tagaytay. RSVP and view the details online. #JayAndCha",
+    images: ["https://jay-and-cha-invitation.vercel.app/desktop-background/couple (6).jpeg"],
+    creator: "@jayandcha",
   },
   robots: {
     index: true,
@@ -91,40 +91,27 @@ export const metadata: Metadata = {
     "application/ld+json": JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Event",
-      name: "Albert & Rodelyn Wedding",
-      startDate: "2025-12-08T10:00:00+08:00",
-      endDate: "2025-12-08T14:00:00+08:00",
+      name: "Jay & Cha Wedding",  
+      startDate: "2026-01-23T04:00:00+08:00",
+      endDate: "2026-01-23T06:00:00+08:00",
       eventStatus: "https://schema.org/EventScheduled",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      location: [
-        {
-          "@type": "Place",
-          name: "Southern-Asia Pacific Division (SSD) Worship Hall",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "SSD Compound, San Miguel",
-            addressLocality: "Silang",
-            addressRegion: "Cavite",
-            postalCode: "4118",
-            addressCountry: "PH",
-          },
-        },
-      ],
-      image: ["https://rodelyn-and-albert-invitation.vercel.app/desktop-background/couple (6).jpg"],
+      location: "Farm Hills Garden Tagaytay",
+      image: ["https://jay-and-cha-invitation.vercel.app/desktop-background/couple (6).jpeg"],
       description:
-        "In honor and gratitude to God who brought them together, Albert & Rodelyn invite you to witness their simple wedding on December 8, 2025 at the SSD Worship Hall in Silang, Cavite. RSVP details and schedule are available online.",
+        "In honor and gratitude to God who brought them together, Jay & Cha invite you to witness their simple wedding on January 23, 2026 at the Farm Hills Garden Tagaytay. RSVP details and schedule are available online.",
       organizer: {
         "@type": "Person",
-        name: "Albert & Rodelyn",
+        name: "Jay & Cha",
       },
       offers: {
         "@type": "Offer",
-        url: "https://rodelyn-and-albert-invitation.vercel.app/",
+        url: "https://jay-and-cha-invitation.vercel.app/",
         availability: "https://schema.org/InStock",
         price: "0",
         priceCurrency: "PHP",
       },
-      eventHashtag: "#BertAndRhods",
+      eventHashtag: "#JayAndCha",
     }),
   },
 }
@@ -142,6 +129,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet" />
         <link rel="preload" as="image" href="/mobile-background/DSCF2614-min.jpg" media="(max-width: 767px)" />
         <link rel="preload" as="image" href="/desktop-background/DSCF2444-min.jpg" media="(min-width: 768px)" />

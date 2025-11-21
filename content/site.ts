@@ -1,17 +1,17 @@
 export const siteConfig = {
   couple: {
-    bride: "Rodelyn Ruga",
-    brideNickname: "Rhods",
-    groom: "Albert Gupit",
-    groomNickname: "Bert",
+    bride: "Charlotte Lubiano Gonzales",
+    brideNickname: "Cha",
+    groom: "John Noel Rivera Manalansan",
+    groomNickname: "Jay",
   },
   wedding: {
-    date: "December 8, 2025",
-    time: "10:00 AM",
-    venue: "Southern-Asia Pacific Division (SSD) Worship Hall, Silang, Cavite",
-    tagline: "In honor and gratitude to God who brought us together",
-    theme: "Emerald Green & Beige",
-    motif: "Emerald Green & Beige",
+    date: "January 23, 2026",
+    time: "3:00 PM",
+    venue: "FARM HILLS GARDEN TAGAYTAY",
+    tagline: "He hath made every thing beautiful in his time… — Ecclesiastes 3:11",
+    theme: "Sage Green – Dusty Blue – Gray/Silver",
+    motif: "Sage Green – Dusty Blue – Gray/Silver",
     themeSong: {
       title: "Handa Na – Piano Version",
       artist: "Noah Raque",
@@ -19,61 +19,68 @@ export const siteConfig = {
   },
   details: {
     rsvp: {
-      deadline: "November 23, 2025",
-      email: "albertrhods25@gmail.com",
-      phone: "0917-112-9528",
+      deadline: "January 13, 2026",
+      email: "",
+      phone: "09615525606",
+      contact: "RIA MANALANSAN (fb) or 09615525606 (viber)",
     },
   },
   ceremony: {
-    location: "Southern-Asia Pacific Division (SSD) Worship Hall, Silang, Cavite",
-    venue: "Southern-Asia Pacific Division (SSD) Worship Hall, Silang, Cavite",
-    date: "December 8, 2025",
-    day: "Monday",
-    time: "10:00 AM",
-    entourageTime: "9:00 AM",
-    guestsTime: "9:30 AM",
+    location: "FARM HILLS GARDEN TAGAYTAY - Garden Area",
+    venue: "FARM HILLS GARDEN TAGAYTAY - Garden Area",
+    date: "January 23, 2026",
+    day: "Friday",
+    time: "4:00 PM",
+    entourageTime: "3:30 PM",
+    guestsTime: "3:45 PM",
   },
   reception: {
-    location: "SSD Lobby, Silang, Cavite",
-    venue: "SSD Lobby, Silang, Cavite",
-    date: "December 8, 2025",
-    time: "12:00 NN",
+    location: "FARM HILLS GARDEN TAGAYTAY - Pavilion",
+    venue: "FARM HILLS GARDEN TAGAYTAY - Pavilion",
+    date: "January 23, 2026",
+    time: "6:00 PM",
   },
   dressCode: {
-    theme: "Emerald Green & Beige",
-    colors: ["#0A3428", "#0F573E", "#DCCBB2", "#C5A572"],
+    theme: "Sage Green – Dusty Blue – Gray/Silver",
+    colors: ["#869EB6", "#83927D", "#C1C1C1"],
     sponsors: {
-      ladies: "Filipiniana or long dresses in emerald or beige",
-      gentlemen: "Barong, suit, or long-sleeved attire in complementary tones",
+      ladies: "Formal attire in sage green, dusty blue, or gray/silver",
+      gentlemen: "Formal attire in sage green, dusty blue, or gray/silver",
     },
     guests: {
-      ladies: "Elegant dresses in muted emerald, sage, or beige",
-      gentlemen: "Dress shirts, polos, or suits in neutral or green hues",
+      ladies: "Formal attire in sage green, dusty blue, or gray/silver",
+      gentlemen: "Formal attire in sage green, dusty blue, or gray/silver",
     },
-    note: "Please avoid jeans and overly casual attire.",
+    note: "We would love to see you in formal attire following our color palette: Sage Green – Dusty Blue – Gray/Silver",
   },
-  narrative: `In honor and gratitude to God who brought us together,
+  narrative: `We are delighted to share this wonderful and blessed moment with you!
 
-We,
-Albert Gupit and Rodelyn Ruga,
-Together with our beloved parents —
-Nilo Gupit & Nancy Gupit
-Delmer Sales & Rosalinda Ruga —
-Warmly request the pleasure of your company as we celebrate our simple wedding.
+Jay & Cha
 
-On Monday, the 8th of December 2025 at 10:00 in the morning,
-the ceremony will be held at Southern-Asia Pacific Division (SSD) Worship Hall, Silang, Cavite.
+January 23, Year 2026
 
-Reception will follow at SSD Lobby, Silang, Cavite.
+"He hath made every thing beautiful in his time…"
+— Ecclesiastes 3:11
 
-Please create a separate email for your RSVP and send it to albertrhods25@gmail.com.
-An honor of a reply is requested on or before the 23rd of November 2025.
-You may reach us at 0917-112-9528.`,
+Ceremony starts at 4:00 in the afternoon
+and Reception follows at 6:00 PM
+
+FARM HILLS GARDEN TAGAYTAY
+
+Ceremony will be at the Garden Area, then proceed to the Pavilion for the Reception of the Wedding.
+
+We have reserved seats for you. Please search for your name below to confirm your attendance:
+concern: 
+RIA MANALANSAN (fb) or 09615525606 (viber).`,
   colors: {
-    primary: "#0A3428",
-    secondary: "#0F573E",
-    accent: "#C5A572",
-    light: "#F3E7D2",
+    primary: "#869EB6",
+    secondary: "#83927D",
+    accent: "#C1C1C1",
+    light: "#F5F5F5",
+  },
+  snapShare: {
+    googleDriveLink: "https://drive.google.com/drive/folders/1a1QESKdiAh3x2CwN-EiZt7Kpsh2fGMj1?usp=sharing",
+    instructions: "Please scan this QR Code, create a folder with your name and upload the photos and videos you have taken during our wedding reception. We are delighted to see your snaps too!",
   },
 }
 

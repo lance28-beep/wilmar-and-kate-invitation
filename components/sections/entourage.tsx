@@ -3,6 +3,7 @@
 import React from "react"
 import { useState, useEffect, useMemo } from "react"
 import { Loader2, Users } from "lucide-react"
+import Image from "next/image"
 
 interface EntourageMember {
   Name: string
@@ -93,7 +94,7 @@ export function Entourage() {
     const textAlign =
       align === "right" ? "text-right" : align === "left" ? "text-left" : "text-center"
     return (
-      <h3 className={`text-xs sm:text-sm md:text-base lg:text-lg font-bold uppercase text-[#0A3428] mb-2 sm:mb-3 md:mb-4 tracking-[0.1em] ${textAlign} ${className} drop-shadow-sm`}>
+      <h3 className={`text-[10px] sm:text-xs md:text-sm lg:text-base font-bold uppercase text-[#0A3428] mb-1.5 sm:mb-2 md:mb-3 tracking-[0.12em] ${textAlign} ${className} drop-shadow-sm`}>
         {children}
       </h3>
     )
@@ -114,12 +115,12 @@ export function Entourage() {
     const textAlign =
       align === "right" ? "text-right" : align === "left" ? "text-left" : "text-center"
     return (
-      <div className={`flex flex-col ${containerAlign} justify-center py-2 sm:py-2.5 md:py-3 leading-relaxed group/item transition-all duration-200 hover:scale-[1.02]`}>
-        <p className={`text-[#0A3428] text-[13px] sm:text-sm md:text-base lg:text-lg font-semibold ${textAlign} group-hover/item:text-[#106552] transition-colors duration-200`}>
+      <div className={`flex flex-col ${containerAlign} justify-center py-1.5 sm:py-2 md:py-2.5 leading-tight group/item transition-all duration-200 hover:scale-[1.02]`}>
+        <p className={`text-[#0A3428] text-xs sm:text-sm md:text-base font-semibold ${textAlign} group-hover/item:text-[#106552] transition-colors duration-200`}>
           {member.Name}
         </p>
         {showRole && member.RoleTitle && (
-          <p className={`text-[#C5A572] text-[10px] sm:text-[11px] md:text-xs lg:text-sm font-medium mt-0.5 sm:mt-1 leading-snug ${textAlign} tracking-wide uppercase`}>
+          <p className={`text-[#C5A572] text-[9px] sm:text-[10px] md:text-xs font-medium mt-0.5 leading-snug ${textAlign} tracking-wider uppercase`}>
             {member.RoleTitle}
           </p>
         )}
@@ -143,9 +144,9 @@ export function Entourage() {
   }) => {
     if (singleTitle) {
       return (
-        <div className="mb-5 sm:mb-7 md:mb-9 lg:mb-12">
+        <div className="mb-4 sm:mb-5 md:mb-7 lg:mb-9">
           <SectionTitle>{singleTitle}</SectionTitle>
-          <div className={`grid grid-cols-1 min-[350px]:grid-cols-2 gap-x-2 sm:gap-x-3 md:gap-x-4 gap-y-1.5 sm:gap-y-2 md:gap-y-3 ${centerContent ? 'max-w-2xl mx-auto' : ''}`}>
+          <div className={`grid grid-cols-1 min-[350px]:grid-cols-2 gap-x-2 sm:gap-x-3 md:gap-x-4 gap-y-1 sm:gap-y-1.5 md:gap-y-2 ${centerContent ? 'max-w-2xl mx-auto' : ''}`}>
             {children}
           </div>
         </div>
@@ -153,16 +154,16 @@ export function Entourage() {
     }
 
     return (
-      <div className="mb-5 sm:mb-7 md:mb-9 lg:mb-12">
-        <div className="grid grid-cols-1 min-[350px]:grid-cols-2 gap-x-2 sm:gap-x-3 md:gap-x-4 mb-2.5 sm:mb-3.5 md:mb-5">
+      <div className="mb-4 sm:mb-5 md:mb-7 lg:mb-9">
+        <div className="grid grid-cols-1 min-[350px]:grid-cols-2 gap-x-2 sm:gap-x-3 md:gap-x-4 mb-2 sm:mb-2.5 md:mb-4">
           {leftTitle && (
-            <SectionTitle align="right" className="pr-3 sm:pr-4 md:pr-6">{leftTitle}</SectionTitle>
+            <SectionTitle align="right" className="pr-2 sm:pr-3 md:pr-5">{leftTitle}</SectionTitle>
           )}
           {rightTitle && (
-            <SectionTitle align="left" className="pl-3 sm:pl-4 md:pl-6">{rightTitle}</SectionTitle>
+            <SectionTitle align="left" className="pl-2 sm:pl-3 md:pl-5">{rightTitle}</SectionTitle>
           )}
         </div>
-        <div className={`grid grid-cols-1 min-[350px]:grid-cols-2 gap-x-2 sm:gap-x-3 md:gap-x-4 gap-y-1.5 sm:gap-y-2 md:gap-y-3 ${centerContent ? 'max-w-2xl mx-auto' : ''}`}>
+        <div className={`grid grid-cols-1 min-[350px]:grid-cols-2 gap-x-2 sm:gap-x-3 md:gap-x-4 gap-y-1 sm:gap-y-1.5 md:gap-y-2 ${centerContent ? 'max-w-2xl mx-auto' : ''}`}>
           {children}
         </div>
       </div>
@@ -172,63 +173,134 @@ export function Entourage() {
   return (
     <section
       id="entourage"
-      className="relative min-h-screen py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28 overflow-hidden bg-gradient-to-b from-[#0A3428] via-[#106552]/90 to-[#0A3428]"
+      className="relative min-h-screen py-8 sm:py-10 md:py-14 lg:py-16 xl:py-20 overflow-hidden bg-[#83927D]"
     >
-      {/* Subtle background elements */}
+      {/* Enhanced background elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Soft gradient overlays */}
-        <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-[#C3A161]/5 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-[#C3A161]/5 to-transparent" />
+        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/15 via-white/5 to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-white/15 via-white/5 to-transparent" />
+        
+        {/* Floating decorative circles */}
+        <div className="absolute top-16 right-12 w-32 h-32 bg-white/10 rounded-full blur-2xl animate-pulse" />
+        <div className="absolute top-32 left-20 w-24 h-24 bg-white/8 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }} />
+        <div className="absolute bottom-16 left-20 w-28 h-28 bg-white/12 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
+        <div className="absolute bottom-24 right-12 w-20 h-20 bg-white/10 rounded-full blur-xl animate-pulse" style={{ animationDelay: '0.5s' }} />
+        
+        {/* Corner decorations - matching countdown section */}
+        <div className="absolute top-0 left-0 z-0">
+          <Image
+            src="/decoration/corner-left-button.png"
+            alt=""
+            width={200}
+            height={200}
+            className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56 h-auto opacity-60 scale-y-[-1]"
+            priority={false}
+          />
+        </div>
+        
+        <div className="absolute top-0 right-0 z-0">
+          <Image
+            src="/decoration/corner-left-button.png"
+            alt=""
+            width={200}
+            height={200}
+            className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56 h-auto opacity-60 scale-x-[-1] scale-y-[-1]"
+            priority={false}
+          />
+        </div>
+        
+        <div className="absolute bottom-0 left-0 z-0">
+          <Image
+            src="/decoration/corner-left-button.png"
+            alt=""
+            width={200}
+            height={200}
+            className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56 h-auto opacity-60"
+            priority={false}
+          />
+        </div>
+        
+        <div className="absolute bottom-0 right-0 z-0">
+          <Image
+            src="/decoration/corner-left-button.png"
+            alt=""
+            width={200}
+            height={200}
+            className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56 h-auto opacity-60 scale-x-[-1]"
+            priority={false}
+          />
+        </div>
+        
+        {/* Decorative horizontal line */}
+        <div className="absolute top-1/3 left-0 w-full h-px bg-white/20" />
       </div>
 
       {/* Section Header */}
-      <div className="relative z-10 text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16 px-4">
-        <h2 className="montez-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[4.5rem] font-normal text-[#FFFFFF] mb-3 sm:mb-4 md:mb-6 drop-shadow-[0_10px_35px_rgba(0,0,0,0.45)] leading-snug">
+      <div className="relative z-10 text-center mb-6 sm:mb-7 md:mb-9 lg:mb-11 px-3 sm:px-4">
+        {/* Decorative element above title */}
+        <div className="flex items-center justify-center gap-2 mb-2.5 sm:mb-3">
+          <div className="w-8 sm:w-12 md:w-16 h-px bg-white/40" />
+          <div className="w-1.5 h-1.5 bg-white/60 rounded-full" />
+          <div className="w-1.5 h-1.5 bg-white/40 rounded-full" />
+          <div className="w-1.5 h-1.5 bg-white/60 rounded-full" />
+          <div className="w-8 sm:w-12 md:w-16 h-px bg-white/40" />
+        </div>
+        
+        <h2 className="imperial-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-normal text-white mb-2 sm:mb-3 drop-shadow-lg leading-tight">
           Wedding Entourage
         </h2>
-        <p className="text-xs sm:text-sm md:text-base lg:text-lg text-[#FFFFFF]/90 font-light max-w-xl mx-auto leading-relaxed px-2">
+        
+        <p className="text-xs sm:text-sm md:text-base text-white/90 font-light max-w-xl mx-auto leading-relaxed px-2">
           Those who stand with us as we begin our journey
         </p>
+        
+        {/* Decorative element below subtitle */}
+        <div className="flex items-center justify-center gap-2 mt-2.5 sm:mt-3">
+          <div className="w-1.5 h-1.5 bg-white/60 rounded-full" />
+          <div className="w-1.5 h-1.5 bg-white/40 rounded-full" />
+          <div className="w-1.5 h-1.5 bg-white/60 rounded-full" />
+        </div>
       </div>
 
       {/* Central Card Container */}
-      <div className="relative z-10 max-w-5xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+      <div className="relative z-10 max-w-5xl mx-auto px-3 sm:px-4 md:px-6">
         {/* Enhanced card with gradient glow */}
-        <div className="relative bg-white/95 backdrop-blur-sm rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden border border-[#C3A161]/30 shadow-lg hover:shadow-xl transition-all duration-300 group">
+        <div className="relative bg-white/95 backdrop-blur-sm rounded-xl sm:rounded-2xl overflow-hidden border border-[#C3A161]/40 shadow-2xl hover:shadow-[0_10px_50px_rgba(195,161,97,0.2)] transition-all duration-300 group">
           {/* Subtle glow on hover */}
-          <div className="absolute -inset-0.5 bg-gradient-to-br from-[#C3A161]/20 to-[#C5A572]/10 rounded-lg sm:rounded-xl md:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
+          <div className="absolute -inset-0.5 bg-gradient-to-br from-[#C3A161]/20 to-[#C5A572]/10 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
           
-          {/* Decorative corner accents */}
-          <div className="absolute top-0 left-0 w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 border-t-2 border-l-2 border-[#C3A161]/30 rounded-tl-lg sm:rounded-tl-xl md:rounded-tl-2xl" />
-          <div className="absolute top-0 right-0 w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 border-t-2 border-r-2 border-[#C3A161]/30 rounded-tr-lg sm:rounded-tr-xl md:rounded-tr-2xl" />
-          <div className="absolute bottom-0 left-0 w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 border-b-2 border-l-2 border-[#C3A161]/30 rounded-bl-lg sm:rounded-bl-xl md:rounded-bl-2xl" />
-          <div className="absolute bottom-0 right-0 w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 border-b-2 border-r-2 border-[#C3A161]/30 rounded-br-lg sm:rounded-br-xl md:rounded-br-2xl" />
+          {/* Decorative corner accents - more compact */}
+          <div className="absolute top-0.5 left-0.5 w-3 h-3 sm:w-4 sm:h-4 border-t-2 border-l-2 border-[#C3A161]/50 rounded-tl-lg" />
+          <div className="absolute top-0.5 right-0.5 w-3 h-3 sm:w-4 sm:h-4 border-t-2 border-r-2 border-[#C3A161]/50 rounded-tr-lg" />
+          <div className="absolute bottom-0.5 left-0.5 w-3 h-3 sm:w-4 sm:h-4 border-b-2 border-l-2 border-[#C3A161]/50 rounded-bl-lg" />
+          <div className="absolute bottom-0.5 right-0.5 w-3 h-3 sm:w-4 sm:h-4 border-b-2 border-r-2 border-[#C3A161]/50 rounded-br-lg" />
           
           {/* Card content */}
-          <div className="relative p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 z-10">
+          <div className="relative p-4 sm:p-5 md:p-7 lg:p-9 z-10">
             {isLoading ? (
-              <div className="flex items-center justify-center py-24 sm:py-28 md:py-32">
-                <div className="flex flex-col items-center gap-4">
-                  <Loader2 className="h-10 w-10 sm:h-12 sm:w-12 animate-spin text-[#C5A572]" />
-                  <span className="text-[#0A3428]/70 font-serif text-base sm:text-lg">Loading entourage...</span>
+              <div className="flex items-center justify-center py-16 sm:py-20 md:py-24">
+                <div className="flex flex-col items-center gap-3">
+                  <Loader2 className="h-8 w-8 sm:h-10 sm:w-10 animate-spin text-[#C5A572]" />
+                  <span className="text-[#0A3428]/70 text-sm sm:text-base">Loading entourage...</span>
                 </div>
               </div>
             ) : error ? (
-              <div className="flex items-center justify-center py-24 sm:py-28 md:py-32">
+              <div className="flex items-center justify-center py-16 sm:py-20 md:py-24">
                 <div className="text-center">
-                  <p className="text-red-600 font-serif text-base sm:text-lg mb-3">{error}</p>
+                  <p className="text-red-600 text-sm sm:text-base mb-2">{error}</p>
                   <button
                     onClick={fetchEntourage}
-                    className="text-[#C5A572] hover:text-[#0A3428] font-serif underline transition-colors duration-200"
+                    className="text-[#C5A572] hover:text-[#0A3428] text-sm underline transition-colors duration-200"
                   >
                     Try again
                   </button>
                 </div>
               </div>
             ) : entourage.length === 0 ? (
-              <div className="text-center py-24 sm:py-28 md:py-32">
-                <Users className="h-14 w-14 sm:h-16 sm:w-16 text-[#C3A161]/30 mx-auto mb-4" />
-                <p className="text-[#0A3428]/60 font-serif text-base sm:text-lg">No entourage members yet</p>
+              <div className="text-center py-16 sm:py-20 md:py-24">
+                <Users className="h-12 w-12 sm:h-14 sm:w-14 text-[#C3A161]/30 mx-auto mb-3" />
+                <p className="text-[#0A3428]/60 text-sm sm:text-base">No entourage members yet</p>
               </div>
             ) : (
             <>
@@ -245,19 +317,19 @@ export function Entourage() {
                   return (
                     <div key={category}>
                       {categoryIndex > 0 && (
-                        <div className="flex justify-center py-3 sm:py-4 md:py-5 mb-5 sm:mb-6 md:mb-8">
-                          <div className="flex items-center gap-2 w-full max-w-md">
-                            <div className="h-[1.5px] flex-1 bg-gradient-to-r from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
-                            <div className="w-1.5 h-1.5 bg-[#C3A161] rounded-full"></div>
-                            <div className="h-[1.5px] flex-1 bg-gradient-to-l from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
+                        <div className="flex justify-center py-2 sm:py-2.5 md:py-3 mb-3 sm:mb-4 md:mb-6">
+                          <div className="flex items-center gap-1.5 w-full max-w-md">
+                            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
+                            <div className="w-1 h-1 bg-[#C3A161] rounded-full"></div>
+                            <div className="h-px flex-1 bg-gradient-to-l from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
                           </div>
                         </div>
                       )}
                       <TwoColumnLayout singleTitle="The Couple" centerContent={true}>
-                        <div className="px-3 sm:px-4 md:px-6">
+                        <div className="px-2 sm:px-3 md:px-5">
                           {groom && <NameItem member={groom} align="right" />}
                         </div>
-                        <div className="px-3 sm:px-4 md:px-6">
+                        <div className="px-2 sm:px-3 md:px-5">
                           {bride && <NameItem member={bride} align="left" />}
                         </div>
                       </TwoColumnLayout>
@@ -289,11 +361,11 @@ export function Entourage() {
                     return (
                       <div key="Parents">
                         {categoryIndex > 0 && (
-                          <div className="flex justify-center py-3 sm:py-4 md:py-5 mb-5 sm:mb-6 md:mb-8">
-                            <div className="flex items-center gap-2 w-full max-w-md">
-                              <div className="h-[1.5px] flex-1 bg-gradient-to-r from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
-                              <div className="w-1.5 h-1.5 bg-[#C3A161] rounded-full"></div>
-                              <div className="h-[1.5px] flex-1 bg-gradient-to-l from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
+                          <div className="flex justify-center py-2 sm:py-2.5 md:py-3 mb-3 sm:mb-4 md:mb-6">
+                            <div className="flex items-center gap-1.5 w-full max-w-md">
+                              <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
+                              <div className="w-1 h-1 bg-[#C3A161] rounded-full"></div>
+                              <div className="h-px flex-1 bg-gradient-to-l from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
                             </div>
                           </div>
                         )}
@@ -308,11 +380,11 @@ export function Entourage() {
                               const right = rightArr[i]
                               rows.push(
                                 <React.Fragment key={`parents-row-${i}`}>
-                                  <div key={`parent-groom-${i}`} className="px-3 sm:px-4 md:px-6">
-                                    {left ? <NameItem member={left} align="right" /> : <div className="py-1 sm:py-1.5 md:py-2" />}
+                                  <div key={`parent-groom-${i}`} className="px-2 sm:px-3 md:px-5">
+                                    {left ? <NameItem member={left} align="right" /> : <div className="py-1 sm:py-1.5" />}
                                   </div>
-                                  <div key={`parent-bride-${i}`} className="px-3 sm:px-4 md:px-6">
-                                    {right ? <NameItem member={right} align="left" /> : <div className="py-1 sm:py-1.5 md:py-2" />}
+                                  <div key={`parent-bride-${i}`} className="px-2 sm:px-3 md:px-5">
+                                    {right ? <NameItem member={right} align="left" /> : <div className="py-1 sm:py-1.5" />}
                                   </div>
                                 </React.Fragment>
                               )
@@ -338,11 +410,11 @@ export function Entourage() {
                     return (
                       <div key="HonorAttendants">
                         {categoryIndex > 0 && (
-                          <div className="flex justify-center py-3 sm:py-4 md:py-5 mb-5 sm:mb-6 md:mb-8">
-                            <div className="flex items-center gap-2 w-full max-w-md">
-                              <div className="h-[1.5px] flex-1 bg-gradient-to-r from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
-                              <div className="w-1.5 h-1.5 bg-[#C3A161] rounded-full"></div>
-                              <div className="h-[1.5px] flex-1 bg-gradient-to-l from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
+                          <div className="flex justify-center py-2 sm:py-2.5 md:py-3 mb-3 sm:mb-4 md:mb-6">
+                            <div className="flex items-center gap-1.5 w-full max-w-md">
+                              <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
+                              <div className="w-1 h-1 bg-[#C3A161] rounded-full"></div>
+                              <div className="h-px flex-1 bg-gradient-to-l from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
                             </div>
                           </div>
                         )}
@@ -355,11 +427,11 @@ export function Entourage() {
                               const right = maidOfHonor[i]
                               rows.push(
                                 <React.Fragment key={`honor-row-${i}`}>
-                                  <div key={`bestman-cell-${i}`} className="px-3 sm:px-4 md:px-6">
-                                    {left ? <NameItem member={left} align="right" /> : <div className="py-1 sm:py-1.5 md:py-2" />}
+                                  <div key={`bestman-cell-${i}`} className="px-2 sm:px-3 md:px-5">
+                                    {left ? <NameItem member={left} align="right" /> : <div className="py-1 sm:py-1.5" />}
                                   </div>
-                                  <div key={`maid-cell-${i}`} className="px-3 sm:px-4 md:px-6">
-                                    {right ? <NameItem member={right} align="left" /> : <div className="py-1 sm:py-1.5 md:py-2" />}
+                                  <div key={`maid-cell-${i}`} className="px-2 sm:px-3 md:px-5">
+                                    {right ? <NameItem member={right} align="left" /> : <div className="py-1 sm:py-1.5" />}
                                   </div>
                                 </React.Fragment>
                               )
@@ -385,11 +457,11 @@ export function Entourage() {
                     return (
                       <div key="BridalParty">
                         {categoryIndex > 0 && (
-                          <div className="flex justify-center py-3 sm:py-4 md:py-5 mb-5 sm:mb-6 md:mb-8">
-                            <div className="flex items-center gap-2 w-full max-w-md">
-                              <div className="h-[1.5px] flex-1 bg-gradient-to-r from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
-                              <div className="w-1.5 h-1.5 bg-[#C3A161] rounded-full"></div>
-                              <div className="h-[1.5px] flex-1 bg-gradient-to-l from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
+                          <div className="flex justify-center py-2 sm:py-2.5 md:py-3 mb-3 sm:mb-4 md:mb-6">
+                            <div className="flex items-center gap-1.5 w-full max-w-md">
+                              <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
+                              <div className="w-1 h-1 bg-[#C3A161] rounded-full"></div>
+                              <div className="h-px flex-1 bg-gradient-to-l from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
                             </div>
                           </div>
                         )}
@@ -402,11 +474,11 @@ export function Entourage() {
                               const bridesmaid = bridesmaids[i]
                               rows.push(
                                 <React.Fragment key={`bridal-row-${i}`}>
-                                  <div key={`groomsman-cell-${i}`} className="px-3 sm:px-4 md:px-6">
-                                    {groomsman ? <NameItem member={groomsman} align="right" /> : <div className="py-1 sm:py-1.5 md:py-2" />}
+                                  <div key={`groomsman-cell-${i}`} className="px-2 sm:px-3 md:px-5">
+                                    {groomsman ? <NameItem member={groomsman} align="right" /> : <div className="py-1 sm:py-1.5" />}
                                   </div>
-                                  <div key={`bridesmaid-cell-${i}`} className="px-3 sm:px-4 md:px-6">
-                                    {bridesmaid ? <NameItem member={bridesmaid} align="left" /> : <div className="py-1 sm:py-1.5 md:py-2" />}
+                                  <div key={`bridesmaid-cell-${i}`} className="px-2 sm:px-3 md:px-5">
+                                    {bridesmaid ? <NameItem member={bridesmaid} align="left" /> : <div className="py-1 sm:py-1.5" />}
                                   </div>
                                 </React.Fragment>
                               )
@@ -432,11 +504,11 @@ export function Entourage() {
                     return (
                       <div key="Sponsors">
                         {categoryIndex > 0 && (
-                          <div className="flex justify-center py-3 sm:py-4 md:py-5 mb-5 sm:mb-6 md:mb-8">
-                            <div className="flex items-center gap-2 w-full max-w-md">
-                              <div className="h-[1.5px] flex-1 bg-gradient-to-r from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
-                              <div className="w-1.5 h-1.5 bg-[#C3A161] rounded-full"></div>
-                              <div className="h-[1.5px] flex-1 bg-gradient-to-l from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
+                          <div className="flex justify-center py-2 sm:py-2.5 md:py-3 mb-3 sm:mb-4 md:mb-6">
+                            <div className="flex items-center gap-1.5 w-full max-w-md">
+                              <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
+                              <div className="w-1 h-1 bg-[#C3A161] rounded-full"></div>
+                              <div className="h-px flex-1 bg-gradient-to-l from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
                             </div>
                           </div>
                         )}
@@ -449,11 +521,11 @@ export function Entourage() {
                               const right = veilSponsors[i]
                               rows.push(
                                 <React.Fragment key={`sponsors-row-${i}`}>
-                                  <div key={`candle-cell-${i}`} className="px-3 sm:px-4 md:px-6">
-                                    {left ? <NameItem member={left} align="right" /> : <div className="py-1 sm:py-1.5 md:py-2" />}
+                                  <div key={`candle-cell-${i}`} className="px-2 sm:px-3 md:px-5">
+                                    {left ? <NameItem member={left} align="right" /> : <div className="py-1 sm:py-1.5" />}
                                   </div>
-                                  <div key={`veil-cell-${i}`} className="px-3 sm:px-4 md:px-6">
-                                    {right ? <NameItem member={right} align="left" /> : <div className="py-1 sm:py-1.5 md:py-2" />}
+                                  <div key={`veil-cell-${i}`} className="px-2 sm:px-3 md:px-5">
+                                    {right ? <NameItem member={right} align="left" /> : <div className="py-1 sm:py-1.5" />}
                                   </div>
                                 </React.Fragment>
                               )
@@ -472,11 +544,11 @@ export function Entourage() {
                 return (
                   <div key={category}>
                     {categoryIndex > 0 && (
-                      <div className="flex justify-center py-3 sm:py-4 md:py-5 mb-5 sm:mb-6 md:mb-8">
-                        <div className="flex items-center gap-2 w-full max-w-md">
-                          <div className="h-[1.5px] flex-1 bg-gradient-to-r from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
-                          <div className="w-1.5 h-1.5 bg-[#C3A161] rounded-full"></div>
-                          <div className="h-[1.5px] flex-1 bg-gradient-to-l from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
+                      <div className="flex justify-center py-2 sm:py-2.5 md:py-3 mb-3 sm:mb-4 md:mb-6">
+                        <div className="flex items-center gap-1.5 w-full max-w-md">
+                          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
+                          <div className="w-1 h-1 bg-[#C3A161] rounded-full"></div>
+                          <div className="h-px flex-1 bg-gradient-to-l from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
                         </div>
                       </div>
                     )}
@@ -496,10 +568,10 @@ export function Entourage() {
                           const right = members[1]
                           return (
                             <>
-                              <div className="px-3 sm:px-4 md:px-6">
+                              <div className="px-2 sm:px-3 md:px-5">
                                 <NameItem member={left} align="right" />
                               </div>
-                              <div className="px-3 sm:px-4 md:px-6">
+                              <div className="px-2 sm:px-3 md:px-5">
                                 <NameItem member={right} align="left" />
                               </div>
                             </>
@@ -508,7 +580,7 @@ export function Entourage() {
                         if (SINGLE_COLUMN_SECTIONS.has(category) || members.length <= 2) {
                           return (
                             <div className="col-span-full">
-                              <div className="max-w-sm mx-auto flex flex-col items-center gap-2 sm:gap-2.5">
+                              <div className="max-w-sm mx-auto flex flex-col items-center gap-1.5 sm:gap-2">
                                 {members.map((member, idx) => (
                                   <NameItem key={`${category}-${idx}-${member.Name}`} member={member} align="center" />
                                 ))}
@@ -527,11 +599,11 @@ export function Entourage() {
                           const r = right[i]
                           rows.push(
                             <React.Fragment key={`${category}-row-${i}`}>
-                              <div key={`${category}-cell-left-${i}`} className="px-3 sm:px-4 md:px-6">
-                                {l ? <NameItem member={l} align="right" /> : <div className="py-1 sm:py-1.5 md:py-2" />}
+                              <div key={`${category}-cell-left-${i}`} className="px-2 sm:px-3 md:px-5">
+                                {l ? <NameItem member={l} align="right" /> : <div className="py-1 sm:py-1.5" />}
                               </div>
-                              <div key={`${category}-cell-right-${i}`} className="px-3 sm:px-4 md:px-6">
-                                {r ? <NameItem member={r} align="left" /> : <div className="py-1 sm:py-1.5 md:py-2" />}
+                              <div key={`${category}-cell-right-${i}`} className="px-2 sm:px-3 md:px-5">
+                                {r ? <NameItem member={r} align="left" /> : <div className="py-1 sm:py-1.5" />}
                               </div>
                             </React.Fragment>
                           )
@@ -548,11 +620,11 @@ export function Entourage() {
                 const members = grouped[category]
                 return (
                   <div key={category}>
-                    <div className="flex justify-center py-3 sm:py-4 md:py-5 mb-5 sm:mb-6 md:mb-8">
-                      <div className="flex items-center gap-2 w-full max-w-md">
-                        <div className="h-[1.5px] flex-1 bg-gradient-to-r from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
-                        <div className="w-1.5 h-1.5 bg-[#C3A161] rounded-full"></div>
-                        <div className="h-[1.5px] flex-1 bg-gradient-to-l from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
+                    <div className="flex justify-center py-2 sm:py-2.5 md:py-3 mb-3 sm:mb-4 md:mb-6">
+                      <div className="flex items-center gap-1.5 w-full max-w-md">
+                        <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
+                        <div className="w-1 h-1 bg-[#C3A161] rounded-full"></div>
+                        <div className="h-px flex-1 bg-gradient-to-l from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
                       </div>
                     </div>
                     <TwoColumnLayout singleTitle={category} centerContent={true}>
@@ -560,7 +632,7 @@ export function Entourage() {
                         if (members.length <= 2) {
                           return (
                             <div className="col-span-full">
-                              <div className="max-w-sm mx-auto flex flex-col items-center gap-2 sm:gap-2.5">
+                              <div className="max-w-sm mx-auto flex flex-col items-center gap-1.5 sm:gap-2">
                                 {members.map((member, idx) => (
                                   <NameItem key={`${category}-${idx}-${member.Name}`} member={member} align="center" />
                                 ))}
@@ -579,11 +651,11 @@ export function Entourage() {
                           const r = right[i]
                           rows.push(
                             <React.Fragment key={`${category}-row-${i}`}>
-                              <div key={`${category}-cell-left-${i}`} className="px-3 sm:px-4 md:px-6">
-                                {l ? <NameItem member={l} align="right" /> : <div className="py-1 sm:py-1.5 md:py-2" />}
+                              <div key={`${category}-cell-left-${i}`} className="px-2 sm:px-3 md:px-5">
+                                {l ? <NameItem member={l} align="right" /> : <div className="py-1 sm:py-1.5" />}
                               </div>
-                              <div key={`${category}-cell-right-${i}`} className="px-3 sm:px-4 md:px-6">
-                                {r ? <NameItem member={r} align="left" /> : <div className="py-1 sm:py-1.5 md:py-2" />}
+                              <div key={`${category}-cell-right-${i}`} className="px-2 sm:px-3 md:px-5">
+                                {r ? <NameItem member={r} align="left" /> : <div className="py-1 sm:py-1.5" />}
                               </div>
                             </React.Fragment>
                           )

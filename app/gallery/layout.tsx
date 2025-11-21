@@ -16,7 +16,7 @@ export default function GalleryLayout({ children }: { children: React.ReactNode 
   return (
     <div className="min-h-screen">
       {/* Simple top bar with only Back link */}
-      <div className="sticky top-0 z-50 backdrop-blur-md bg-[#0A3428]/80 border-b border-[#C3A161]/30">
+      {/* <div className="sticky top-0 z-50 backdrop-blur-md bg-[#0A3428]/80 border-b border-[#C3A161]/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
           <Link
             href="/"
@@ -26,7 +26,7 @@ export default function GalleryLayout({ children }: { children: React.ReactNode 
           </Link>
           <div className="text-xs text-[#FFFFFF]/60 font-sans">Gallery</div>
         </div>
-      </div>
+      </div> */}
       {children}
     </div>
   )
