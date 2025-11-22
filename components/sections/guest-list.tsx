@@ -349,7 +349,7 @@ export function GuestList() {
           Please search for your name below to confirm your attendance
         </p>
         <p className="text-[10px] sm:text-xs text-white/70 font-light max-w-2xl mx-auto mt-1.5 sm:mt-2 px-2">
-          Reply requested on or before January 13, 2026 • Contact: RIA MANALANSAN (fb) or 09615525606 (viber)
+          Reply requested on or before January 3, 2026 • Contact: RIA MANALANSAN (fb) or 09615525606 (viber)
         </p>
         
         {/* Decorative element below subtitle */}

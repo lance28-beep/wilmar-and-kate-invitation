@@ -251,10 +251,6 @@ export function Entourage() {
           Wedding Entourage
         </h2>
         
-        <p className="text-xs sm:text-sm md:text-base text-white/90 font-light max-w-xl mx-auto leading-relaxed px-2">
-          Those who stand with us as we begin our journey
-        </p>
-        
         {/* Decorative element below subtitle */}
         <div className="flex items-center justify-center gap-2 mt-2.5 sm:mt-3">
           <div className="w-1.5 h-1.5 bg-white/60 rounded-full" />
@@ -304,6 +300,31 @@ export function Entourage() {
               </div>
             ) : (
             <>
+              {/* Officiating Minister - Always at the top */}
+              <TwoColumnLayout singleTitle="Officiating Minister" centerContent={true}>
+                <div className="col-span-full">
+                  <div className="max-w-sm mx-auto flex flex-col items-center gap-1.5 sm:gap-2">
+                    <div className="flex flex-col items-center justify-center py-1.5 sm:py-2 md:py-2.5 leading-tight">
+                      <p className="text-[#0A3428] text-xs sm:text-sm md:text-base font-semibold text-center">
+                        Bishop Reuben Abante
+                      </p>
+                      <p className="text-[#C5A572] text-[9px] sm:text-[10px] md:text-xs font-medium mt-0.5 leading-snug text-center tracking-wider uppercase">
+                        Lighthouse Bible Baptist Church
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </TwoColumnLayout>
+              
+              {/* Divider after Officiating Minister */}
+              <div className="flex justify-center py-2 sm:py-2.5 md:py-3 mb-3 sm:mb-4 md:mb-6">
+                <div className="flex items-center gap-1.5 w-full max-w-md">
+                  <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
+                  <div className="w-1 h-1 bg-[#C3A161] rounded-full"></div>
+                  <div className="h-px flex-1 bg-gradient-to-l from-transparent via-[#C3A161]/50 to-[#C3A161]"></div>
+                </div>
+              </div>
+              
               {ROLE_CATEGORY_ORDER.map((category, categoryIndex) => {
                 const members = grouped[category] || []
                 

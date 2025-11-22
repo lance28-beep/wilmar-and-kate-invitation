@@ -6,7 +6,7 @@ export const siteConfig = {
     groomNickname: "Jay",
   },
   wedding: {
-    date: "January 23, 2026",
+    date: "January 13, 2026",
     time: "3:00 PM",
     venue: "FARM HILLS GARDEN TAGAYTAY",
     tagline: "He hath made every thing beautiful in his time… — Ecclesiastes 3:11",
@@ -19,7 +19,7 @@ export const siteConfig = {
   },
   details: {
     rsvp: {
-      deadline: "January 13, 2026",
+      deadline: "January 3, 2026",
       email: "",
       phone: "09615525606",
       contact: "RIA MANALANSAN (fb) or 09615525606 (viber)",
@@ -28,8 +28,8 @@ export const siteConfig = {
   ceremony: {
     location: "FARM HILLS GARDEN TAGAYTAY - Garden Area",
     venue: "FARM HILLS GARDEN TAGAYTAY - Garden Area",
-    date: "January 23, 2026",
-    day: "Friday",
+    date: "January 13, 2026",
+    day: "Tuesday",
     time: "4:00 PM",
     entourageTime: "3:30 PM",
     guestsTime: "3:45 PM",
@@ -37,7 +37,7 @@ export const siteConfig = {
   reception: {
     location: "FARM HILLS GARDEN TAGAYTAY - Pavilion",
     venue: "FARM HILLS GARDEN TAGAYTAY - Pavilion",
-    date: "January 23, 2026",
+    date: "January 13, 2026",
     time: "6:00 PM",
   },
   dressCode: {
@@ -57,7 +57,7 @@ export const siteConfig = {
 
 Jay & Cha
 
-January 23, Year 2026
+January 13, Year 2026
 
 "He hath made every thing beautiful in his time…"
 — Ecclesiastes 3:11

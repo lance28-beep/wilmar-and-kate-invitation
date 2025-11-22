@@ -154,10 +154,6 @@ export function PrincipalSponsors() {
           Principal Sponsors
         </h2>
         
-        <p className="text-xs sm:text-sm md:text-base text-white/90 font-light max-w-xl mx-auto leading-relaxed px-2">
-          Our Beloved Godparents
-        </p>
-        
         {/* Decorative element below subtitle */}
         <div className="flex items-center justify-center gap-2 mt-2.5 sm:mt-3">
           <div className="w-1.5 h-1.5 bg-white/60 rounded-full" />

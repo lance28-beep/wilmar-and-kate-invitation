@@ -127,7 +127,7 @@ export function RSVP({ onSuccess }: RSVPFormProps) {
                 <p className="text-sm sm:text-lg md:text-xl text-[#402921]/80 font-sans font-light leading-relaxed">
                   The favor of your reply is requested on or before{" "}
                   <span className="font-semibold text-[#402921] bg-[#402921]/10 px-2 py-1 rounded-lg text-sm md:text-base">
-                    January 13, 2026
+                    January 3, 2026
                   </span>
                 </p>
                 <p className="text-xs sm:text-sm md:text-base text-[#402921]/70 font-sans font-light leading-relaxed mt-3">

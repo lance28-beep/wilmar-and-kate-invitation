@@ -35,7 +35,7 @@ const mobileImages = [
     "/mobile-background/couple (13).jpeg",
 ]
 
-const softTextShadow = "0 10px 28px rgba(7, 15, 20, 0.42), 0 3px 10px rgba(0, 0, 0, 0.4)"
+const softTextShadow = "0 2px 4px rgba(0, 0, 0, 0.9), 0 4px 8px rgba(0, 0, 0, 0.7), 0 8px 16px rgba(0, 0, 0, 0.5), 0 12px 24px rgba(0, 0, 0, 0.3)"
 
 export function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -103,9 +103,8 @@ export function Hero() {
     }
   }, [imagesLoaded])
 
-  const invitationLine = `Together with their families, ${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname} request the honor of your presence.`
-  const subInvitationLine =
-    "Let us gather in reverence and joy as we celebrate the covenant of love God has beautifully prepared."
+  const invitationLine = `Together with our families,\nwe, ${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname}, warmly invite you to join us\nas we celebrate with gratitude and joy\nthe covenant of love God has beautifully prepared for us.`
+  const subInvitationLine = ""
 
   return (
     <section
@@ -171,16 +170,10 @@ export function Hero() {
           {/* Warm invitation line */}
           <div className="space-y-2 sm:space-y-3 mb-2 sm:mb-4">
             <p
-              className="text-sm sm:text-base md:text-lg lg:text-xl font-light text-[#FFFFFF]/95 tracking-wide text-balance"
+              className="text-sm sm:text-base md:text-lg lg:text-xl font-light text-[#FFFFFF]/95 tracking-wide text-balance whitespace-pre-line"
               style={{ textShadow: softTextShadow }}
             >
               {invitationLine}
-            </p>
-            <p
-              className="text-xs sm:text-sm md:text-base lg:text-lg text-[#FFFFFF]/85 tracking-wide text-balance"
-              style={{ textShadow: softTextShadow }}
-            >
-              {subInvitationLine}
             </p>
             {/* Subtle divider */}
             <div className="flex items-center justify-center gap-3 sm:gap-4 py-1">
@@ -193,16 +186,16 @@ export function Hero() {
           {/* Couple names - keeping the arrangement as requested */}
           <div className="space-y-3 sm:space-y-4 md:space-y-5">
             <h1
-              className="parisienne-regular text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] 2xl:text-[11rem] font-semibold tracking-[0.02em] sm:tracking-[0.03em] md:tracking-[0.04em] drop-shadow-2xl leading-tight"
+              className="parisienne-regular text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[12rem] 2xl:text-[14rem] font-semibold tracking-[0.02em] sm:tracking-[0.03em] md:tracking-[0.04em] drop-shadow-2xl leading-tight"
               style={{
                 color: '#FFFFFF',
-                textShadow: "0 16px 38px rgba(10, 20, 32, 0.45), 0 6px 24px rgba(28, 51, 63, 0.35)",
+                textShadow: "0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 0.95), 0 0 30px rgba(255, 255, 255, 0.9), 0 0 40px rgba(255, 255, 255, 0.85), 0 0 60px rgba(255, 255, 255, 0.7), 0 0 80px rgba(255, 255, 255, 0.5), 0 0 100px rgba(255, 255, 255, 0.3), 0 4px 8px rgba(0, 0, 0, 0.4)",
               }}
             >
               <span className="inline-block transform transition-all duration-700 hover:scale-105">
                 {siteConfig.couple.groomNickname}
               </span>
-              <span className="mx-2 sm:mx-3 md:mx-4 text-[#FFFFFF]">&</span>
+              <span className="mx-2 sm:mx-3 md:mx-4">&</span>
               <span className="inline-block transform transition-all duration-700 hover:scale-105">
                 {siteConfig.couple.brideNickname}
               </span>
@@ -226,19 +219,13 @@ export function Hero() {
                 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-light text-[#FFFFFF] tracking-wide"
                 style={{ textShadow: softTextShadow }}
               >
-                {siteConfig.ceremony.day} • {siteConfig.ceremony.date}
+                {siteConfig.ceremony.day} * {siteConfig.ceremony.date} * {siteConfig.ceremony.time}
               </p>
               <p
-                className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold text-[#FFFFFF] tracking-[0.25em]"
+                className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold text-[#FFFFFF] tracking-wide"
                 style={{ textShadow: softTextShadow }}
               >
-                {siteConfig.ceremony.time} • Garden Vows at {siteConfig.ceremony.venue}
-              </p>
-              <p
-                className="text-[11px] sm:text-xs md:text-sm lg:text-base font-medium text-[#FFFFFF]/80 tracking-wide"
-                style={{ textShadow: softTextShadow }}
-              >
-                Reception follows at {siteConfig.reception.time} in the {siteConfig.reception.venue}
+                {siteConfig.wedding.venue}
               </p>
             </div>
           </div>

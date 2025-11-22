@@ -186,7 +186,7 @@ export function Details() {
               </div>
               
               <p className="text-base sm:text-lg md:text-xl font-bold text-white mb-3 sm:mb-4">
-                January 23, 2026 • Thursday
+                January 13, 2026 • Tuesday
               </p>
               
               {/* Bottom decorative divider */}

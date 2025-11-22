@@ -19,7 +19,7 @@ const faqItems: FAQItem[] = [
   {
     question: "When and where is the ceremony?",
     answer:
-      "The ceremony is on January 23, 2026 at 4:00 PM at FARM HILLS GARDEN TAGAYTAY - Garden Area.",
+      "The ceremony is on January 13, 2026 at 4:00 PM at FARM HILLS GARDEN TAGAYTAY - Garden Area.",
   },
   {
     question: "Where is the reception?",
@@ -29,7 +29,7 @@ const faqItems: FAQItem[] = [
   {
     question: "When is the RSVP deadline?",
     answer:
-      "Please confirm your attendance by January 13, 2026. Your response helps us finalize our guest list. Thank you! [RSVP_LINK]Click here to RSVP[/RSVP_LINK]",
+      "Please confirm your attendance by January 3, 2026. Your response helps us finalize our guest list. Thank you! [RSVP_LINK]Click here to RSVP[/RSVP_LINK]",
   },
   {
     question: "Do you have a gift registry?",

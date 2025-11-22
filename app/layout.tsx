@@ -11,7 +11,7 @@ const greatVibes = Great_Vibes({ subsets: ["latin"], weight: "400", variable: "-
 export const metadata: Metadata = {
   title: "Jay & Cha - Wedding Invitation",
   description:
-    "Celebrate the simple and faith-filled wedding of Jay and Cha on January 23, 2026 at the Farm Hills Garden Tagaytay. RSVP, read the invitation, and get all event details online.",
+    "Celebrate the simple and faith-filled wedding of Jay and Cha on January 13, 2026 at the Farm Hills Garden Tagaytay. RSVP, read the invitation, and get all event details online.",
   keywords:
     "Jay Cha wedding, Jay Cha wedding invitation, Tagaytay wedding, Farm Hills Garden Tagaytay, emerald green beige wedding, RSVP, wedding invitation website, 2026 weddings, Filipino wedding, jaycha26@gmail.com",
   authors: [
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
   },
   manifest: "/favicon_io/site.webmanifest",
   openGraph: {
-    title: "Jay & Cha Wedding | January 23, 2026",
+    title: "Jay & Cha Wedding | January 13, 2026",
     description:
-      "Join Jay & Cha as they say “I do” on January 23, 2026 at the Farm Hills Garden Tagaytay. View the invitation, RSVP details, and schedule online.",
+      'Join Jay & Cha as they say "I do" on January 13, 2026 at the Farm Hills Garden Tagaytay. View the invitation, RSVP details, and schedule online.',
     url: "https://jay-and-cha-invitation.vercel.app/",
     siteName: "Jay and Cha Wedding",
     locale: "en_PH",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
         url: "https://jay-and-cha-invitation.vercel.app/desktop-background/couple (6).jpeg",
         width: 1200,
         height: 630,
-        alt: "Jay & Cha Wedding Invitation - January 23, 2026",
+        alt: "Jay & Cha Wedding Invitation - January 13, 2026",
       },
     ],
   },
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jay & Cha Wedding Invitation",
     description:
-      "You're invited to the wedding of Jay & Cha on January 23, 2026 at the Farm Hills Garden Tagaytay. RSVP and view the details online. #JayAndCha",
+      "You're invited to the wedding of Jay & Cha on January 13, 2026 at the Farm Hills Garden Tagaytay. RSVP and view the details online. #JayAndCha",
     images: ["https://jay-and-cha-invitation.vercel.app/desktop-background/couple (6).jpeg"],
     creator: "@jayandcha",
   },
@@ -92,14 +92,14 @@ export const metadata: Metadata = {
       "@context": "https://schema.org",
       "@type": "Event",
       name: "Jay & Cha Wedding",  
-      startDate: "2026-01-23T04:00:00+08:00",
-      endDate: "2026-01-23T06:00:00+08:00",
+      startDate: "2026-01-13T04:00:00+08:00",
+      endDate: "2026-01-13T06:00:00+08:00",
       eventStatus: "https://schema.org/EventScheduled",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       location: "Farm Hills Garden Tagaytay",
       image: ["https://jay-and-cha-invitation.vercel.app/desktop-background/couple (6).jpeg"],
       description:
-        "In honor and gratitude to God who brought them together, Jay & Cha invite you to witness their simple wedding on January 23, 2026 at the Farm Hills Garden Tagaytay. RSVP details and schedule are available online.",
+        "In honor and gratitude to God who brought them together, Jay & Cha invite you to witness their simple wedding on January 13, 2026 at the Farm Hills Garden Tagaytay. RSVP details and schedule are available online.",
       organizer: {
         "@type": "Person",
         name: "Jay & Cha",
