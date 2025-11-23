@@ -1,15 +1,15 @@
 export const siteConfig = {
   couple: {
-    bride: "Charlotte Lubiano Gonzales",
-    brideNickname: "Cha",
-    groom: "John Noel Rivera Manalansan",
-    groomNickname: "Jay",
+    bride: "Kate",
+    brideNickname: "Kate",
+    groom: "Wilmar",
+    groomNickname: "Wilmar",
   },
   wedding: {
-    date: "January 13, 2026",
-    time: "3:00 PM",
-    venue: "FARM HILLS GARDEN TAGAYTAY",
-    tagline: "He hath made every thing beautiful in his time… — Ecclesiastes 3:11",
+    date: "December 21, 2025",
+    time: "4:00 PM",
+    venue: "Villa Anaya Resort and Events Place",
+    tagline: "I have found the one whom my soul loves. — Song of Solomon 3:4",
     theme: "Sage Green – Dusty Blue – Gray/Silver",
     motif: "Sage Green – Dusty Blue – Gray/Silver",
     themeSong: {
@@ -19,25 +19,25 @@ export const siteConfig = {
   },
   details: {
     rsvp: {
-      deadline: "January 3, 2026",
+      deadline: "December 11, 2025",
       email: "",
-      phone: "09615525606",
-      contact: "RIA MANALANSAN (fb) or 09615525606 (viber)",
+      phone: "",
+      contact: "",
     },
   },
   ceremony: {
-    location: "FARM HILLS GARDEN TAGAYTAY - Garden Area",
-    venue: "FARM HILLS GARDEN TAGAYTAY - Garden Area",
-    date: "January 13, 2026",
-    day: "Tuesday",
+    location: "Villa Anaya Resort and Events Place",
+    venue: "Villa Anaya Resort and Events Place",
+    date: "December 21, 2025",
+    day: "Sunday",
     time: "4:00 PM",
     entourageTime: "3:30 PM",
     guestsTime: "3:45 PM",
   },
   reception: {
-    location: "FARM HILLS GARDEN TAGAYTAY - Pavilion",
-    venue: "FARM HILLS GARDEN TAGAYTAY - Pavilion",
-    date: "January 13, 2026",
+    location: "Villa Anaya Resort and Events Place",
+    venue: "Villa Anaya Resort and Events Place",
+    date: "December 21, 2025",
     time: "6:00 PM",
   },
   dressCode: {
@@ -53,25 +53,11 @@ export const siteConfig = {
     },
     note: "We would love to see you in formal attire following our color palette: Sage Green – Dusty Blue – Gray/Silver",
   },
-  narrative: `We are delighted to share this wonderful and blessed moment with you!
+  narrative: `We’re incredibly excited to share with you the beautiful journey of how our love began — a story filled with small moments that grew into something truly meaningful. From the very first spark to the countless memories that followed, every chapter has shaped who we are today. We want this space to be a little window into our hearts, a place where you can feel the warmth, laughter, and magic that brought us together.
 
-Jay & Cha
+Right now, we’re still putting the pieces together, choosing the words that best capture everything we’ve been through — the challenges we conquered, the joy we found in each other, and the love that continues to grow every single day. Hehehe, medyo kinikilig pa kami habang sinusulat!
 
-January 13, Year 2026
-
-"He hath made every thing beautiful in his time…"
-— Ecclesiastes 3:11
-
-Ceremony starts at 4:00 in the afternoon
-and Reception follows at 6:00 PM
-
-FARM HILLS GARDEN TAGAYTAY
-
-Ceremony will be at the Garden Area, then proceed to the Pavilion for the Reception of the Wedding.
-
-We have reserved seats for you. Please search for your name below to confirm your attendance:
-concern: 
-RIA MANALANSAN (fb) or 09615525606 (viber).`,
+Please stay tuned as we craft our full story. We can’t wait to share it with you soon. Something sweet, real, and beautiful is on its way. 💕✨`,
   colors: {
     primary: "#869EB6",
     secondary: "#83927D",
@@ -79,7 +65,7 @@ RIA MANALANSAN (fb) or 09615525606 (viber).`,
     light: "#F5F5F5",
   },
   snapShare: {
-    googleDriveLink: "https://drive.google.com/drive/folders/1a1QESKdiAh3x2CwN-EiZt7Kpsh2fGMj1?usp=sharing",
+    googleDriveLink: "https://drive.google.com/drive/folders/1ZHOf6m3bDrwu5vTkZ9bX2qjmPdeclZrh?usp=sharing",
     instructions: "Please scan this QR Code, create a folder with your name and upload the photos and videos you have taken during our wedding reception. We are delighted to see your snaps too!",
   },
 }

@@ -3,15 +3,32 @@
 import CircularGallery from "@/components/CircularGallery"
 import { Section } from "@/components/section"
 import { ChevronRight } from "lucide-react"
+import NextImage from "next/image"
 
 const galleryItems = [
-  { image: "/mobile-background/couple (1).jpeg", text: "" },
-  { image: "/mobile-background/couple (3).jpeg", text: "" },
-  { image: "/mobile-background/couple (5).jpeg", text: "" },
-  { image: "/mobile-background/couple (7).jpeg", text: "" },
-  { image: "/mobile-background/couple (9).jpeg", text: "" },
-  { image: "/mobile-background/couple (11).jpeg", text: "" },
-  { image: "/mobile-background/couple (13).jpeg", text: "" },
+  { image: "/mobile-background/couple (1).jpg", text: "" },
+  { image: "/mobile-background/couple (2).jpg", text: "" },
+  { image: "/mobile-background/couple (3).jpg", text: "" },
+  { image: "/mobile-background/couple (4).jpg", text: "" },
+  { image: "/mobile-background/couple (5).jpg", text: "" },
+  { image: "/mobile-background/couple (6).jpg", text: "" },
+  { image: "/mobile-background/couple (7).jpg", text: "" },
+  { image: "/mobile-background/couple (8).jpg", text: "" },
+  { image: "/mobile-background/couple (9).jpg", text: "" },
+  { image: "/mobile-background/couple (10).jpg", text: "" },
+  { image: "/mobile-background/couple (11).jpg", text: "" },
+  { image: "/mobile-background/couple (12).jpg", text: "" },
+  { image: "/mobile-background/couple (13).jpg", text: "" },
+  { image: "/mobile-background/couple (14).jpg", text: "" },
+  { image: "/mobile-background/couple (15).jpg", text: "" },
+  { image: "/mobile-background/couple (16).jpg", text: "" },
+  { image: "/mobile-background/couple (17).jpg", text: "" },
+  { image: "/mobile-background/couple (18).jpg", text: "" },
+  { image: "/mobile-background/couple (19).jpg", text: "" },
+  { image: "/mobile-background/couple (20).jpg", text: "" },
+  { image: "/mobile-background/couple (21).jpg", text: "" },
+  { image: "/mobile-background/couple (22).jpg", text: "" },
+  { image: "/mobile-background/couple (23).jpg", text: "" },
 
 ]
 
@@ -19,32 +36,31 @@ export function Gallery() {
   return (
     <Section
       id="gallery"
-      className="relative overflow-hidden bg-[#83927D] py-10 sm:py-12 md:py-16 lg:py-20"
+      className="relative overflow-hidden bg-[#58171D] py-10 sm:py-12 md:py-16 lg:py-20"
     >
-      {/* Enhanced background decorations */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Gradient overlays */}
-        <div className="absolute top-0 left-0 h-1/2 w-full bg-gradient-to-b from-white/20 via-white/5 to-transparent" />
-        <div className="absolute bottom-0 left-0 h-1/2 w-full bg-gradient-to-t from-white/20 via-white/5 to-transparent" />
-        
-        {/* Floating decorative circles */}
-        <div className="absolute top-12 right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl animate-pulse" />
-        <div className="absolute top-24 left-16 w-24 h-24 bg-white/8 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }} />
-        <div className="absolute bottom-20 right-20 w-28 h-28 bg-white/12 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
-        <div className="absolute bottom-32 left-12 w-20 h-20 bg-white/10 rounded-full blur-xl animate-pulse" style={{ animationDelay: '0.5s' }} />
-        
-        {/* Decorative lines */}
-        <div className="absolute top-1/3 left-0 w-full h-px bg-white/20" />
-        
-        {/* Bottom center decoration */}
-        <div className="absolute inset-x-0 bottom-0 flex justify-center">
-          <img
-            src="/decoration/bottom-center-flower.png"
+      {/* Flower decorations - bottom corners only */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        {/* Bottom left corner decoration - flipped horizontally */}
+        <div className="absolute bottom-0 left-0 z-0">
+          <NextImage
+            src="/decoration/right-bottom-corner-flower.png"
             alt=""
-            aria-hidden="true"
-            className="h-auto w-[180px] opacity-75 sm:w-[280px] md:w-[340px] lg:w-[400px]"
-            loading="lazy"
-            decoding="async"
+            width={200}
+            height={200}
+            className="w-40 sm:w-48 md:w-52 lg:w-56 xl:w-60 h-auto opacity-80 scale-x-[-1]"
+            priority={false}
+          />
+        </div>
+        
+        {/* Bottom right corner decoration */}
+        <div className="absolute bottom-0 right-0 z-0">
+          <NextImage
+            src="/decoration/right-bottom-corner-flower.png"
+            alt=""
+            width={200}
+            height={200}
+            className="w-40 sm:w-48 md:w-52 lg:w-56 xl:w-60 h-auto opacity-80"
+            priority={false}
           />
         </div>
       </div>
@@ -106,7 +122,7 @@ export function Gallery() {
       <div className="relative z-10 flex justify-center px-3 sm:px-4">
         <a
           href="/gallery"
-          className="group relative inline-flex items-center gap-2 sm:gap-2.5 whitespace-nowrap rounded-xl border-2 border-[#C3A161]/40 bg-[#C5A572] px-6 sm:px-8 md:px-10 lg:px-12 py-3 sm:py-3.5 md:py-4 text-xs sm:text-sm md:text-base font-bold uppercase tracking-[0.15em] text-white shadow-[0_8px_32px_rgba(197,165,114,0.4)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(197,165,114,0.6)] hover:scale-[1.03] hover:border-[#C3A161]/60 active:scale-[0.98] overflow-hidden"
+          className="group relative inline-flex items-center gap-2 sm:gap-2.5 whitespace-nowrap rounded-xl border-2 border-[#CCB595]/40 bg-[#805640] px-6 sm:px-8 md:px-10 lg:px-12 py-3 sm:py-3.5 md:py-4 text-xs sm:text-sm md:text-base font-bold uppercase tracking-[0.15em] text-white shadow-[0_8px_32px_rgba(128,86,64,0.4)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(128,86,64,0.6)] hover:scale-[1.03] hover:border-[#CCB595]/60 active:scale-[0.98] overflow-hidden"
         >
           {/* Button shine effect */}
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />

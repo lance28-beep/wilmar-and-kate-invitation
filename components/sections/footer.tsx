@@ -82,84 +82,33 @@ export function Footer() {
 
   return (
     <footer 
-      className="relative z-20 mt-16 text-white overflow-hidden bg-gradient-to-b from-[#869EB6] via-[#83927D] to-[#869EB6]"
+      className="relative z-20 mt-16 text-white overflow-hidden bg-[#58171D]"
     >
-      {/* Decorative background elements */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Soft gradient overlays */}
-        <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-white/10 via-white/5 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-white/10 via-white/5 to-transparent" />
-        
-        {/* Floating decorative circles */}
-        <motion.div
-          className="absolute top-16 right-12 w-32 h-32 bg-white/8 rounded-full blur-2xl"
-          animate={{ scale: [1, 1.1, 1], opacity: [0.08, 0.12, 0.08] }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <motion.div
-          className="absolute top-32 left-20 w-24 h-24 bg-white/6 rounded-full blur-xl"
-          animate={{ scale: [1.1, 1, 1.1], opacity: [0.12, 0.08, 0.12] }}
-          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <motion.div
-          className="absolute bottom-16 left-20 w-28 h-28 bg-white/10 rounded-full blur-2xl"
-          animate={{ scale: [1, 1.1, 1], opacity: [0.1, 0.15, 0.1] }}
-          transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <motion.div
-          className="absolute bottom-24 right-12 w-20 h-20 bg-white/8 rounded-full blur-xl"
-          animate={{ scale: [1.1, 1, 1.1], opacity: [0.08, 0.12, 0.08] }}
-          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-        />
-        
-        {/* Corner decorations */}
-        <div className="absolute top-0 left-0 z-0">
-          <Image
-            src="/decoration/corner-left-button.png"
-            alt=""
-            width={200}
-            height={200}
-            className="w-24 sm:w-32 md:w-40 lg:w-48 h-auto opacity-40 scale-y-[-1]"
-            priority={false}
-          />
-        </div>
-        
-        <div className="absolute top-0 right-0 z-0">
-          <Image
-            src="/decoration/corner-left-button.png"
-            alt=""
-            width={200}
-            height={200}
-            className="w-24 sm:w-32 md:w-40 lg:w-48 h-auto opacity-40 scale-x-[-1] scale-y-[-1]"
-            priority={false}
-          />
-        </div>
-        
+      {/* Flower decorations - bottom corners only */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        {/* Bottom left corner decoration - flipped horizontally */}
         <div className="absolute bottom-0 left-0 z-0">
           <Image
-            src="/decoration/corner-left-button.png"
+            src="/decoration/right-bottom-corner-flower.png"
             alt=""
             width={200}
             height={200}
-            className="w-24 sm:w-32 md:w-40 lg:w-48 h-auto opacity-40"
+            className="w-40 sm:w-48 md:w-52 lg:w-56 xl:w-60 h-auto opacity-80 scale-x-[-1]"
             priority={false}
           />
         </div>
         
+        {/* Bottom right corner decoration */}
         <div className="absolute bottom-0 right-0 z-0">
           <Image
-            src="/decoration/corner-left-button.png"
+            src="/decoration/right-bottom-corner-flower.png"
             alt=""
             width={200}
             height={200}
-            className="w-24 sm:w-32 md:w-40 lg:w-48 h-auto opacity-40 scale-x-[-1]"
+            className="w-40 sm:w-48 md:w-52 lg:w-56 xl:w-60 h-auto opacity-80"
             priority={false}
           />
         </div>
-        
-        {/* Decorative horizontal lines */}
-        <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-        <div className="absolute bottom-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
       </div>
       
       {/* Monogram - centered at top */}
@@ -172,7 +121,7 @@ export function Footer() {
         >
           <Image
             src="/decoration/monogram.png"
-            alt="Jay & Cha Monogram"
+            alt={`${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname} Monogram`}
             width={350}
             height={350}
             className="w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 brightness-0 invert opacity-90"
@@ -273,7 +222,7 @@ export function Footer() {
                 <div className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 bg-white/20 rounded-full flex items-center justify-center border border-white/30 flex-shrink-0">
                   <Heart className="w-5 h-5 sm:w-5.5 sm:h-5.5 md:w-6 md:h-6 text-white" />
                 </div>
-                <h3 className="parisienne-regular text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white">{siteConfig.couple.groomNickname} & {siteConfig.couple.brideNickname}</h3>
+                <h3 className="alex-brush-regular text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white">{siteConfig.couple.groomNickname} & {siteConfig.couple.brideNickname}</h3>
               </div>
               <div className="space-y-3 sm:space-y-3.5 md:space-y-4">
                 <div className="flex items-center gap-2 sm:gap-2.5 md:gap-3 font-lora text-white/95">
@@ -404,7 +353,7 @@ export function Footer() {
         <motion.div className="border-t border-white/30 pt-6 sm:pt-7 md:pt-8" variants={fadeInUp}>
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-5 md:gap-6">
             <div className="text-center md:text-left">
-              <p className="text-white/90 font-lora text-xs sm:text-sm">© {year} Jay & Cha. All rights reserved.</p>
+              <p className="text-white/90 font-lora text-xs sm:text-sm">© {year} {siteConfig.couple.groomNickname} & {siteConfig.couple.brideNickname}. All rights reserved.</p>
               <p className="text-white/95 font-lora text-xs sm:text-sm mt-0.5 sm:mt-1">
                 Made with 💕 for our special day
               </p>

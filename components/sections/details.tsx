@@ -26,12 +26,12 @@ export function Details() {
   }
 
   // Updated venue information
-  const ceremonyVenueName = "Farm Hills Garden Tagaytay"
-  const ceremonyVenueAddress = "Garden Area"
-  const receptionVenueName = "Farm Hills Garden Tagaytay"
-  const receptionVenueAddress = "Pavilion"
-  const fullAddress = "Farm Hills Garden, Tagaytay"
-  const venue = `Farm Hills Garden, Tagaytay`
+  const ceremonyVenueName = siteConfig.ceremony.venue
+  const ceremonyVenueAddress = siteConfig.ceremony.location
+  const receptionVenueName = siteConfig.reception.venue
+  const receptionVenueAddress = siteConfig.reception.location
+  const fullAddress = siteConfig.wedding.venue
+  const venue = siteConfig.wedding.venue
   const ceremonyMapsLink = `https://maps.google.com/?q=${encodeURIComponent(venue)}`
   const receptionMapsLink = `https://maps.google.com/?q=${encodeURIComponent(venue)}`
 
@@ -41,80 +41,64 @@ export function Details() {
 
 
   return (
-    <Section id="details" className="relative bg-[#869EB6] py-10 sm:py-12 md:py-16 lg:py-20 overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <Image
-          src="/Details/FARMHILLSGARDENTAGAYTAY.png"
-          alt="Farm Hills Garden"
-          fill
-          className="object-cover opacity-20"
-          sizes="100vw"
-          priority
-        />
-        {/* Overlay to blend with theme */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#869EB6]/80 via-[#869EB6]/70 to-[#869EB6]/80" />
-      </div>
-
+    <Section id="details" className="relative bg-[#5c1f24] py-10 sm:py-12 md:py-16 lg:py-20 overflow-hidden">
       {/* Enhanced background elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Soft gradient overlays */}
-        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/20 via-white/5 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-white/20 via-white/5 to-transparent" />
+        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/15 via-white/5 to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-white/15 via-white/5 to-transparent" />
         
         {/* Floating decorative circles */}
-        <div className="absolute top-12 right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl animate-pulse" />
-        <div className="absolute top-24 left-16 w-24 h-24 bg-white/8 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }} />
-        <div className="absolute bottom-20 right-20 w-28 h-28 bg-white/12 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
-        <div className="absolute bottom-32 left-12 w-20 h-20 bg-white/10 rounded-full blur-xl animate-pulse" style={{ animationDelay: '0.5s' }} />
+        <div className="absolute top-10 left-10 w-32 h-32 bg-white/8 rounded-full blur-2xl animate-pulse" />
+        <div className="absolute top-20 right-16 w-24 h-24 bg-white/6 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }} />
+        <div className="absolute bottom-16 left-20 w-28 h-28 bg-white/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
+        <div className="absolute bottom-24 right-12 w-20 h-20 bg-white/8 rounded-full blur-xl animate-pulse" style={{ animationDelay: '0.5s' }} />
         
-        {/* Corner decorations - more compact on mobile */}
+        {/* Top corner flower decorations */}
         <div className="absolute top-0 left-0 z-0">
           <Image
-            src="/decoration/corner-left-button.png"
+            src="/decoration/top-left-corner flower.png"
             alt=""
-            width={200}
-            height={200}
-            className="w-28 sm:w-36 md:w-44 lg:w-52 xl:w-60 h-auto opacity-75 scale-y-[-1]"
+            width={300}
+            height={300}
+            className="w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64 h-auto opacity-80"
             priority={false}
           />
         </div>
         
         <div className="absolute top-0 right-0 z-0">
           <Image
-            src="/decoration/corner-left-button.png"
+            src="/decoration/top-left-corner flower.png"
             alt=""
-            width={200}
-            height={200}
-            className="w-28 sm:w-36 md:w-44 lg:w-52 xl:w-60 h-auto opacity-75 scale-x-[-1] scale-y-[-1]"
+            width={300}
+            height={300}
+            className="w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64 h-auto opacity-80 scale-x-[-1]"
             priority={false}
           />
         </div>
         
+        {/* Bottom corner flower decorations */}
         <div className="absolute bottom-0 left-0 z-0">
           <Image
-            src="/decoration/corner-left-button.png"
+            src="/decoration/left-bottom-left-flower.png"
             alt=""
-            width={200}
-            height={200}
-            className="w-28 sm:w-36 md:w-44 lg:w-52 xl:w-60 h-auto opacity-75"
+            width={400}
+            height={400}
+            className="w-48 sm:w-56 md:w-64 lg:w-72 xl:w-80 2xl:w-96 h-auto opacity-80"
             priority={false}
           />
         </div>
         
         <div className="absolute bottom-0 right-0 z-0">
           <Image
-            src="/decoration/corner-left-button.png"
+            src="/decoration/left-bottom-left-flower.png"
             alt=""
-            width={200}
-            height={200}
-            className="w-28 sm:w-36 md:w-44 lg:w-52 xl:w-60 h-auto opacity-75 scale-x-[-1]"
+            width={400}
+            height={400}
+            className="w-48 sm:w-56 md:w-64 lg:w-72 xl:w-80 2xl:w-96 h-auto opacity-80 scale-x-[-1]"
             priority={false}
           />
         </div>
-        
-        {/* Decorative lines */}
-        <div className="absolute top-1/3 left-0 w-full h-px bg-white/20" />
       </div>
 
       {/* Header */}
@@ -150,8 +134,8 @@ export function Details() {
           {/* Venue Image */}
           <div className="relative w-full h-40 sm:h-48 md:h-56 lg:h-64 mb-5 sm:mb-6 rounded-xl overflow-hidden">
             <Image
-              src="/Details/FARMHILLSGARDENTAGAYTAY.png"
-              alt="Farm Hills Garden Tagaytay"
+              src="/Details/illa Anaya ResortandEventsPlace.png"
+              alt={siteConfig.wedding.venue}
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
@@ -162,10 +146,10 @@ export function Details() {
             {/* Venue overlay */}
             <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4">
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 drop-shadow-lg leading-tight">
-                Farm Hills Garden
+                {siteConfig.wedding.venue}
               </h3>
               <p className="text-xs sm:text-sm md:text-base text-white/95 font-medium drop-shadow-md">
-                Tagaytay City
+                {siteConfig.ceremony.day}, {siteConfig.ceremony.date}
               </p>
             </div>
           </div>
@@ -186,7 +170,7 @@ export function Details() {
               </div>
               
               <p className="text-base sm:text-lg md:text-xl font-bold text-white mb-3 sm:mb-4">
-                January 13, 2026 • Tuesday
+                {siteConfig.ceremony.date} • {siteConfig.ceremony.day}
               </p>
               
               {/* Bottom decorative divider */}
@@ -219,7 +203,7 @@ export function Details() {
                 </div>
                 <div className="min-w-0 flex-1">
                   <p className="text-xs sm:text-sm font-bold text-white">Ceremony</p>
-                  <p className="text-[11px] sm:text-xs text-white/90">Garden Area</p>
+                  <p className="text-[11px] sm:text-xs text-white/90">{siteConfig.ceremony.venue}</p>
                 </div>
               </div>
               <div className="flex items-center gap-2 sm:gap-3 p-3 sm:p-3.5 bg-white/15 backdrop-blur-sm rounded-lg border border-white/20">
@@ -228,7 +212,7 @@ export function Details() {
                 </div>
                 <div className="min-w-0 flex-1">
                   <p className="text-xs sm:text-sm font-bold text-white">Reception</p>
-                  <p className="text-[11px] sm:text-xs text-white/90">Pavilion</p>
+                  <p className="text-[11px] sm:text-xs text-white/90">{siteConfig.reception.venue}</p>
                 </div>
               </div>
             </div>
@@ -237,7 +221,7 @@ export function Details() {
             <div className="flex flex-row gap-2 sm:gap-3">
               <button
                 onClick={() => openInMaps(ceremonyMapsLink)}
-                className="flex-1 flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-3 sm:py-3.5 bg-white/95 hover:bg-white text-[#869EB6] rounded-xl font-bold text-xs sm:text-sm md:text-base transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] shadow-md hover:shadow-lg"
+                className="flex-1 flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-3 sm:py-3.5 bg-white/95 hover:bg-white text-[#904945] rounded-xl font-bold text-xs sm:text-sm md:text-base transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] shadow-md hover:shadow-lg"
                 aria-label="Get directions to venue"
               >
                 <Navigation className="w-4 h-4 flex-shrink-0" />
@@ -286,27 +270,74 @@ export function Details() {
             </div>
             
             <div className="space-y-3 sm:space-y-4">
+              {/* Guest Dress Code */}
               <div>
-                <p className="text-xs sm:text-sm md:text-base text-white/95 leading-relaxed">
-                  We would love to see you in <span className="font-semibold">formal attire</span> following our color palette.
-                </p>
+                <p className="text-xs sm:text-sm font-semibold text-white mb-2 sm:mb-2.5">Guest</p>
+                <div className="space-y-1.5 text-[11px] sm:text-xs text-white/95 leading-relaxed">
+                  <p><span className="font-semibold">Ladies:</span> Cocktail, midi or maxi dress</p>
+                  <p><span className="font-semibold">Gentlemen:</span> Long sleeved dress shirt and/or coat, slacks. Dressy shoes</p>
+                </div>
               </div>
 
               {/* Color Palette */}
               <div>
-                <p className="text-xs sm:text-sm font-semibold text-white mb-2 sm:mb-2.5">Wedding Colors</p>
+                <p className="text-xs sm:text-sm font-semibold text-white mb-2 sm:mb-2.5">We'd love to see you in shades of brown</p>
+                <p className="text-[10px] sm:text-xs text-white/80 mb-2 sm:mb-2.5">Color Palette</p>
                 <div className="flex gap-2 sm:gap-3 flex-wrap items-center">
                   <div className="flex flex-col items-center gap-1.5">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-white/60 bg-[#83927D]" />
-                    <span className="text-[10px] sm:text-xs text-white/90 font-medium">Sage Green</span>
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-white/60" style={{ backgroundColor: '#CCB595' }} />
+                    <span className="text-[10px] sm:text-xs text-white/90 font-medium">#CCB595</span>
                   </div>
                   <div className="flex flex-col items-center gap-1.5">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-white/60 bg-[#869EB6]" />
-                    <span className="text-[10px] sm:text-xs text-white/90 font-medium">Dusty Blue</span>
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-white/60" style={{ backgroundColor: '#805640' }} />
+                    <span className="text-[10px] sm:text-xs text-white/90 font-medium">#805640</span>
                   </div>
                   <div className="flex flex-col items-center gap-1.5">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-white/60 bg-[#A8A8A8]" />
-                    <span className="text-[10px] sm:text-xs text-white/90 font-medium">Gray/Silver</span>
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-white/60" style={{ backgroundColor: '#D5A98C' }} />
+                    <span className="text-[10px] sm:text-xs text-white/90 font-medium">#D5A98C</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-1.5">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-white/60" style={{ backgroundColor: '#AA7B5F' }} />
+                    <span className="text-[10px] sm:text-xs text-white/90 font-medium">#AA7B5F</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Principal Sponsor Dress Code */}
+              <div className="pt-2 sm:pt-3 border-t border-white/20">
+                <p className="text-xs sm:text-sm font-semibold text-white mb-3 sm:mb-4">Principal Sponsor</p>
+                
+                {/* Ninang */}
+                <div className="mb-3 sm:mb-4">
+                  <p className="text-[11px] sm:text-xs font-semibold text-white mb-2">Ninang:</p>
+                  <p className="text-[11px] sm:text-xs text-white/95 leading-relaxed mb-2">
+                    Long gown or Semi-formal in cream or champagne gold color
+                  </p>
+                  <div className="relative w-full h-32 sm:h-40 md:h-48 rounded-lg overflow-hidden border border-white/30">
+                    <Image
+                      src="/Details/NinangprincipalSponsor.png"
+                      alt="Ninang dress code example"
+                      fill
+                      className="object-contain bg-white/5"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                </div>
+
+                {/* Ninong */}
+                <div>
+                  <p className="text-[11px] sm:text-xs font-semibold text-white mb-2">Ninong:</p>
+                  <p className="text-[11px] sm:text-xs text-white/95 leading-relaxed mb-2">
+                    Barong Tagalog paired with Black slacks
+                  </p>
+                  <div className="relative w-full h-32 sm:h-40 md:h-48 rounded-lg overflow-hidden border border-white/30">
+                    <Image
+                      src="/Details/NonongPrincipalSponsor.png"
+                      alt="Ninong dress code example"
+                      fill
+                      className="object-contain bg-white/5"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
                   </div>
                 </div>
               </div>
@@ -332,14 +363,14 @@ export function Details() {
               <div>
                 <p className="text-xs sm:text-sm font-semibold text-white mb-1.5 sm:mb-2">Parking Available</p>
                 <p className="text-[11px] sm:text-xs text-white/90 leading-relaxed">
-                  Farm Hills Garden offers ample parking spaces. Kindly arrive 15–20 minutes early to settle in comfortably.
+                  {siteConfig.wedding.venue} offers ample parking spaces. Kindly arrive 15–20 minutes early to settle in comfortably.
                 </p>
               </div>
 
               <div>
                 <p className="text-xs sm:text-sm font-semibold text-white mb-1.5 sm:mb-2">Getting There</p>
                 <p className="text-[11px] sm:text-xs text-white/90 leading-relaxed">
-                  The venue is located in Tagaytay City. Please use "Farm Hills Garden, Tagaytay" in your navigation app for directions.
+                  The venue is easy to reach. Please use "{siteConfig.wedding.venue}" in your navigation app for directions.
                 </p>
               </div>
             </div>

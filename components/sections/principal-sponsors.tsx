@@ -24,7 +24,7 @@ export function PrincipalSponsors() {
     const textAlign =
       align === "right" ? "text-right" : align === "left" ? "text-left" : "text-center"
     return (
-      <h3 className={`text-[10px] sm:text-xs md:text-sm lg:text-base font-bold uppercase text-[#0A3428] mb-1.5 sm:mb-2 md:mb-3 tracking-[0.12em] ${textAlign} ${className} drop-shadow-sm`}>
+      <h3 className={`text-[10px] sm:text-xs md:text-sm lg:text-base font-bold uppercase text-[#2E0B0F] mb-1.5 sm:mb-2 md:mb-3 tracking-[0.12em] ${textAlign} ${className} drop-shadow-sm`}>
         {children}
       </h3>
     )
@@ -38,7 +38,7 @@ export function PrincipalSponsors() {
       align === "right" ? "text-right" : align === "left" ? "text-left" : "text-center"
     return (
       <div className={`flex flex-col ${containerAlign} justify-center py-1.5 sm:py-2 md:py-2.5 w-full group/item transition-all duration-200 hover:scale-[1.02]`}>
-        <p className={`text-[#0A3428] text-xs sm:text-sm md:text-base font-semibold leading-tight break-words ${textAlign} group-hover/item:text-[#106552] transition-colors duration-200`}>{name}</p>
+        <p className={`text-[#2E0B0F] text-xs sm:text-sm md:text-base font-semibold leading-tight break-words ${textAlign} group-hover/item:text-[#58171D] transition-colors duration-200`}>{name}</p>
       </div>
     )
   }
@@ -76,73 +76,39 @@ export function PrincipalSponsors() {
   return (
     <Section
       id="sponsors"
-      className="relative bg-transparent py-8 sm:py-10 md:py-14 lg:py-16 xl:py-20 overflow-hidden"
+      className="relative bg-[#58171D] py-8 sm:py-10 md:py-14 lg:py-16 xl:py-20 overflow-hidden"
     >
-      {/* Enhanced background elements */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Soft gradient overlays */}
-        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/15 via-white/5 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-white/15 via-white/5 to-transparent" />
-        
-        {/* Floating decorative circles */}
-        <div className="absolute top-16 right-12 w-32 h-32 bg-white/10 rounded-full blur-2xl animate-pulse" />
-        <div className="absolute top-32 left-20 w-24 h-24 bg-white/8 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }} />
-        <div className="absolute bottom-16 left-20 w-28 h-28 bg-white/12 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
-        <div className="absolute bottom-24 right-12 w-20 h-20 bg-white/10 rounded-full blur-xl animate-pulse" style={{ animationDelay: '0.5s' }} />
-        
-        {/* Corner decorations - matching countdown section */}
-        <div className="absolute top-0 left-0 z-0">
-          <Image
-            src="/decoration/corner-left-button.png"
-            alt=""
-            width={200}
-            height={200}
-            className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56 h-auto opacity-60 scale-y-[-1]"
-            priority={false}
-          />
-        </div>
-        
-        <div className="absolute top-0 right-0 z-0">
-          <Image
-            src="/decoration/corner-left-button.png"
-            alt=""
-            width={200}
-            height={200}
-            className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56 h-auto opacity-60 scale-x-[-1] scale-y-[-1]"
-            priority={false}
-          />
-        </div>
-        
+      {/* Flower decorations - bottom corners only */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        {/* Bottom left corner decoration - flipped horizontally */}
         <div className="absolute bottom-0 left-0 z-0">
           <Image
-            src="/decoration/corner-left-button.png"
+            src="/decoration/right-bottom-corner-flower.png"
             alt=""
             width={200}
             height={200}
-            className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56 h-auto opacity-60"
+            className="w-40 sm:w-48 md:w-52 lg:w-56 xl:w-60 h-auto opacity-80 scale-x-[-1]"
             priority={false}
           />
         </div>
         
+        {/* Bottom right corner decoration */}
         <div className="absolute bottom-0 right-0 z-0">
           <Image
-            src="/decoration/corner-left-button.png"
+            src="/decoration/right-bottom-corner-flower.png"
             alt=""
             width={200}
             height={200}
-            className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56 h-auto opacity-60 scale-x-[-1]"
+            className="w-40 sm:w-48 md:w-52 lg:w-56 xl:w-60 h-auto opacity-80"
             priority={false}
           />
         </div>
-        
-        {/* Decorative horizontal line */}
-        <div className="absolute top-1/3 left-0 w-full h-px bg-white/20" />
       </div>
 
-      {/* Section Header */}
-      <div className="relative z-10 text-center mb-6 sm:mb-7 md:mb-9 lg:mb-11 px-3 sm:px-4">
+      {/* Header with enhanced decorations */}
+      <div className="relative z-10 px-3 sm:px-4 text-center mb-6 sm:mb-8 md:mb-12">
         {/* Decorative element above title */}
-        <div className="flex items-center justify-center gap-2 mb-2.5 sm:mb-3">
+        <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
           <div className="w-8 sm:w-12 md:w-16 h-px bg-white/40" />
           <div className="w-1.5 h-1.5 bg-white/60 rounded-full" />
           <div className="w-1.5 h-1.5 bg-white/40 rounded-full" />
@@ -150,12 +116,16 @@ export function PrincipalSponsors() {
           <div className="w-8 sm:w-12 md:w-16 h-px bg-white/40" />
         </div>
         
-        <h2 className="imperial-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-normal text-white mb-2 sm:mb-3 drop-shadow-lg leading-tight">
+        <h2 className="imperial-script-regular mb-2 sm:mb-3 md:mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-normal text-white drop-shadow-lg">
           Principal Sponsors
         </h2>
         
+        <p className="mx-auto max-w-xl text-xs sm:text-sm md:text-base lg:text-lg font-light leading-relaxed text-white/90 px-2">
+          Honoring those who guide and support us
+        </p>
+        
         {/* Decorative element below subtitle */}
-        <div className="flex items-center justify-center gap-2 mt-2.5 sm:mt-3">
+        <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4">
           <div className="w-1.5 h-1.5 bg-white/60 rounded-full" />
           <div className="w-1.5 h-1.5 bg-white/40 rounded-full" />
           <div className="w-1.5 h-1.5 bg-white/60 rounded-full" />
@@ -163,26 +133,26 @@ export function PrincipalSponsors() {
       </div>
 
       {/* Sponsors content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-3 sm:px-4 md:px-6">
-        {/* Enhanced card with gradient glow */}
-        <div className="relative bg-white/95 backdrop-blur-sm rounded-xl sm:rounded-2xl overflow-hidden border border-[#C3A161]/40 shadow-2xl hover:shadow-[0_10px_50px_rgba(195,161,97,0.2)] transition-all duration-300 group">
-          {/* Subtle glow on hover */}
-          <div className="absolute -inset-0.5 bg-gradient-to-br from-[#C3A161]/20 to-[#C5A572]/10 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
+      <div className="relative z-10 px-3 sm:px-4 md:px-6 lg:px-8 mb-8 sm:mb-10 md:mb-12">
+        <div className="mx-auto w-full max-w-5xl">
+          {/* Outer glow effect */}
+          <div className="absolute -inset-2 bg-white/20 rounded-[32px] sm:rounded-[36px] blur-2xl opacity-50" />
           
-          {/* Decorative corner accents - more compact */}
-          <div className="absolute top-0.5 left-0.5 w-3 h-3 sm:w-4 sm:h-4 border-t-2 border-l-2 border-[#C3A161]/50 rounded-tl-lg" />
-          <div className="absolute top-0.5 right-0.5 w-3 h-3 sm:w-4 sm:h-4 border-t-2 border-r-2 border-[#C3A161]/50 rounded-tr-lg" />
-          <div className="absolute bottom-0.5 left-0.5 w-3 h-3 sm:w-4 sm:h-4 border-b-2 border-l-2 border-[#C3A161]/50 rounded-bl-lg" />
-          <div className="absolute bottom-0.5 right-0.5 w-3 h-3 sm:w-4 sm:h-4 border-b-2 border-r-2 border-[#C3A161]/50 rounded-br-lg" />
-          
-          {/* Card content */}
-          <div className="relative p-4 sm:p-5 md:p-7 lg:p-9 z-10">
+          <div className="relative rounded-[24px] sm:rounded-[28px] md:rounded-[32px] border-2 border-white/20 bg-white/10 p-2 sm:p-2.5 md:p-3 shadow-[0_12px_48px_rgba(0,0,0,0.15)] backdrop-blur-xl">
+            {/* Decorative corner accents */}
+            <div className="absolute top-1 left-1 w-4 h-4 sm:w-5 sm:h-5 border-t-2 border-l-2 border-white/30 rounded-tl-2xl" />
+            <div className="absolute top-1 right-1 w-4 h-4 sm:w-5 sm:h-5 border-t-2 border-r-2 border-white/30 rounded-tr-2xl" />
+            <div className="absolute bottom-1 left-1 w-4 h-4 sm:w-5 sm:h-5 border-b-2 border-l-2 border-white/30 rounded-bl-2xl" />
+            <div className="absolute bottom-1 right-1 w-4 h-4 sm:w-5 sm:h-5 border-b-2 border-r-2 border-white/30 rounded-br-2xl" />
+            
+            {/* Card content */}
+            <div className="relative p-4 sm:p-5 md:p-7 lg:p-9 z-10 bg-white/95 rounded-[20px] sm:rounded-[24px] md:rounded-[28px]">
             <div className="relative z-10 w-full">
               {isLoading ? (
                 <div className="flex items-center justify-center py-16 sm:py-20 md:py-24">
                   <div className="flex flex-col items-center gap-3">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 border-4 border-[#C3A161]/30 border-t-[#C5A572] rounded-full animate-spin" />
-                    <span className="text-[#0A3428]/70 text-sm sm:text-base">Loading sponsors...</span>
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 border-4 border-[#CCB595]/30 border-t-[#805640] rounded-full animate-spin" />
+                    <span className="text-[#2E0B0F]/70 text-sm sm:text-base">Loading sponsors...</span>
                   </div>
                 </div>
               ) : error ? (
@@ -191,7 +161,7 @@ export function PrincipalSponsors() {
                     <p className="text-red-600 text-sm sm:text-base mb-2">{error}</p>
                     <button
                       onClick={fetchSponsors}
-                      className="text-[#C5A572] hover:text-[#0A3428] text-sm underline transition-colors duration-200"
+                      className="text-[#805640] hover:text-[#2E0B0F] text-sm underline transition-colors duration-200"
                     >
                       Try again
                     </button>
@@ -199,7 +169,7 @@ export function PrincipalSponsors() {
                 </div>
               ) : sponsorPairs.length === 0 ? (
                 <div className="text-center py-16 sm:py-20 md:py-24">
-                  <p className="text-[#0A3428]/60 text-sm sm:text-base">No sponsors yet</p>
+                  <p className="text-[#2E0B0F]/60 text-sm sm:text-base">No sponsors yet</p>
                 </div>
               ) : (
                 <div className="mb-4 sm:mb-5 md:mb-7 lg:mb-9">
@@ -229,6 +199,7 @@ export function PrincipalSponsors() {
                   </div>
                 </div>
               )}
+            </div>
             </div>
           </div>
         </div>

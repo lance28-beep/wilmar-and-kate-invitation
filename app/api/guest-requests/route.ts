@@ -1,7 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server"
 
 // You'll need to replace this with your GuestWish Google Apps Script URL
-const GUEST_WISH_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz3-mJwp9C1Q8tzZj58LrjomN0dM-lBBC3Exx9nbAHrhDo9nVCjgoW3Y1IQSkyB_jJOHQ/exec'
+const GUEST_WISH_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwIemT6IAsb70MsHJpBVh0GQub3ScRT9Jh0o2EJKCZXw2DdKkaippmtBqPGrPjmTmes2g/exec'
 
 // Guest Request interface for WishGuest sheet
 export interface GuestRequest {

@@ -3,112 +3,139 @@ import { Section } from "@/components/section"
 import { siteConfig } from "@/content/site"
 import Stack from "@/components/stack"
 import { motion } from "motion/react"
+import Image from "next/image"
 
 
 export function Narrative() {
-  // Generate particle positions
-  const particles = Array.from({ length: 50 }, (_, i) => ({
-    id: i,
-    top: `${Math.random() * 100}%`,
-    left: `${Math.random() * 100}%`,
-    delay: Math.random() * 20,
-    duration: 15 + Math.random() * 10,
-    size: 2 + Math.random() * 3,
-    xMove: Math.random() * 20 - 10,
-  }))
-
   return (
-    <Section id="narrative" className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-b from-[#FFFFFF] via-[#C3A161]/60 to-[#FFFFFF]">
-
-      {/* Particle Background Effect */}
-      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-        {particles.map((particle) => (
-          <motion.div
-            key={particle.id}
-            className="absolute rounded-full"
-            style={{ background: `radial-gradient(circle at 30% 30%, #C5A57233 0%, #C3A16122 90%, #FFFFFF11 99%)` }}
-            animate={{
-              y: [0, -30, 0],
-              x: [0, particle.xMove, 0],
-              opacity: [0.1, 0.3, 0.1],
-              scale: [1, 1.2, 1],
-            }}
-            transition={{
-              duration: particle.duration,
-              repeat: Infinity,
-              delay: particle.delay,
-              ease: "easeInOut",
-            }}
-          />
-        ))}
+    <Section id="narrative" className="relative py-8 sm:py-12 md:py-20 overflow-hidden bg-[#5c1f24]">
+      {/* Enhanced background elements - romantic and compact */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Soft gradient overlays with romantic pink tones */}
+        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-[#CCB595]/10 via-white/5 to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#CCB595]/10 via-white/5 to-transparent" />
         
-        {/* Floating hearts */}
-        {Array.from({ length: 8 }).map((_, i) => (
+        {/* Floating decorative circles - smaller for mobile */}
+        <div className="absolute top-6 left-6 w-20 h-20 sm:w-32 sm:h-32 bg-white/8 rounded-full blur-2xl animate-pulse" />
+        <div className="absolute top-12 right-10 w-16 h-16 sm:w-24 sm:h-24 bg-[#CCB595]/10 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }} />
+        <div className="absolute bottom-12 left-12 w-20 h-20 sm:w-28 sm:h-28 bg-white/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
+        <div className="absolute bottom-16 right-8 w-14 h-14 sm:w-20 sm:h-20 bg-[#CCB595]/8 rounded-full blur-xl animate-pulse" style={{ animationDelay: '0.5s' }} />
+        
+        {/* Romantic floating hearts - subtle animation */}
+        {Array.from({ length: 4 }).map((_, i) => (
           <motion.div
             key={`heart-${i}`}
-            className="absolute text-[#C3A161]/30"
+            className="absolute text-white/15"
             style={{
-              top: `${10 + i * 12}%`,
-              left: `${5 + (i % 3) * 30}%`,
+              top: `${20 + i * 20}%`,
+              left: `${10 + (i % 2) * 80}%`,
             }}
             animate={{
-              y: [0, -20, 0],
+              y: [0, -15, 0],
               rotate: [0, 5, 0],
-              opacity: [0.05, 0.15, 0.05],
+              opacity: [0.1, 0.2, 0.1],
             }}
             transition={{
               duration: 8 + i * 0.5,
               repeat: Infinity,
-              delay: i * 0.5,
+              delay: i * 0.8,
               ease: "easeInOut",
             }}
           >
-            <svg className="w-4 h-4 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
             </svg>
           </motion.div>
         ))}
-
+        
+        {/* Bottom corner flower decorations - smaller for mobile */}
+        <div className="absolute bottom-0 left-0 z-0">
+          <Image
+            src="/decoration/left-bottom-left-flower.png"
+            alt=""
+            width={400}
+            height={400}
+            className="w-32 sm:w-48 md:w-64 lg:w-72 h-auto opacity-70"
+            priority={false}
+          />
+        </div>
+        
+        <div className="absolute bottom-0 right-0 z-0">
+          <Image
+            src="/decoration/left-bottom-left-flower.png"
+            alt=""
+            width={400}
+            height={400}
+            className="w-32 sm:w-48 md:w-64 lg:w-72 h-auto opacity-70 scale-x-[-1]"
+            priority={false}
+          />
+        </div>
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-b from-[#FFFFFF]/85 via-[#FFFFFF]/70 to-[#FFFFFF]/85 backdrop-blur-md z-10"></div>
-
-      {/* Bottom-right flower decoration (above layered background) */}
-      <img
-        src="/decoration/flower-bg-left-down.png"
-        alt=""
-        aria-hidden="true"
-        className="absolute bottom-0 right-0 z-20 w-32 sm:w-40 md:w-52 lg:w-60 opacity-90 select-none pointer-events-none"
-      />
-      {/* Overlay for a slight warmth effect for theme harmony */}
-      <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-[#C3A161]/60 to-transparent mix-blend-multiply"></div>
-
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Title */}
+      {/* Header - Compact for mobile */}
+      <div className="relative z-10 text-center mb-6 sm:mb-8 md:mb-12 px-3 sm:px-4">
+        {/* Decorative element above title - romantic hearts */}
         <motion.div 
-          className="text-center mb-12 md:mb-24"
+          className="flex items-center justify-center gap-1.5 sm:gap-2 mb-2 sm:mb-3"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="imperial-script-regular text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-normal text-primary mb-6 md:mb-8 text-balance drop-shadow-lg tracking-tight">
-            <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#0A3428] via-[#106552] to-[#C5A572]">Our Love Story:</span>
-          </h2>
-          
-          {/* Decorative flourish */}
-          <div className="flex items-center justify-center gap-4 mb-8">
-            <div className="w-12 md:w-16 h-px bg-gradient-to-r from-transparent via-[#C3A161]/80 to-[#C5A572]/40"></div>
-            <svg className="w-6 h-6 md:w-8 md:h-8 text-[#C3A161]/80" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-            </svg>
-            <div className="w-12 md:w-16 h-px bg-gradient-to-l from-transparent via-[#C3A161]/80 to-[#C5A572]/40"></div>
-          </div>
+          <div className="w-6 sm:w-8 md:w-12 h-px bg-white/40" />
+          <motion.svg 
+            className="w-3 h-3 sm:w-4 sm:h-4 text-[#CCB595]/80" 
+            fill="currentColor" 
+            viewBox="0 0 24 24"
+            animate={{ scale: [1, 1.2, 1] }}
+            transition={{ duration: 2, repeat: Infinity }}
+          >
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </motion.svg>
+          <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-white/60 rounded-full" />
+          <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-[#CCB595]/60 rounded-full" />
+          <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-white/60 rounded-full" />
+          <motion.svg 
+            className="w-3 h-3 sm:w-4 sm:h-4 text-[#CCB595]/80" 
+            fill="currentColor" 
+            viewBox="0 0 24 24"
+            animate={{ scale: [1, 1.2, 1] }}
+            transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
+          >
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </motion.svg>
+          <div className="w-6 sm:w-8 md:w-12 h-px bg-white/40" />
         </motion.div>
-
-        {/* Main Content - Centered Layout */}
+        
+        <motion.h2 
+          className="imperial-script-regular text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-normal text-white mb-3 sm:mb-4 md:mb-6 text-balance drop-shadow-lg tracking-tight"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          Our Love Story
+        </motion.h2>
+        
+        {/* Decorative element below title - romantic */}
         <motion.div 
-          className="grid grid-cols-1 lg:grid-cols-3 gap-12 md:gap-16 items-center lg:items-start"
+          className="flex items-center justify-center gap-1.5 sm:gap-2 mt-2 sm:mt-3"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-white/60 rounded-full" />
+          <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-[#CCB595]/60 rounded-full" />
+          <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-white/60 rounded-full" />
+        </motion.div>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+
+        {/* Main Content - Centered Layout - Compact */}
+        <motion.div 
+          className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-12 items-center lg:items-start"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -117,29 +144,32 @@ export function Narrative() {
           {/* Left Spacer */}
           <div className="hidden lg:block"></div>
 
-          {/* Interactive Stack Component - Center */}
+          {/* Interactive Stack Component - Center - Smaller for mobile */}
           <div className="flex justify-center">
             <div className="relative">
-              {/* Enhanced glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#106552]/30 via-[#C5A572]/20 to-[#FFFFFF]/25 rounded-full blur-3xl -z-10 w-full h-full max-w-sm animate-pulse"></div>
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#C3A161]/25 via-transparent to-[#FFFFFF]/10 rounded-full blur-2xl -z-10 w-full h-full max-w-sm"></div>
+              {/* Enhanced glow effect - romantic pink/white glow */}
+              <div className="absolute inset-0 bg-[#CCB595]/15 rounded-full blur-3xl -z-10 w-full h-full max-w-[240px] sm:max-w-sm animate-pulse"></div>
+              <div className="absolute inset-0 bg-white/8 rounded-full blur-2xl -z-10 w-full h-full max-w-[240px] sm:max-w-sm"></div>
 
-              <Stack
-                randomRotation={true}
-                sensitivity={180}
-                sendToBackOnClick={false}
-                cardDimensions={{ width: 280, height: 320 }}
-                cardsData={[
-                  { id: 1, img: "/LoveStory/story (4).png" },
-                  { id: 2, img: "/LoveStory/story (3).png" },
-                  { id: 3, img: "/LoveStory/story (2).png" },
-                  { id: 4, img: "/LoveStory/story (1).png" },
-                ]}
-                animationConfig={{ stiffness: 260, damping: 20 }}
-              />
+              <div className="scale-[0.75] sm:scale-90 md:scale-100">
+                <Stack
+                  randomRotation={true}
+                  sensitivity={180}
+                  sendToBackOnClick={false}
+                  cardDimensions={{ width: 220, height: 260 }}
+                  cardsData={[
+                    { id: 1, img: "/mobile-background/couple (33).jpg" },
+                    { id: 2, img: "/mobile-background/couple (34).jpg" },
+                    { id: 3, img: "/mobile-background/couple (35).jpg" },
+                    { id: 4, img: "/mobile-background/couple (36).jpg" },
+                    { id: 5, img: "/mobile-background/couple (37).jpg" },
+                  ]}
+                  animationConfig={{ stiffness: 260, damping: 20 }}
+                />
+              </div>
 
               <motion.p 
-                className="text-center text-sm md:text-base text-[#0A3428] mt-8 font-sans font-medium tracking-wide"
+                className="text-center text-xs sm:text-sm md:text-base text-white/90 mt-4 sm:mt-6 font-sans font-medium tracking-wide drop-shadow-sm"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
@@ -154,72 +184,100 @@ export function Narrative() {
           <div className="hidden lg:block"></div>
         </motion.div>
 
-        {/* Story Text - Full Width Below */}
+        {/* Story Text - Full Width Below - Compact for mobile */}
         <motion.div 
-          className="mt-16 md:mt-28 max-w-4xl mx-auto"
+          className="mt-8 sm:mt-12 md:mt-16 max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <div className="space-y-6 md:space-y-10">
-            {siteConfig.narrative.split("\n\n").map((paragraph, index) => (
-              <motion.div 
-                key={index} 
-                className="relative"
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
-              >
-                {/* First paragraph with drop cap */}
-                {index === 0 ? (
-                  <p className="text-sm md:text-lg leading-relaxed text-[#0A3428] text-pretty font-sans font-light pl-3 md:pl-6">
-                    <span className="float-left text-4xl md:text-7xl lg:text-8xl font-serif font-bold text-[#C5A572] leading-none mr-2 mt-1 drop-shadow-md">
-                      {paragraph.charAt(0)}
-                    </span>
-                    {paragraph.slice(1)}
-                  </p>
-                ) : (
-                  <p className="text-sm md:text-lg leading-relaxed text-[#106552] text-pretty font-sans font-light pl-3 md:pl-6">
-                    {paragraph}
-                  </p>
-                )}
-              </motion.div>
-            ))}
+          {/* Text container - compact padding for mobile */}
+          <div className="relative bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 lg:p-10 shadow-2xl border border-white/30">
+            <div className="space-y-4 sm:space-y-6 md:space-y-8">
+              {siteConfig.narrative.split("\n\n").map((paragraph, index) => (
+                <motion.div 
+                  key={index} 
+                  className="relative"
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
+                >
+                  {/* First paragraph with drop cap - smaller for mobile */}
+                  {index === 0 ? (
+                    <p className="text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed text-white text-pretty font-sans font-light pl-2 sm:pl-3 md:pl-4">
+                      <span className="float-left text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white/95 leading-none mr-1.5 sm:mr-2 mt-0.5 sm:mt-1 drop-shadow-md">
+                        {paragraph.charAt(0)}
+                      </span>
+                      {paragraph.slice(1)}
+                    </p>
+                  ) : (
+                    <p className="text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed text-white/90 text-pretty font-sans font-light pl-2 sm:pl-3 md:pl-4">
+                      {paragraph}
+                    </p>
+                  )}
+                </motion.div>
+              ))}
+            </div>
+            
+            {/* Decorative corner accents - romantic hearts */}
+            <div className="absolute top-1 left-1 w-2 h-2 sm:w-3 sm:h-3 border-t-2 border-l-2 border-[#CCB595]/50 rounded-tl-lg" />
+            <div className="absolute top-1 right-1 w-2 h-2 sm:w-3 sm:h-3 border-t-2 border-r-2 border-[#CCB595]/50 rounded-tr-lg" />
+            <div className="absolute bottom-1 left-1 w-2 h-2 sm:w-3 sm:h-3 border-b-2 border-l-2 border-[#CCB595]/50 rounded-bl-lg" />
+            <div className="absolute bottom-1 right-1 w-2 h-2 sm:w-3 sm:h-3 border-b-2 border-r-2 border-[#CCB595]/50 rounded-br-lg" />
           </div>
+        </motion.div>
 
-          {/* Divider and CTA */}
-          <motion.div 
-            className="mt-16 md:mt-24 lg:mt-28 space-y-8 md:space-y-12"
+        {/* Divider and CTA - Compact */}
+        <motion.div 
+            className="mt-8 sm:mt-12 md:mt-16 space-y-6 sm:space-y-8"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            {/* Decorative divider */}
-            <div className="flex items-center justify-center gap-4">
-              <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#C3A161]/60 to-[#C5A572]/30"></div>
-              <svg className="w-5 h-5 text-[#C3A161]/80" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-5c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/>
-              </svg>
-              <div className="flex-1 h-px bg-gradient-to-l from-transparent via-[#C3A161]/60 to-[#C5A572]/30"></div>
+            {/* Decorative divider - romantic with hearts */}
+            <div className="flex items-center justify-center gap-2 sm:gap-4">
+              <div className="flex-1 h-px bg-white/40"></div>
+              <div className="flex items-center gap-1 sm:gap-1.5">
+                <motion.svg 
+                  className="w-3 h-3 sm:w-4 sm:h-4 text-[#CCB595]/80" 
+                  fill="currentColor" 
+                  viewBox="0 0 24 24"
+                  animate={{ scale: [1, 1.15, 1] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                >
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </motion.svg>
+                <div className="w-1 h-1 bg-white/70 rounded-full"></div>
+                <motion.svg 
+                  className="w-3 h-3 sm:w-4 sm:h-4 text-[#CCB595]/80" 
+                  fill="currentColor" 
+                  viewBox="0 0 24 24"
+                  animate={{ scale: [1, 1.15, 1] }}
+                  transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
+                >
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </motion.svg>
+              </div>
+              <div className="flex-1 h-px bg-white/40"></div>
             </div>
 
-            {/* Enhanced CTA Button */}
+            {/* Enhanced CTA Button - Compact for mobile */}
             <div className="flex justify-center">
               <motion.a
                 href="#guest-list"
-                className="group relative w-full sm:w-auto px-8 sm:px-12 md:px-16 py-5 sm:py-6 md:py-7 bg-gradient-to-r from-[#0A3428] via-[#106552] to-[#C5A572] text-[#FFFFFF] font-sans font-bold text-base sm:text-lg md:text-xl lg:text-2xl rounded-[2rem] transition-all duration-500 text-center overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-[#C5A572]/35 border-2 border-[#FFFFFF] hover:border-[#C3A161] hover:text-white"
+                className="group relative w-full sm:w-auto px-6 sm:px-8 md:px-12 py-3.5 sm:py-4 md:py-5 bg-gradient-to-r from-[#5c1f24] via-[#904945] to-[#805640] text-[#FFFFFF] font-sans font-bold text-sm sm:text-base md:text-lg lg:text-xl rounded-[1.5rem] sm:rounded-[2rem] transition-all duration-500 text-center overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-[#904945]/40 border-2 border-white/30 hover:border-white/50 hover:text-white"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05, y: -4 }}
                 whileTap={{ scale: 0.98 }}
               >
-                {/* Pulsing glow effect */}
+                {/* Pulsing glow effect - refined colors */}
                 <motion.div 
-                  className="absolute inset-0 bg-[#C3A161]/35 rounded-[2rem] blur-2xl"
+                  className="absolute inset-0 bg-[#904945]/40 rounded-[2rem] blur-2xl"
                   animate={{
                     opacity: [0.4, 0.7, 0.4],
                     scale: [1, 1.1, 1],
@@ -296,11 +354,11 @@ export function Narrative() {
                   </svg>
                 </motion.div>
                 
-                {/* Button content */}
-                <span className="relative z-10 tracking-wide uppercase inline-flex items-center gap-3 font-bold text-[#FFFFFF]">
+                {/* Button content - compact */}
+                <span className="relative z-10 tracking-wide uppercase inline-flex items-center gap-2 sm:gap-3 font-bold text-[#FFFFFF] text-xs sm:text-sm md:text-base">
                   Join Our Celebration
                   <motion.svg 
-                    className="w-5 h-5 md:w-6 md:h-6 text-[#FFFFFF]" 
+                    className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-[#FFFFFF]" 
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
@@ -344,7 +402,6 @@ export function Narrative() {
                 />
               </motion.a>
             </div>
-          </motion.div>
         </motion.div>
 
       </div>

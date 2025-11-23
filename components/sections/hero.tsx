@@ -6,33 +6,129 @@ import { siteConfig } from "@/content/site"
 // Decorative icons removed for a cleaner, more formal presentation
 
 const desktopImages = [
-    "/desktop-background/couple (1).jpeg",
-    "/desktop-background/couple (2).jpeg",
-    "/desktop-background/couple (3).jpeg",
-    "/desktop-background/couple (4).jpeg",
-    "/desktop-background/couple (5).jpeg",
-    "/desktop-background/couple (6).jpeg",
-    "/desktop-background/couple (7).jpeg",
-    "/desktop-background/couple (8).jpeg",
-    "/desktop-background/couple (9).jpeg",
-    "/desktop-background/couple (10).jpeg",
-    "/desktop-background/couple (11).jpeg",
+    "/desktop-background/couple (1).jpg",
+    "/desktop-background/couple (2).jpg",
+    "/desktop-background/couple (3).jpg",
+    "/desktop-background/couple (4).jpg",
+    "/desktop-background/couple (5).jpg",
+    "/desktop-background/couple (6).jpg",
+    "/desktop-background/couple (7).jpg",
+    "/desktop-background/couple (8).jpg",
+    "/desktop-background/couple (9).jpg",
+    "/desktop-background/couple (10).jpg",
+    "/desktop-background/couple (11).jpg",
+    "/desktop-background/couple (12).jpg",
+    "/desktop-background/couple (13).jpg",
+    "/desktop-background/couple (14).jpg",
+    "/desktop-background/couple (15).jpg",
+    "/desktop-background/couple (16).jpg",
+    "/desktop-background/couple (17).jpg",
+    "/desktop-background/couple (18).jpg",
+    "/desktop-background/couple (19).jpg",
+    "/desktop-background/couple (20).jpg",
+    "/desktop-background/couple (21).jpg",
+    "/desktop-background/couple (22).jpg",
+    "/desktop-background/couple (23).jpg",
+    "/desktop-background/couple (24).jpg",
+    "/desktop-background/couple (25).jpg",
+    "/desktop-background/couple (26).jpg",
+    "/desktop-background/couple (27).jpg",
+    "/desktop-background/couple (28).jpg",
+    "/desktop-background/couple (29).jpg",
+    "/desktop-background/couple (30).jpg",
+    "/desktop-background/couple (31).jpg",
+    "/desktop-background/couple (32).jpg",
+    "/desktop-background/couple (33).jpg",
+    "/desktop-background/couple (34).jpg",
+    "/desktop-background/couple (35).jpg",
+    "/desktop-background/couple (36).jpg",
+    "/desktop-background/couple (37).jpg",
+    "/desktop-background/couple (38).jpg",
+    "/desktop-background/couple (39).jpg",
+    "/desktop-background/couple (40).jpg",
+    "/desktop-background/couple (41).jpg",
+    "/desktop-background/couple (42).jpg",
+    "/desktop-background/couple (43).jpg",
+    "/desktop-background/couple (44).jpg",
+    "/desktop-background/couple (45).jpg",
+    "/desktop-background/couple (46).jpg",
+    "/desktop-background/couple (47).jpg",
+    "/desktop-background/couple (48).jpg",
+    "/desktop-background/couple (49).jpg",
+    "/desktop-background/couple (50).jpg",
+    "/desktop-background/couple (51).jpg",
+    "/desktop-background/couple (52).jpg",
+    "/desktop-background/couple (53).jpg",
+    "/desktop-background/couple (54).jpg",
+    "/desktop-background/couple (55).jpg",
+    "/desktop-background/couple (56).jpg",
+    "/desktop-background/couple (57).jpg",
+    "/desktop-background/couple (58).jpg",
+    "/desktop-background/couple (59).jpg",
+    "/desktop-background/couple (60).jpg",
+    "/desktop-background/couple (61).jpg",
+    "/desktop-background/couple (62).jpg",
+    "/desktop-background/couple (63).jpg",
+    "/desktop-background/couple (64).jpg",
+    "/desktop-background/couple (65).jpg",
+    "/desktop-background/couple (66).jpg",
+    "/desktop-background/couple (67).jpg",
+    "/desktop-background/couple (68).jpg",
+    "/desktop-background/couple (69).jpg",
+    "/desktop-background/couple (70).jpg",
+    "/desktop-background/couple (71).jpg",
+    "/desktop-background/couple (72).jpg",
+    "/desktop-background/couple (73).jpg",
+    "/desktop-background/couple (74).jpg",
+    "/desktop-background/couple (75).jpg",
+    "/desktop-background/couple (76).jpg",
+    "/desktop-background/couple (77).jpg",
+    "/desktop-background/couple (78).jpg",
+    "/desktop-background/couple (79).jpg",
+
 ]
 
 const mobileImages = [
-    "/mobile-background/couple (1).jpeg",
-    "/mobile-background/couple (2).jpeg",
-    "/mobile-background/couple (3).jpeg",
-    "/mobile-background/couple (4).jpeg",
-    "/mobile-background/couple (5).jpeg",
-    "/mobile-background/couple (6).jpeg",
-    "/mobile-background/couple (7).jpeg",
-    "/mobile-background/couple (8).jpeg",
-    "/mobile-background/couple (9).jpeg",
-    "/mobile-background/couple (10).jpeg",
-    "/mobile-background/couple (11).jpeg",
-    "/mobile-background/couple (12).jpeg",
-    "/mobile-background/couple (13).jpeg",
+    "/mobile-background/couple (1).jpg",
+    "/mobile-background/couple (2).jpg",
+    "/mobile-background/couple (3).jpg",
+    "/mobile-background/couple (4).jpg",
+    "/mobile-background/couple (5).jpg",
+    "/mobile-background/couple (6).jpg",
+    "/mobile-background/couple (7).jpg",
+    "/mobile-background/couple (8).jpg",
+    "/mobile-background/couple (9).jpg",
+    "/mobile-background/couple (10).jpg",
+    "/mobile-background/couple (11).jpg",
+    "/mobile-background/couple (12).jpg",
+    "/mobile-background/couple (13).jpg",
+    "/mobile-background/couple (14).jpg",
+    "/mobile-background/couple (15).jpg",
+    "/mobile-background/couple (16).jpg",
+    "/mobile-background/couple (17).jpg",
+    "/mobile-background/couple (18).jpg",
+    "/mobile-background/couple (19).jpg",
+    "/mobile-background/couple (20).jpg",
+    "/mobile-background/couple (21).jpg",
+    "/mobile-background/couple (22).jpg",
+    "/mobile-background/couple (23).jpg",
+    "/mobile-background/couple (24).jpg",
+    "/mobile-background/couple (25).jpg",
+    "/mobile-background/couple (26).jpg",
+    "/mobile-background/couple (27).jpg",
+    "/mobile-background/couple (28).jpg",
+    "/mobile-background/couple (29).jpg",
+    "/mobile-background/couple (30).jpg",
+    "/mobile-background/couple (31).jpg",
+    "/mobile-background/couple (32).jpg",
+    "/mobile-background/couple (33).jpg",
+    "/mobile-background/couple (34).jpg",
+    "/mobile-background/couple (35).jpg",
+    "/mobile-background/couple (36).jpg",
+    "/mobile-background/couple (37).jpg",
+    "/mobile-background/couple (38).jpg",
+    "/mobile-background/couple (39).jpg",
+    "/mobile-background/couple (40).jpg",
 ]
 
 const softTextShadow = "0 2px 4px rgba(0, 0, 0, 0.9), 0 4px 8px rgba(0, 0, 0, 0.7), 0 8px 16px rgba(0, 0, 0, 0.5), 0 12px 24px rgba(0, 0, 0, 0.3)"
@@ -103,15 +199,14 @@ export function Hero() {
     }
   }, [imagesLoaded])
 
-  const invitationLine = `Together with our families,\nwe, ${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname}, warmly invite you to join us\nas we celebrate with gratitude and joy\nthe covenant of love God has beautifully prepared for us.`
-  const subInvitationLine = ""
+  const invitationLine = `Together with our families, we warmly invite you\nto witness and celebrate our union`
 
   return (
     <section
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{
-        background: "linear-gradient(180deg, #869EB6 0%, #869EB6 40%, #C1C1C1 100%)",
+        background: "linear-gradient(180deg, #5c1f24 0%, #904945 50%, #A1857A 100%)",
       }}
     >
       <div className="absolute inset-0 w-full h-full">
@@ -131,13 +226,13 @@ export function Hero() {
           />
         ))}
         {/* Enhanced gradient overlay with better depth */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#869EB6]/90 via-[#869EB6]/55 via-[#C1C1C1]/35 to-transparent z-0" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#869EB6]/35 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#5c1f24]/90 via-[#904945]/50 via-[#A1857A]/30 to-transparent z-0" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#5c1f24]/30 z-0" />
         
-        {/* Bottom left corner decoration - original orientation */}
-        <div className="absolute bottom-0 left-0 z-0">
+        {/* Top left corner decoration */}
+        <div className="absolute top-0 left-0 z-0">
           <NextImage
-            src="/decoration/corner-left-button.png"
+            src="/decoration/top-left-corner flower.png"
             alt=""
             width={200}
             height={200}
@@ -146,10 +241,10 @@ export function Hero() {
           />
         </div>
         
-        {/* Bottom right corner decoration - flipped horizontally */}
-        <div className="absolute bottom-0 right-0 z-0">
+        {/* Top right corner decoration - flipped horizontally */}
+        <div className="absolute top-0 right-0 z-0">
           <NextImage
-            src="/decoration/corner-left-button.png"
+            src="/decoration/top-left-corner flower.png"
             alt=""
             width={200}
             height={200}
@@ -157,39 +252,66 @@ export function Hero() {
             priority={false}
           />
         </div>
+        
+        {/* Bottom left corner decoration - flipped horizontally */}
+        <div className="absolute bottom-0 left-0 z-0">
+          <NextImage
+            src="/decoration/right-bottom-corner-flower.png"
+            alt=""
+            width={200}
+            height={200}
+            className="w-40 sm:w-48 md:w-52 lg:w-56 xl:w-60 h-auto opacity-80 scale-x-[-1]"
+            priority={false}
+          />
+        </div>
+        
+        {/* Bottom right corner decoration */}
+        <div className="absolute bottom-0 right-0 z-0">
+          <NextImage
+            src="/decoration/right-bottom-corner-flower.png"
+            alt=""
+            width={200}
+            height={200}
+            className="w-40 sm:w-48 md:w-52 lg:w-56 xl:w-60 h-auto opacity-80"
+            priority={false}
+          />
+        </div>
       </div>
 
-      <div className="relative z-10 w-full container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 flex flex-col items-center justify-end min-h-screen pb-12 sm:pb-20 md:pb-28 lg:pb-40 xl:pb-48">
+      <div className="relative z-10 w-full container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 flex flex-col items-center justify-center min-h-screen py-20 sm:py-24">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-x-0 sm:inset-x-6 md:inset-x-10 lg:inset-x-16 top-16 sm:top-20 lg:top-28 bottom-24 sm:bottom-28 lg:bottom-40 mx-auto max-w-5xl rounded-[42px] bg-gradient-to-b from-[#F9E7D3]/65 via-[#FDF5EC]/55 to-[#F9E7D3]/15 opacity-90 blur-[40px] drop-shadow-[0_35px_65px_rgba(7,12,18,0.35)]"
+          className="pointer-events-none absolute inset-x-0 sm:inset-x-6 md:inset-x-10 lg:inset-x-16 top-1/4 bottom-1/4 mx-auto max-w-4xl rounded-[42px] bg-gradient-to-b from-[#E6CFC9]/50 via-[#E6CFC9]/40 to-[#A1857A]/10 opacity-80 blur-[35px] drop-shadow-[0_20px_40px_rgba(46,11,15,0.3)]"
         />
-        <div className={`relative z-10 w-full max-w-4xl text-center space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-8 transition-all duration-1000 ease-out ${
+        <div className={`relative z-10 w-full max-w-3xl text-center space-y-3 sm:space-y-4 md:space-y-5 transition-all duration-1000 ease-out ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}>
           {/* Warm invitation line */}
-          <div className="space-y-2 sm:space-y-3 mb-2 sm:mb-4">
+          <div className="space-y-2 mb-3 sm:mb-4">
             <p
-              className="text-sm sm:text-base md:text-lg lg:text-xl font-light text-[#FFFFFF]/95 tracking-wide text-balance whitespace-pre-line"
-              style={{ textShadow: softTextShadow }}
+              className="font-sans text-base sm:text-lg md:text-xl lg:text-2xl font-normal text-white tracking-normal text-balance whitespace-pre-line leading-relaxed"
+              style={{ 
+                fontFamily: 'Arial, sans-serif',
+                textShadow: softTextShadow 
+              }}
             >
               {invitationLine}
             </p>
             {/* Subtle divider */}
-            <div className="flex items-center justify-center gap-3 sm:gap-4 py-1">
-              <div className="h-px w-16 sm:w-20 md:w-24 bg-gradient-to-r from-transparent via-[#C1C1C1]/70 to-[#C1C1C1]" />
-              <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#C1C1C1]/80 shadow-[0_0_12px_rgba(193,193,193,0.8)]" />
-              <div className="h-px w-16 sm:w-20 md:w-24 bg-gradient-to-l from-transparent via-[#C1C1C1]/70 to-[#C1C1C1]" />
+            <div className="flex items-center justify-center gap-2 sm:gap-3 py-1">
+              <div className="h-px w-12 sm:w-16 bg-gradient-to-r from-transparent via-[#E6CFC9]/60 to-[#E6CFC9]" />
+              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#E6CFC9]/80 shadow-[0_0_10px_rgba(230,207,201,0.7)]" />
+              <div className="h-px w-12 sm:w-16 bg-gradient-to-l from-transparent via-[#E6CFC9]/60 to-[#E6CFC9]" />
             </div>
           </div>
 
-          {/* Couple names - keeping the arrangement as requested */}
-          <div className="space-y-3 sm:space-y-4 md:space-y-5">
+          {/* Couple names */}
+          <div className="space-y-2 sm:space-y-3">
             <h1
-              className="parisienne-regular text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[12rem] 2xl:text-[14rem] font-semibold tracking-[0.02em] sm:tracking-[0.03em] md:tracking-[0.04em] drop-shadow-2xl leading-tight"
+              className="alex-brush-regular text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-normal tracking-wide drop-shadow-2xl leading-tight"
               style={{
                 color: '#FFFFFF',
-                textShadow: "0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 0.95), 0 0 30px rgba(255, 255, 255, 0.9), 0 0 40px rgba(255, 255, 255, 0.85), 0 0 60px rgba(255, 255, 255, 0.7), 0 0 80px rgba(255, 255, 255, 0.5), 0 0 100px rgba(255, 255, 255, 0.3), 0 4px 8px rgba(0, 0, 0, 0.4)",
+                textShadow: "0 0 15px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.7), 0 0 45px rgba(255, 255, 255, 0.5), 0 4px 12px rgba(0, 0, 0, 0.4)",
               }}
             >
               <span className="inline-block transform transition-all duration-700 hover:scale-105">
@@ -201,28 +323,28 @@ export function Hero() {
               </span>
             </h1>
             {/* Elegant divider */}
-            <div className="h-0.5 sm:h-1 w-20 sm:w-24 md:w-32 lg:w-40 mx-auto bg-gradient-to-r from-transparent via-[#C1C1C1] to-transparent shadow-[0_0_14px_rgba(193,193,193,0.55)]" />
+            <div className="h-px w-16 sm:w-20 md:w-24 lg:w-32 mx-auto bg-gradient-to-r from-transparent via-[#E6CFC9] to-transparent shadow-[0_0_12px_rgba(230,207,201,0.5)]" />
           </div>
 
           {/* Tagline with improved typography */}
-          <div className="space-y-3 sm:space-y-4 md:space-y-5 pt-2 sm:pt-4">
+          <div className="space-y-2 sm:space-y-3 pt-2 sm:pt-3">
             <p
-              className="imperial-script-regular text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#FFFFFF] tracking-wide"
+              className="alex-brush-regular text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-[#FFFFFF] tracking-wide"
               style={{ textShadow: softTextShadow }}
             >
               {siteConfig.wedding.tagline}
             </p>
 
             {/* Date and time information */}
-            <div className="space-y-2 sm:space-y-2.5 md:space-y-3 pt-2">
+            <div className="space-y-1.5 sm:space-y-2 pt-2">
               <p
-                className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-light text-[#FFFFFF] tracking-wide"
+                className="text-xs sm:text-sm md:text-base lg:text-lg font-light text-[#FFFFFF] tracking-wide"
                 style={{ textShadow: softTextShadow }}
               >
-                {siteConfig.ceremony.day} * {siteConfig.ceremony.date} * {siteConfig.ceremony.time}
+                {siteConfig.ceremony.day} • {siteConfig.ceremony.date} • {siteConfig.ceremony.time}
               </p>
               <p
-                className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold text-[#FFFFFF] tracking-wide"
+                className="text-xs sm:text-sm md:text-base lg:text-lg font-medium text-[#FFFFFF]/95 tracking-wide"
                 style={{ textShadow: softTextShadow }}
               >
                 {siteConfig.wedding.venue}
@@ -230,34 +352,34 @@ export function Hero() {
             </div>
           </div>
 
-            {/* CTA Buttons - Horizontal layout on all devices */}
-            <div className="pt-6 sm:pt-8 md:pt-10 lg:pt-12 flex flex-row gap-2 sm:gap-3 md:gap-4 justify-center items-center max-w-2xl mx-auto w-full px-2">
+            {/* CTA Buttons - Elegant and compact */}
+            <div className="pt-4 sm:pt-6 md:pt-8 flex flex-row gap-3 sm:gap-4 justify-center items-center">
             <a
                 href="#messages"
-              className="group flex-1 max-w-[200px] sm:max-w-none sm:min-w-[160px] md:min-w-[180px] px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-2.5 sm:py-3 md:py-3.5 lg:py-4 rounded-lg sm:rounded-xl font-semibold sm:font-bold transition-all duration-500 ease-out uppercase tracking-wider text-xs sm:text-sm md:text-base whitespace-nowrap relative overflow-hidden border-2 backdrop-blur-sm"
+              className="group px-6 sm:px-8 md:px-10 py-2 sm:py-2.5 md:py-3 rounded-lg font-semibold transition-all duration-500 ease-out uppercase tracking-wider text-xs sm:text-sm whitespace-nowrap relative overflow-hidden border-2 backdrop-blur-sm"
               style={{
-                backgroundColor: "rgba(134, 158, 182, 0.92)",
-                borderColor: "rgba(193, 193, 193, 0.5)",
+                backgroundColor: "rgba(92, 31, 36, 0.9)",
+                borderColor: "rgba(230, 207, 201, 0.6)",
                 color: "#FFFFFF",
-                boxShadow: "0 6px 24px rgba(134, 158, 182, 0.45), 0 2px 6px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.15)",
+                boxShadow: "0 4px 16px rgba(92, 31, 36, 0.4), 0 2px 6px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.1)",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = "#869EB6";
-                e.currentTarget.style.borderColor = "rgba(193, 193, 193, 0.8)";
-                e.currentTarget.style.transform = "translateY(-3px) scale(1.02)";
-                e.currentTarget.style.boxShadow = "0 10px 30px rgba(134, 158, 182, 0.55), 0 4px 12px rgba(0,0,0,0.35), 0 0 20px rgba(193, 193, 193, 0.35)";
+                e.currentTarget.style.backgroundColor = "#5c1f24";
+                e.currentTarget.style.borderColor = "rgba(230, 207, 201, 0.9)";
+                e.currentTarget.style.transform = "translateY(-2px) scale(1.02)";
+                e.currentTarget.style.boxShadow = "0 8px 24px rgba(92, 31, 36, 0.5), 0 4px 12px rgba(0,0,0,0.3), 0 0 16px rgba(230, 207, 201, 0.3)";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = "rgba(134, 158, 182, 0.92)";
-                e.currentTarget.style.borderColor = "rgba(193, 193, 193, 0.5)";
+                e.currentTarget.style.backgroundColor = "rgba(92, 31, 36, 0.9)";
+                e.currentTarget.style.borderColor = "rgba(230, 207, 201, 0.6)";
                 e.currentTarget.style.transform = "translateY(0) scale(1)";
-                e.currentTarget.style.boxShadow = "0 6px 24px rgba(134, 158, 182, 0.45), 0 2px 6px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.15)";
+                e.currentTarget.style.boxShadow = "0 4px 16px rgba(92, 31, 36, 0.4), 0 2px 6px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.1)";
               }}
               onMouseDown={(e) => {
-                e.currentTarget.style.transform = "translateY(-1px) scale(0.98)";
+                e.currentTarget.style.transform = "translateY(0) scale(0.98)";
               }}
               onMouseUp={(e) => {
-                e.currentTarget.style.transform = "translateY(-3px) scale(1.02)";
+                e.currentTarget.style.transform = "translateY(-2px) scale(1.02)";
               }}
             >
               <span className="relative z-10 flex items-center justify-center">
@@ -269,37 +391,37 @@ export function Hero() {
             </a>
             <a
               href="#guest-list"
-              className="group flex-1 max-w-[200px] sm:max-w-none sm:min-w-[160px] md:min-w-[180px] px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-2.5 sm:py-3 md:py-3.5 lg:py-4 rounded-lg sm:rounded-xl font-semibold sm:font-bold transition-all duration-500 ease-out uppercase tracking-wider text-xs sm:text-sm md:text-base whitespace-nowrap relative overflow-hidden border-2 backdrop-blur-sm"
+              className="group px-6 sm:px-8 md:px-10 py-2 sm:py-2.5 md:py-3 rounded-lg font-semibold transition-all duration-500 ease-out uppercase tracking-wider text-xs sm:text-sm whitespace-nowrap relative overflow-hidden border-2 backdrop-blur-sm"
               style={{
-                backgroundColor: "rgba(134, 158, 182, 0.92)",
-                borderColor: "rgba(255, 255, 255, 0.5)",
-                color: "#FFFFFF",
-                boxShadow: "0 6px 24px rgba(134, 158, 182, 0.45), 0 2px 6px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.2)",
+                backgroundColor: "rgba(230, 207, 201, 0.95)",
+                borderColor: "rgba(92, 31, 36, 0.6)",
+                color: "#5c1f24",
+                boxShadow: "0 4px 16px rgba(230, 207, 201, 0.4), 0 2px 6px rgba(0,0,0,0.2)",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = "#869EB6";
-                e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.85)";
-                e.currentTarget.style.transform = "translateY(-3px) scale(1.02)";
-                e.currentTarget.style.boxShadow = "0 10px 30px rgba(134, 158, 182, 0.6), 0 4px 12px rgba(0,0,0,0.35), 0 0 20px rgba(255, 255, 255, 0.3)";
+                e.currentTarget.style.backgroundColor = "#E6CFC9";
+                e.currentTarget.style.borderColor = "rgba(92, 31, 36, 0.9)";
+                e.currentTarget.style.transform = "translateY(-2px) scale(1.02)";
+                e.currentTarget.style.boxShadow = "0 8px 24px rgba(230, 207, 201, 0.5), 0 4px 12px rgba(0,0,0,0.3), 0 0 16px rgba(255, 255, 255, 0.3)";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = "rgba(134, 158, 182, 0.92)";
-                e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.5)";
+                e.currentTarget.style.backgroundColor = "rgba(230, 207, 201, 0.95)";
+                e.currentTarget.style.borderColor = "rgba(92, 31, 36, 0.6)";
                 e.currentTarget.style.transform = "translateY(0) scale(1)";
-                e.currentTarget.style.boxShadow = "0 6px 24px rgba(134, 158, 182, 0.45), 0 2px 6px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.2)";
+                e.currentTarget.style.boxShadow = "0 4px 16px rgba(230, 207, 201, 0.4), 0 2px 6px rgba(0,0,0,0.2)";
               }}
               onMouseDown={(e) => {
-                e.currentTarget.style.transform = "translateY(-1px) scale(0.98)";
+                e.currentTarget.style.transform = "translateY(0) scale(0.98)";
               }}
               onMouseUp={(e) => {
-                e.currentTarget.style.transform = "translateY(-3px) scale(1.02)";
+                e.currentTarget.style.transform = "translateY(-2px) scale(1.02)";
               }}
             >
               <span className="relative z-10 flex items-center justify-center">
                 RSVP
               </span>
               <div 
-                className="absolute inset-0 bg-gradient-to-r from-transparent via-[#FFFFFF]/35 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700 transform -skew-x-12 -translate-x-full group-hover:translate-x-full"
+                className="absolute inset-0 bg-gradient-to-r from-transparent via-[#5c1f24]/15 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700 transform -skew-x-12 -translate-x-full group-hover:translate-x-full"
               />
             </a>
           </div>

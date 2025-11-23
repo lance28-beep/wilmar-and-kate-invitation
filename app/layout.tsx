@@ -9,25 +9,25 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const greatVibes = Great_Vibes({ subsets: ["latin"], weight: "400", variable: "--font-serif" })
 
 export const metadata: Metadata = {
-  title: "Jay & Cha - Wedding Invitation",
+  title: "Wilmar&Kate - Wedding Invitation",
   description:
-    "Celebrate the simple and faith-filled wedding of Jay and Cha on January 13, 2026 at the Farm Hills Garden Tagaytay. RSVP, read the invitation, and get all event details online.",
+    "Celebrate the simple andbeautiful wedding of Wilmar and Kate on December 21, 2025 at the Villa Anaya Resort and Events Place. RSVP, read the invitation, and get all event details online.",
   keywords:
-    "Jay Cha wedding, Jay Cha wedding invitation, Tagaytay wedding, Farm Hills Garden Tagaytay, emerald green beige wedding, RSVP, wedding invitation website, 2026 weddings, Filipino wedding, jaycha26@gmail.com",
+    "Wilmar Kate wedding, Wilmar Kate wedding invitation, Villa Anaya Resort and Events Place, emerald green beige wedding, RSVP, wedding invitation website, 2025 weddings, Filipino wedding, wilmarkate25@gmail.com",
   authors: [
-    { name: "Jay" },
-    { name: "Cha" },  
+    { name: "Wilmar" }, 
+    { name: "Kate" },  
   ],
-  creator: "Jay & Cha",
-  publisher: "Jay & Cha",
+  creator: "Wilmar & Kate",
+  publisher: "Wilmar & Kate",
   formatDetection: {
     email: false,
     address: false,
     telephone: true,
   },
-  metadataBase: new URL("https://jay-and-cha-invitation.vercel.app/"),
+  metadataBase: new URL("https://wilmar-and-kate-invitation.vercel.app/"),
   alternates: {
-    canonical: "https://jay-and-cha-invitation.vercel.app/",
+    canonical: "https://wilmar-and-kate-invitation.vercel.app/",
   },
   icons: {
     icon: [
@@ -49,29 +49,29 @@ export const metadata: Metadata = {
   },
   manifest: "/favicon_io/site.webmanifest",
   openGraph: {
-    title: "Jay & Cha Wedding | January 13, 2026",
+    title: "Wilmar & Kate Wedding | December 21, 2025",
     description:
-      'Join Jay & Cha as they say "I do" on January 13, 2026 at the Farm Hills Garden Tagaytay. View the invitation, RSVP details, and schedule online.',
-    url: "https://jay-and-cha-invitation.vercel.app/",
-    siteName: "Jay and Cha Wedding",
+      'Join Wilmar & Kate as they say "I do" on December 21, 2025 at the Villa Anaya Resort and Events Place. View the invitation, RSVP details, and schedule online.',
+    url: "https://wilmar-and-kate-invitation.vercel.app/",
+    siteName: "Wilmar and Kate Wedding",
     locale: "en_PH",
     type: "website",
     images: [
       {
-        url: "https://jay-and-cha-invitation.vercel.app/desktop-background/couple (6).jpeg",
+        url: "https://wilmar-and-kate-invitation.vercel.app/desktop-background/couple (66).jpg",
         width: 1200,
         height: 630,
-        alt: "Jay & Cha Wedding Invitation - January 13, 2026",
+        alt: "Wilmar & Kate Wedding Invitation - December 21, 2025",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jay & Cha Wedding Invitation",
+    title: "Wilmar & Kate Wedding Invitation",
     description:
-      "You're invited to the wedding of Jay & Cha on January 13, 2026 at the Farm Hills Garden Tagaytay. RSVP and view the details online. #JayAndCha",
-    images: ["https://jay-and-cha-invitation.vercel.app/desktop-background/couple (6).jpeg"],
-    creator: "@jayandcha",
+      "You're invited to the wedding of Wilmar & Kate on December 21, 2025 at the Villa Anaya Resort and Events Place. RSVP and view the details online. #WilmarAndKate",
+    images: ["https://wilmar-and-kate-invitation.vercel.app/desktop-background/couple (66).jpg"],
+    creator: "@wilmarkate25",
   },
   robots: {
     index: true,
@@ -97,21 +97,21 @@ export const metadata: Metadata = {
       eventStatus: "https://schema.org/EventScheduled",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       location: "Farm Hills Garden Tagaytay",
-      image: ["https://jay-and-cha-invitation.vercel.app/desktop-background/couple (6).jpeg"],
+      image: ["https://wilmar-and-kate-invitation.vercel.app/desktop-background/couple (66).jpg"],
       description:
-        "In honor and gratitude to God who brought them together, Jay & Cha invite you to witness their simple wedding on January 13, 2026 at the Farm Hills Garden Tagaytay. RSVP details and schedule are available online.",
+        "In honor and gratitude to God who brought them together, Wilmar & Kate invite you to witness their simple wedding on December 21, 2025 at the Villa Anaya Resort and Events Place. RSVP details and schedule are available online.",
       organizer: {
         "@type": "Person",
-        name: "Jay & Cha",
+        name: "Wilmar & Kate",
       },
       offers: {
         "@type": "Offer",
-        url: "https://jay-and-cha-invitation.vercel.app/",
+        url: "https://wilmar-and-kate-invitation.vercel.app/",
         availability: "https://schema.org/InStock",
         price: "0",
         priceCurrency: "PHP",
       },
-      eventHashtag: "#JayAndCha",
+      eventHashtag: "#DediKATEdbyGodForWILMAR",
     }),
   },
 }
@@ -128,6 +128,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet" />
