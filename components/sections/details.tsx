@@ -41,7 +41,7 @@ export function Details() {
 
 
   return (
-    <Section id="details" className="relative bg-[#5c1f24] py-10 sm:py-12 md:py-16 lg:py-20 overflow-hidden">
+    <Section id="details" className="relative bg-[#821D30] py-10 sm:py-12 md:py-16 lg:py-20 overflow-hidden">
       {/* Enhanced background elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Soft gradient overlays */}
@@ -53,29 +53,6 @@ export function Details() {
         <div className="absolute top-20 right-16 w-24 h-24 bg-white/6 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }} />
         <div className="absolute bottom-16 left-20 w-28 h-28 bg-white/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
         <div className="absolute bottom-24 right-12 w-20 h-20 bg-white/8 rounded-full blur-xl animate-pulse" style={{ animationDelay: '0.5s' }} />
-        
-        {/* Top corner flower decorations */}
-        <div className="absolute top-0 left-0 z-0">
-          <Image
-            src="/decoration/top-left-corner flower.png"
-            alt=""
-            width={300}
-            height={300}
-            className="w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64 h-auto opacity-80"
-            priority={false}
-          />
-        </div>
-        
-        <div className="absolute top-0 right-0 z-0">
-          <Image
-            src="/decoration/top-left-corner flower.png"
-            alt=""
-            width={300}
-            height={300}
-            className="w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64 h-auto opacity-80 scale-x-[-1]"
-            priority={false}
-          />
-        </div>
         
         {/* Bottom corner flower decorations */}
         <div className="absolute bottom-0 left-0 z-0">
@@ -134,7 +111,7 @@ export function Details() {
           {/* Venue Image */}
           <div className="relative w-full h-40 sm:h-48 md:h-56 lg:h-64 mb-5 sm:mb-6 rounded-xl overflow-hidden">
             <Image
-              src="/Details/illa Anaya ResortandEventsPlace.png"
+              src="/Details/image.png"
               alt={siteConfig.wedding.venue}
               fill
               className="object-cover"
@@ -221,7 +198,7 @@ export function Details() {
             <div className="flex flex-row gap-2 sm:gap-3">
               <button
                 onClick={() => openInMaps(ceremonyMapsLink)}
-                className="flex-1 flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-3 sm:py-3.5 bg-white/95 hover:bg-white text-[#904945] rounded-xl font-bold text-xs sm:text-sm md:text-base transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] shadow-md hover:shadow-lg"
+                className="flex-1 flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-3 sm:py-3.5 bg-white/95 hover:bg-white text-[#821D30] rounded-xl font-bold text-xs sm:text-sm md:text-base transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] shadow-md hover:shadow-lg"
                 aria-label="Get directions to venue"
               >
                 <Navigation className="w-4 h-4 flex-shrink-0" />

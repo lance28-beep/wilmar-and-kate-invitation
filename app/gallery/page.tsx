@@ -72,7 +72,7 @@ export default function GalleryPage() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#5c1f24] via-[#904945] to-[#A1857A] relative overflow-hidden">
+    <main className="min-h-screen bg-gradient-to-b from-[#821D30] via-[#821D30] to-[#B88A93] relative overflow-hidden">
       {/* Enhanced background elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Soft gradient overlays */}
@@ -95,29 +95,6 @@ export default function GalleryPage() {
           animate={{ scale: [1, 1.1, 1], opacity: [0.1, 0.15, 0.1] }}
           transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
         />
-        
-        {/* Top corner flower decorations */}
-        <div className="absolute top-0 left-0 z-0">
-          <Image
-            src="/decoration/top-left-corner flower.png"
-            alt=""
-            width={300}
-            height={300}
-            className="w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64 h-auto opacity-80"
-            priority={false}
-          />
-        </div>
-        
-        <div className="absolute top-0 right-0 z-0">
-          <Image
-            src="/decoration/top-left-corner flower.png"
-            alt=""
-            width={300}
-            height={300}
-            className="w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64 h-auto opacity-80 scale-x-[-1]"
-            priority={false}
-          />
-        </div>
         
         {/* Bottom corner flower decorations */}
         <div className="absolute bottom-0 left-0 z-0">
@@ -210,7 +187,7 @@ export default function GalleryPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group relative aspect-square overflow-hidden rounded-xl sm:rounded-2xl shadow-2xl border border-[#904945]/30 hover:border-[#904945]/60 transition-all duration-300 cursor-pointer"
+                className="group relative aspect-square overflow-hidden rounded-xl sm:rounded-2xl shadow-2xl border border-[#821D30]/30 hover:border-[#821D30]/60 transition-all duration-300 cursor-pointer"
                 onClick={() => setSelectedImage(image.src)}
                 whileHover={{ scale: 1.02 }}
               >

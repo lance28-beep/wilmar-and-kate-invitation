@@ -82,7 +82,7 @@ export function Footer() {
 
   return (
     <footer 
-      className="relative z-20 mt-16 text-white overflow-hidden bg-[#58171D]"
+      className="relative z-20 mt-16 text-white overflow-hidden bg-[#5A1422]"
     >
       {/* Flower decorations - bottom corners only */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">

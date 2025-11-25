@@ -133,15 +133,15 @@ export function FAQ() {
       {/* FAQ content */}
       <div className="relative z-10 max-w-4xl mx-auto px-3 sm:px-4 md:px-6">
         {/* Enhanced card with gradient glow */}
-        <div className="relative bg-white/95 backdrop-blur-sm rounded-xl sm:rounded-2xl overflow-hidden border border-[#904945]/40 shadow-2xl hover:shadow-[0_10px_50px_rgba(134,158,182,0.3)] transition-all duration-300 group">
+        <div className="relative bg-white/95 backdrop-blur-sm rounded-xl sm:rounded-2xl overflow-hidden border border-[#821D30]/40 shadow-2xl hover:shadow-[0_10px_50px_rgba(134,158,182,0.3)] transition-all duration-300 group">
           {/* Subtle glow on hover */}
-          <div className="absolute -inset-0.5 bg-gradient-to-br from-[#904945]/20 to-[#A1857A]/10 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
+          <div className="absolute -inset-0.5 bg-gradient-to-br from-[#821D30]/20 to-[#B88A93]/10 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
           
           {/* Decorative corner accents - compact */}
-          <div className="absolute top-0.5 left-0.5 w-3 h-3 sm:w-4 sm:h-4 border-t-2 border-l-2 border-[#904945]/50 rounded-tl-lg" />
-          <div className="absolute top-0.5 right-0.5 w-3 h-3 sm:w-4 sm:h-4 border-t-2 border-r-2 border-[#904945]/50 rounded-tr-lg" />
-          <div className="absolute bottom-0.5 left-0.5 w-3 h-3 sm:w-4 sm:h-4 border-b-2 border-l-2 border-[#904945]/50 rounded-bl-lg" />
-          <div className="absolute bottom-0.5 right-0.5 w-3 h-3 sm:w-4 sm:h-4 border-b-2 border-r-2 border-[#904945]/50 rounded-br-lg" />
+          <div className="absolute top-0.5 left-0.5 w-3 h-3 sm:w-4 sm:h-4 border-t-2 border-l-2 border-[#821D30]/50 rounded-tl-lg" />
+          <div className="absolute top-0.5 right-0.5 w-3 h-3 sm:w-4 sm:h-4 border-t-2 border-r-2 border-[#821D30]/50 rounded-tr-lg" />
+          <div className="absolute bottom-0.5 left-0.5 w-3 h-3 sm:w-4 sm:h-4 border-b-2 border-l-2 border-[#821D30]/50 rounded-bl-lg" />
+          <div className="absolute bottom-0.5 right-0.5 w-3 h-3 sm:w-4 sm:h-4 border-b-2 border-r-2 border-[#821D30]/50 rounded-br-lg" />
           
           {/* FAQ items */}
           <div className="relative p-3 sm:p-4 md:p-5 lg:p-7 z-10">
@@ -152,19 +152,19 @@ export function FAQ() {
                 return (
                   <div
                     key={index}
-                    className="rounded-lg border border-[#904945]/30 bg-white hover:bg-[#904945]/5 transition-all duration-300 hover:shadow-md overflow-hidden"
+                    className="rounded-lg border border-[#821D30]/30 bg-white hover:bg-[#821D30]/5 transition-all duration-300 hover:shadow-md overflow-hidden"
                   >
                     <button
                       onClick={() => toggleItem(index)}
-                      className="group w-full px-2.5 sm:px-3 md:px-4 py-2.5 sm:py-3 md:py-3.5 flex items-center justify-between text-left outline-none focus-visible:ring-2 focus-visible:ring-[#904945]/50 focus-visible:ring-offset-2 transition-colors"
+                      className="group w-full px-2.5 sm:px-3 md:px-4 py-2.5 sm:py-3 md:py-3.5 flex items-center justify-between text-left outline-none focus-visible:ring-2 focus-visible:ring-[#821D30]/50 focus-visible:ring-offset-2 transition-colors"
                       aria-expanded={isOpen}
                       aria-controls={contentId}
                     >
-                      <span className="font-semibold text-[#2E0B0F] pr-2 sm:pr-2.5 text-xs sm:text-sm md:text-base font-sans leading-snug group-hover:text-[#A1857A] transition-colors duration-200">
+                      <span className="font-semibold text-[#5A1422] pr-2 sm:pr-2.5 text-xs sm:text-sm md:text-base font-sans leading-snug group-hover:text-[#B88A93] transition-colors duration-200">
                         {item.question}
                       </span>
                       <ChevronDown
-                        className={`w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#904945] flex-shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+                        className={`w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#821D30] flex-shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
                         aria-hidden
                       />
                     </button>
@@ -177,13 +177,13 @@ export function FAQ() {
                       }`}
                     >
                       <div className="overflow-hidden">
-                        <div className="px-2.5 sm:px-3 md:px-4 py-2 sm:py-2.5 md:py-3 bg-[#904945]/10 border-t border-[#904945]/20">
+                        <div className="px-2.5 sm:px-3 md:px-4 py-2 sm:py-2.5 md:py-3 bg-[#821D30]/10 border-t border-[#821D30]/20">
                           {item.answer.includes("[RSVP_LINK]") ? (
-                            <p className="text-[#2E0B0F] leading-relaxed text-[10px] sm:text-xs md:text-sm font-sans whitespace-pre-line">
+                            <p className="text-[#5A1422] leading-relaxed text-[10px] sm:text-xs md:text-sm font-sans whitespace-pre-line">
                               {item.answer.split("[RSVP_LINK]")[0]}
                               <a 
                                 href="#guest-list" 
-                                className="text-[#A1857A] underline font-semibold hover:text-[#904945] transition-colors"
+                                className="text-[#B88A93] underline font-semibold hover:text-[#821D30] transition-colors"
                                 onClick={(e) => {
                                   e.preventDefault()
                                   document.getElementById('guest-list')?.scrollIntoView({ behavior: 'smooth' })
@@ -194,7 +194,7 @@ export function FAQ() {
                               {item.answer.split("[/RSVP_LINK]")[1]}
                             </p>
                           ) : (
-                            <p className="text-[#2E0B0F] leading-relaxed text-[10px] sm:text-xs md:text-sm font-sans whitespace-pre-line">
+                            <p className="text-[#5A1422] leading-relaxed text-[10px] sm:text-xs md:text-sm font-sans whitespace-pre-line">
                               {item.answer}
                             </p>
                           )}

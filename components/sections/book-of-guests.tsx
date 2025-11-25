@@ -148,32 +148,32 @@ export function BookOfGuests() {
         {/* Stats card */}
         <div className="text-center mb-4 sm:mb-5 md:mb-6 px-3 sm:px-4 md:px-6">
           <div className="relative max-w-3xl mx-auto">
-            <div className="relative bg-white/95 backdrop-blur-sm rounded-xl sm:rounded-2xl overflow-hidden border border-[#904945]/40 shadow-2xl hover:shadow-[0_10px_50px_rgba(134,158,182,0.3)] transition-all duration-300 group">
+            <div className="relative bg-white/95 backdrop-blur-sm rounded-xl sm:rounded-2xl overflow-hidden border border-[#821D30]/40 shadow-2xl hover:shadow-[0_10px_50px_rgba(134,158,182,0.3)] transition-all duration-300 group">
               {/* Subtle glow on hover */}
-              <div className="absolute -inset-0.5 bg-gradient-to-br from-[#904945]/20 to-[#A1857A]/10 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
+              <div className="absolute -inset-0.5 bg-gradient-to-br from-[#821D30]/20 to-[#B88A93]/10 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
               
               {/* Decorative corner accents - compact */}
-              <div className="absolute top-0.5 left-0.5 w-3 h-3 sm:w-4 sm:h-4 border-t-2 border-l-2 border-[#904945]/50 rounded-tl-lg" />
-              <div className="absolute top-0.5 right-0.5 w-3 h-3 sm:w-4 sm:h-4 border-t-2 border-r-2 border-[#904945]/50 rounded-tr-lg" />
-              <div className="absolute bottom-0.5 left-0.5 w-3 h-3 sm:w-4 sm:h-4 border-b-2 border-l-2 border-[#904945]/50 rounded-bl-lg" />
-              <div className="absolute bottom-0.5 right-0.5 w-3 h-3 sm:w-4 sm:h-4 border-b-2 border-r-2 border-[#904945]/50 rounded-br-lg" />
+              <div className="absolute top-0.5 left-0.5 w-3 h-3 sm:w-4 sm:h-4 border-t-2 border-l-2 border-[#821D30]/50 rounded-tl-lg" />
+              <div className="absolute top-0.5 right-0.5 w-3 h-3 sm:w-4 sm:h-4 border-t-2 border-r-2 border-[#821D30]/50 rounded-tr-lg" />
+              <div className="absolute bottom-0.5 left-0.5 w-3 h-3 sm:w-4 sm:h-4 border-b-2 border-l-2 border-[#821D30]/50 rounded-bl-lg" />
+              <div className="absolute bottom-0.5 right-0.5 w-3 h-3 sm:w-4 sm:h-4 border-b-2 border-r-2 border-[#821D30]/50 rounded-br-lg" />
               
               {/* Content */}
               <div className="relative z-10 p-3 sm:p-4 md:p-5">
                 <div className="flex items-center justify-center gap-2 mb-1.5 sm:mb-2">
-                  <div className="bg-gradient-to-br from-[#A1857A] to-[#904945] p-1.5 rounded-full shadow-md flex-shrink-0">
+                  <div className="bg-gradient-to-br from-[#B88A93] to-[#821D30] p-1.5 rounded-full shadow-md flex-shrink-0">
                     <Heart className="text-white h-3.5 w-3.5 sm:h-4 sm:w-4" />
                   </div>
                   <div className="flex flex-col items-center">
-                    <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-sans font-bold text-[#2E0B0F] leading-tight">
+                    <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-sans font-bold text-[#5A1422] leading-tight">
                       {totalGuests} {totalGuests === 1 ? "Guest" : "Guests"} Celebrating
                     </h3>
-                    <p className="text-[9px] sm:text-[10px] md:text-xs text-[#2E0B0F]/70 font-sans mt-0.5">
+                    <p className="text-[9px] sm:text-[10px] md:text-xs text-[#5A1422]/70 font-sans mt-0.5">
                       {guests.length} {guests.length === 1 ? "RSVP entry" : "RSVP entries"}
                     </p>
                   </div>
                 </div>
-                <p className="text-[10px] sm:text-xs md:text-sm text-[#2E0B0F]/80 font-sans leading-relaxed">
+                <p className="text-[10px] sm:text-xs md:text-sm text-[#5A1422]/80 font-sans leading-relaxed">
                   Thank you for your RSVP!
                 </p>
               </div>
@@ -183,23 +183,23 @@ export function BookOfGuests() {
 
         {/* Guest list container */}
         <div className="max-w-5xl mx-auto px-3 sm:px-4 md:px-6">
-          <div className="relative bg-white/95 backdrop-blur-sm rounded-xl sm:rounded-2xl overflow-hidden border border-[#904945]/40 shadow-2xl hover:shadow-[0_10px_50px_rgba(134,158,182,0.3)] transition-all duration-300 group">
+          <div className="relative bg-white/95 backdrop-blur-sm rounded-xl sm:rounded-2xl overflow-hidden border border-[#821D30]/40 shadow-2xl hover:shadow-[0_10px_50px_rgba(134,158,182,0.3)] transition-all duration-300 group">
             {/* Subtle glow on hover */}
-            <div className="absolute -inset-0.5 bg-gradient-to-br from-[#904945]/20 to-[#A1857A]/10 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
+            <div className="absolute -inset-0.5 bg-gradient-to-br from-[#821D30]/20 to-[#B88A93]/10 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
             
             {/* Decorative corner accents - compact */}
-            <div className="absolute top-0.5 left-0.5 w-3 h-3 sm:w-4 sm:h-4 border-t-2 border-l-2 border-[#904945]/50 rounded-tl-lg" />
-            <div className="absolute top-0.5 right-0.5 w-3 h-3 sm:w-4 sm:h-4 border-t-2 border-r-2 border-[#904945]/50 rounded-tr-lg" />
-            <div className="absolute bottom-0.5 left-0.5 w-3 h-3 sm:w-4 sm:h-4 border-b-2 border-l-2 border-[#904945]/50 rounded-bl-lg" />
-            <div className="absolute bottom-0.5 right-0.5 w-3 h-3 sm:w-4 sm:h-4 border-b-2 border-r-2 border-[#904945]/50 rounded-br-lg" />
+            <div className="absolute top-0.5 left-0.5 w-3 h-3 sm:w-4 sm:h-4 border-t-2 border-l-2 border-[#821D30]/50 rounded-tl-lg" />
+            <div className="absolute top-0.5 right-0.5 w-3 h-3 sm:w-4 sm:h-4 border-t-2 border-r-2 border-[#821D30]/50 rounded-tr-lg" />
+            <div className="absolute bottom-0.5 left-0.5 w-3 h-3 sm:w-4 sm:h-4 border-b-2 border-l-2 border-[#821D30]/50 rounded-bl-lg" />
+            <div className="absolute bottom-0.5 right-0.5 w-3 h-3 sm:w-4 sm:h-4 border-b-2 border-r-2 border-[#821D30]/50 rounded-br-lg" />
             
             <div className="relative p-3 sm:p-4 md:p-6 lg:p-8 z-10">
             
             {isLoading ? (
               <div className="flex items-center justify-center py-12 sm:py-16">
                 <div className="flex flex-col items-center gap-2.5">
-                  <Loader2 className="h-7 w-7 sm:h-8 sm:w-8 animate-spin text-[#904945]" />
-                  <span className="text-[#2E0B0F]/70 font-sans text-xs sm:text-sm">Loading guests...</span>
+                  <Loader2 className="h-7 w-7 sm:h-8 sm:w-8 animate-spin text-[#821D30]" />
+                  <span className="text-[#5A1422]/70 font-sans text-xs sm:text-sm">Loading guests...</span>
                 </div>
               </div>
             ) : error ? (
@@ -212,13 +212,13 @@ export function BookOfGuests() {
             ) : guests.length === 0 ? (
               <div className="flex items-center justify-center py-12 sm:py-16">
                 <div className="text-center px-3">
-                  <div className="bg-gradient-to-br from-[#A1857A] to-[#904945] w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center mx-auto mb-2.5">
+                  <div className="bg-gradient-to-br from-[#B88A93] to-[#821D30] w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center mx-auto mb-2.5">
                     <Heart className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                   </div>
-                  <h3 className="text-sm sm:text-base md:text-lg font-sans font-bold text-[#2E0B0F] mb-1 sm:mb-1.5">
+                  <h3 className="text-sm sm:text-base md:text-lg font-sans font-bold text-[#5A1422] mb-1 sm:mb-1.5">
                     No guests yet
                   </h3>
-                  <p className="text-[10px] sm:text-xs text-[#2E0B0F]/70 font-sans max-w-xs mx-auto leading-relaxed">
+                  <p className="text-[10px] sm:text-xs text-[#5A1422]/70 font-sans max-w-xs mx-auto leading-relaxed">
                     Be the first to RSVP!
                   </p>
                 </div>
@@ -228,12 +228,12 @@ export function BookOfGuests() {
                 {guests.map((guest, index) => (
                   <div
                     key={index}
-                    className="group relative bg-white rounded-lg sm:rounded-xl p-2 sm:p-2.5 md:p-3 border border-[#904945]/30 hover:border-[#904945]/50 transition-all duration-300 hover:shadow-md"
+                    className="group relative bg-white rounded-lg sm:rounded-xl p-2 sm:p-2.5 md:p-3 border border-[#821D30]/30 hover:border-[#821D30]/50 transition-all duration-300 hover:shadow-md"
                   >
                     <div className="flex gap-2">
                       {/* Avatar */}
                       <div className="relative h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 flex-shrink-0">
-                        <div className="h-full w-full rounded-full bg-gradient-to-br from-[#A1857A] to-[#904945] text-white flex items-center justify-center font-semibold shadow-md ring-2 ring-white text-[10px] sm:text-xs">
+                        <div className="h-full w-full rounded-full bg-gradient-to-br from-[#B88A93] to-[#821D30] text-white flex items-center justify-center font-semibold shadow-md ring-2 ring-white text-[10px] sm:text-xs">
                           {getInitials(guest.Name)}
                         </div>
                       </div>
@@ -242,20 +242,20 @@ export function BookOfGuests() {
                       <div className="flex-1 min-w-0">
                         <div className="flex items-start justify-between gap-1.5 sm:gap-2">
                           <div className="flex-1 min-w-0">
-                            <h4 className="font-sans text-xs sm:text-sm md:text-base font-semibold text-[#2E0B0F] mb-0.5 group-hover:text-[#A1857A] transition-colors duration-200 truncate">
+                            <h4 className="font-sans text-xs sm:text-sm md:text-base font-semibold text-[#5A1422] mb-0.5 group-hover:text-[#B88A93] transition-colors duration-200 truncate">
                               {guest.Name}
                             </h4>
                             {guest.Email && guest.Email !== "Pending" && (
-                              <div className="flex items-center text-[9px] sm:text-[10px] text-[#2E0B0F]/70 mb-0.5">
-                                <Mail className="h-2.5 w-2.5 mr-1 text-[#904945] flex-shrink-0" />
+                              <div className="flex items-center text-[9px] sm:text-[10px] text-[#5A1422]/70 mb-0.5">
+                                <Mail className="h-2.5 w-2.5 mr-1 text-[#821D30] flex-shrink-0" />
                                 <span className="font-sans truncate">{guest.Email}</span>
                               </div>
                             )}
                           </div>
                           {/* Guest count badge */}
                           <div className="flex items-center gap-0.5 sm:gap-1 flex-shrink-0">
-                            <User className="h-2.5 w-2.5 sm:h-3 sm:w-3 text-[#904945]" />
-                            <span className="inline-flex items-center justify-center px-1.5 py-0.5 sm:px-2 bg-[#904945]/10 text-[#A1857A] rounded-full text-[9px] sm:text-[10px] font-semibold border border-[#904945]/30 whitespace-nowrap">
+                            <User className="h-2.5 w-2.5 sm:h-3 sm:w-3 text-[#821D30]" />
+                            <span className="inline-flex items-center justify-center px-1.5 py-0.5 sm:px-2 bg-[#821D30]/10 text-[#B88A93] rounded-full text-[9px] sm:text-[10px] font-semibold border border-[#821D30]/30 whitespace-nowrap">
                               {guest.Guest ? (parseInt(String(guest.Guest)) || 1) : 1}
                             </span>
                           </div>
@@ -263,10 +263,10 @@ export function BookOfGuests() {
                         
                         {/* Message */}
                         {guest.Message && (
-                          <div className="mt-1.5 sm:mt-2 pt-1.5 sm:pt-2 border-t border-[#904945]/20">
+                          <div className="mt-1.5 sm:mt-2 pt-1.5 sm:pt-2 border-t border-[#821D30]/20">
                             <div className="flex items-start gap-1 sm:gap-1.5">
-                              <MessageSquare className="h-2.5 w-2.5 sm:h-3 sm:w-3 text-[#904945] flex-shrink-0 mt-0.5" />
-                              <p className="text-[9px] sm:text-[10px] md:text-xs text-[#2E0B0F]/80 font-sans leading-relaxed italic flex-1">
+                              <MessageSquare className="h-2.5 w-2.5 sm:h-3 sm:w-3 text-[#821D30] flex-shrink-0 mt-0.5" />
+                              <p className="text-[9px] sm:text-[10px] md:text-xs text-[#5A1422]/80 font-sans leading-relaxed italic flex-1">
                                 "{guest.Message}"
                               </p>
                             </div>

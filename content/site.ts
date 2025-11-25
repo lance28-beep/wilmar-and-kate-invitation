@@ -59,9 +59,9 @@ Right now, we’re still putting the pieces together, choosing the words that be
 
 Please stay tuned as we craft our full story. We can’t wait to share it with you soon. Something sweet, real, and beautiful is on its way. 💕✨`,
   colors: {
-    primary: "#869EB6",
-    secondary: "#83927D",
-    accent: "#C1C1C1",
+    primary: "#821D30",
+    secondary: "#5A1422",
+    accent: "#EAD4D9",
     light: "#F5F5F5",
   },
   snapShare: {

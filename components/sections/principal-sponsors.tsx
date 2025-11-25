@@ -2,8 +2,8 @@
 
 import React from "react"
 import { useEffect, useMemo, useState } from "react"
-import { Section } from "@/components/section"
 import Image from "next/image"
+import { Loader2, Users } from "lucide-react"
 
 interface PrincipalSponsor {
   MalePrincipalSponsor: string
@@ -24,7 +24,7 @@ export function PrincipalSponsors() {
     const textAlign =
       align === "right" ? "text-right" : align === "left" ? "text-left" : "text-center"
     return (
-      <h3 className={`text-[10px] sm:text-xs md:text-sm lg:text-base font-bold uppercase text-[#2E0B0F] mb-1.5 sm:mb-2 md:mb-3 tracking-[0.12em] ${textAlign} ${className} drop-shadow-sm`}>
+      <h3 className={`text-[10px] sm:text-xs md:text-sm lg:text-base font-bold uppercase text-[#5A1422] mb-1.5 sm:mb-2 md:mb-3 tracking-[0.12em] ${textAlign} ${className} drop-shadow-sm`}>
         {children}
       </h3>
     )
@@ -38,7 +38,7 @@ export function PrincipalSponsors() {
       align === "right" ? "text-right" : align === "left" ? "text-left" : "text-center"
     return (
       <div className={`flex flex-col ${containerAlign} justify-center py-1.5 sm:py-2 md:py-2.5 w-full group/item transition-all duration-200 hover:scale-[1.02]`}>
-        <p className={`text-[#2E0B0F] text-xs sm:text-sm md:text-base font-semibold leading-tight break-words ${textAlign} group-hover/item:text-[#58171D] transition-colors duration-200`}>{name}</p>
+        <p className={`text-[#5A1422] text-xs sm:text-sm md:text-base font-semibold leading-tight break-words ${textAlign} group-hover/item:text-[#821D30] transition-colors duration-200`}>{name}</p>
       </div>
     )
   }
@@ -74,12 +74,40 @@ export function PrincipalSponsors() {
   )
 
   return (
-    <Section
+    <section
       id="sponsors"
-      className="relative bg-[#58171D] py-8 sm:py-10 md:py-14 lg:py-16 xl:py-20 overflow-hidden"
+      className="relative min-h-screen py-8 sm:py-10 md:py-14 lg:py-16 xl:py-20 overflow-hidden"
+      style={{
+        backgroundImage: 'url(/gallery/maroon-white-gradient-noisy-grain-background.avif)',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
     >
-      {/* Flower decorations - bottom corners only */}
+      {/* Floral decorations */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        {/* Top right corner decoration */}
+        <div className="absolute -top-10 -right-6 sm:-top-14 sm:-right-8 md:-top-16 md:-right-10 z-0">
+          <Image
+            src="/decoration/top-right-corner-flower.png"
+            alt=""
+            width={320}
+            height={320}
+            className="w-48 sm:w-60 md:w-72 lg:w-80 xl:w-96 h-auto opacity-80"
+            priority={false}
+          />
+        </div>
+        {/* Top left corner decoration */}
+        <div className="absolute -top-10 -left-6 sm:-top-14 sm:-left-8 md:-top-16 md:-left-10 z-0">
+          <Image
+            src="/decoration/top-right-corner-flower.png"
+            alt=""
+            width={320}
+            height={320}
+            className="w-48 sm:w-60 md:w-72 lg:w-80 xl:w-96 h-auto opacity-80 scale-x-[-1]"
+            priority={false}
+          />
+        </div>
         {/* Bottom left corner decoration - flipped horizontally */}
         <div className="absolute bottom-0 left-0 z-0">
           <Image
@@ -105,9 +133,8 @@ export function PrincipalSponsors() {
         </div>
       </div>
 
-      {/* Header with enhanced decorations */}
+      {/* Header */}
       <div className="relative z-10 px-3 sm:px-4 text-center mb-6 sm:mb-8 md:mb-12">
-        {/* Decorative element above title */}
         <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
           <div className="w-8 sm:w-12 md:w-16 h-px bg-white/40" />
           <div className="w-1.5 h-1.5 bg-white/60 rounded-full" />
@@ -120,11 +147,6 @@ export function PrincipalSponsors() {
           Principal Sponsors
         </h2>
         
-        <p className="mx-auto max-w-xl text-xs sm:text-sm md:text-base lg:text-lg font-light leading-relaxed text-white/90 px-2">
-          Honoring those who guide and support us
-        </p>
-        
-        {/* Decorative element below subtitle */}
         <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4">
           <div className="w-1.5 h-1.5 bg-white/60 rounded-full" />
           <div className="w-1.5 h-1.5 bg-white/40 rounded-full" />
@@ -134,25 +156,18 @@ export function PrincipalSponsors() {
 
       {/* Sponsors content */}
       <div className="relative z-10 px-3 sm:px-4 md:px-6 lg:px-8 mb-8 sm:mb-10 md:mb-12">
-        <div className="mx-auto w-full max-w-5xl">
-          {/* Outer glow effect */}
-          <div className="absolute -inset-2 bg-white/20 rounded-[32px] sm:rounded-[36px] blur-2xl opacity-50" />
+        <div className="mx-auto w-full max-w-5xl relative">
+          <div className="absolute -inset-2 rounded-[32px] sm:rounded-[36px] bg-white/30 blur-3xl opacity-40" />
           
-          <div className="relative rounded-[24px] sm:rounded-[28px] md:rounded-[32px] border-2 border-white/20 bg-white/10 p-2 sm:p-2.5 md:p-3 shadow-[0_12px_48px_rgba(0,0,0,0.15)] backdrop-blur-xl">
-            {/* Decorative corner accents */}
-            <div className="absolute top-1 left-1 w-4 h-4 sm:w-5 sm:h-5 border-t-2 border-l-2 border-white/30 rounded-tl-2xl" />
-            <div className="absolute top-1 right-1 w-4 h-4 sm:w-5 sm:h-5 border-t-2 border-r-2 border-white/30 rounded-tr-2xl" />
-            <div className="absolute bottom-1 left-1 w-4 h-4 sm:w-5 sm:h-5 border-b-2 border-l-2 border-white/30 rounded-bl-2xl" />
-            <div className="absolute bottom-1 right-1 w-4 h-4 sm:w-5 sm:h-5 border-b-2 border-r-2 border-white/30 rounded-br-2xl" />
+          <div className="relative rounded-[24px] sm:rounded-[28px] md:rounded-[32px] bg-white/20 p-[3px] shadow-[0_18px_60px_rgba(0,0,0,0.18)] backdrop-blur-3xl overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-white/5 to-transparent pointer-events-none" />
             
-            {/* Card content */}
-            <div className="relative p-4 sm:p-5 md:p-7 lg:p-9 z-10 bg-white/95 rounded-[20px] sm:rounded-[24px] md:rounded-[28px]">
-            <div className="relative z-10 w-full">
+            <div className="relative p-4 sm:p-5 md:p-7 lg:p-9 z-10 rounded-[20px] sm:rounded-[24px] md:rounded-[28px] bg-white/30 backdrop-blur-2xl">
               {isLoading ? (
                 <div className="flex items-center justify-center py-16 sm:py-20 md:py-24">
                   <div className="flex flex-col items-center gap-3">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 border-4 border-[#CCB595]/30 border-t-[#805640] rounded-full animate-spin" />
-                    <span className="text-[#2E0B0F]/70 text-sm sm:text-base">Loading sponsors...</span>
+                    <Loader2 className="h-8 w-8 sm:h-10 sm:w-10 animate-spin text-[#5A1422]" />
+                    <span className="text-[#5A1422]/70 text-sm sm:text-base">Loading sponsors...</span>
                   </div>
                 </div>
               ) : error ? (
@@ -161,7 +176,7 @@ export function PrincipalSponsors() {
                     <p className="text-red-600 text-sm sm:text-base mb-2">{error}</p>
                     <button
                       onClick={fetchSponsors}
-                      className="text-[#805640] hover:text-[#2E0B0F] text-sm underline transition-colors duration-200"
+                      className="text-[#5A1422] hover:text-[#821D30] text-sm underline transition-colors duration-200"
                     >
                       Try again
                     </button>
@@ -169,7 +184,8 @@ export function PrincipalSponsors() {
                 </div>
               ) : sponsorPairs.length === 0 ? (
                 <div className="text-center py-16 sm:py-20 md:py-24">
-                  <p className="text-[#2E0B0F]/60 text-sm sm:text-base">No sponsors yet</p>
+                  <Users className="h-12 w-12 sm:h-14 sm:w-14 text-[#EAD4D9]/30 mx-auto mb-3" />
+                  <p className="text-[#5A1422]/60 text-sm sm:text-base">No sponsors yet</p>
                 </div>
               ) : (
                 <div className="mb-4 sm:mb-5 md:mb-7 lg:mb-9">
@@ -179,31 +195,30 @@ export function PrincipalSponsors() {
                   </div>
                   <div className="grid grid-cols-1 min-[350px]:grid-cols-2 gap-x-2 sm:gap-x-3 md:gap-x-4 gap-y-1 sm:gap-y-1.5 md:gap-y-2 items-stretch">
                     {sponsorPairs.map((pair, idx) => (
-                      <>
-                        <div key={`male-${idx}-${pair.MalePrincipalSponsor || 'empty'}`} className="px-2 sm:px-3 md:px-5">
+                      <React.Fragment key={`sponsor-row-${idx}`}>
+                        <div className="px-2 sm:px-3 md:px-5">
                           {pair.MalePrincipalSponsor ? (
                             <NameItem name={pair.MalePrincipalSponsor} align="right" />
                           ) : (
                             <div className="py-1 sm:py-1.5" />
                           )}
                         </div>
-                        <div key={`female-${idx}-${pair.FemalePrincipalSponsor || 'empty'}`} className="px-2 sm:px-3 md:px-5">
+                        <div className="px-2 sm:px-3 md:px-5">
                           {pair.FemalePrincipalSponsor ? (
                             <NameItem name={pair.FemalePrincipalSponsor} align="left" />
                           ) : (
                             <div className="py-1 sm:py-1.5" />
                           )}
                         </div>
-                      </>
+                      </React.Fragment>
                     ))}
                   </div>
                 </div>
               )}
             </div>
-            </div>
           </div>
         </div>
       </div>
-    </Section>
+    </section>
   )
 }

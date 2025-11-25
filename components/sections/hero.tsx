@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect, useState, useMemo } from "react"
-import NextImage from "next/image"
 import { siteConfig } from "@/content/site"
 // Decorative icons removed for a cleaner, more formal presentation
 
@@ -206,7 +205,7 @@ export function Hero() {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{
-        background: "linear-gradient(180deg, #5c1f24 0%, #904945 50%, #A1857A 100%)",
+        background: "linear-gradient(180deg, #821D30 0%, #821D30 50%, #B88A93 100%)",
       }}
     >
       <div className="absolute inset-0 w-full h-full">
@@ -226,62 +225,14 @@ export function Hero() {
           />
         ))}
         {/* Enhanced gradient overlay with better depth */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#5c1f24]/90 via-[#904945]/50 via-[#A1857A]/30 to-transparent z-0" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#5c1f24]/30 z-0" />
-        
-        {/* Top left corner decoration */}
-        <div className="absolute top-0 left-0 z-0">
-          <NextImage
-            src="/decoration/top-left-corner flower.png"
-            alt=""
-            width={200}
-            height={200}
-            className="w-40 sm:w-48 md:w-52 lg:w-56 xl:w-60 h-auto opacity-80"
-            priority={false}
-          />
-        </div>
-        
-        {/* Top right corner decoration - flipped horizontally */}
-        <div className="absolute top-0 right-0 z-0">
-          <NextImage
-            src="/decoration/top-left-corner flower.png"
-            alt=""
-            width={200}
-            height={200}
-            className="w-40 sm:w-48 md:w-52 lg:w-56 xl:w-60 h-auto opacity-80 scale-x-[-1]"
-            priority={false}
-          />
-        </div>
-        
-        {/* Bottom left corner decoration - flipped horizontally */}
-        <div className="absolute bottom-0 left-0 z-0">
-          <NextImage
-            src="/decoration/right-bottom-corner-flower.png"
-            alt=""
-            width={200}
-            height={200}
-            className="w-40 sm:w-48 md:w-52 lg:w-56 xl:w-60 h-auto opacity-80 scale-x-[-1]"
-            priority={false}
-          />
-        </div>
-        
-        {/* Bottom right corner decoration */}
-        <div className="absolute bottom-0 right-0 z-0">
-          <NextImage
-            src="/decoration/right-bottom-corner-flower.png"
-            alt=""
-            width={200}
-            height={200}
-            className="w-40 sm:w-48 md:w-52 lg:w-56 xl:w-60 h-auto opacity-80"
-            priority={false}
-          />
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#821D30]/90 via-[#821D30]/50 via-[#B88A93]/30 to-transparent z-0" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#821D30]/30 z-0" />
       </div>
 
       <div className="relative z-10 w-full container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 flex flex-col items-center justify-center min-h-screen py-20 sm:py-24">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-x-0 sm:inset-x-6 md:inset-x-10 lg:inset-x-16 top-1/4 bottom-1/4 mx-auto max-w-4xl rounded-[42px] bg-gradient-to-b from-[#E6CFC9]/50 via-[#E6CFC9]/40 to-[#A1857A]/10 opacity-80 blur-[35px] drop-shadow-[0_20px_40px_rgba(46,11,15,0.3)]"
+          className="pointer-events-none absolute inset-x-0 sm:inset-x-6 md:inset-x-10 lg:inset-x-16 top-1/4 bottom-1/4 mx-auto max-w-4xl rounded-[42px] bg-gradient-to-b from-[#EAD4D9]/50 via-[#EAD4D9]/40 to-[#B88A93]/10 opacity-80 blur-[35px] drop-shadow-[0_20px_40px_rgba(130,29,48,0.3)]"
         />
         <div className={`relative z-10 w-full max-w-3xl text-center space-y-3 sm:space-y-4 md:space-y-5 transition-all duration-1000 ease-out ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
@@ -299,9 +250,9 @@ export function Hero() {
             </p>
             {/* Subtle divider */}
             <div className="flex items-center justify-center gap-2 sm:gap-3 py-1">
-              <div className="h-px w-12 sm:w-16 bg-gradient-to-r from-transparent via-[#E6CFC9]/60 to-[#E6CFC9]" />
-              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#E6CFC9]/80 shadow-[0_0_10px_rgba(230,207,201,0.7)]" />
-              <div className="h-px w-12 sm:w-16 bg-gradient-to-l from-transparent via-[#E6CFC9]/60 to-[#E6CFC9]" />
+              <div className="h-px w-12 sm:w-16 bg-gradient-to-r from-transparent via-[#EAD4D9]/60 to-[#EAD4D9]" />
+              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#EAD4D9]/80 shadow-[0_0_10px_rgba(234,212,217,0.7)]" />
+              <div className="h-px w-12 sm:w-16 bg-gradient-to-l from-transparent via-[#EAD4D9]/60 to-[#EAD4D9]" />
             </div>
           </div>
 
@@ -323,7 +274,7 @@ export function Hero() {
               </span>
             </h1>
             {/* Elegant divider */}
-            <div className="h-px w-16 sm:w-20 md:w-24 lg:w-32 mx-auto bg-gradient-to-r from-transparent via-[#E6CFC9] to-transparent shadow-[0_0_12px_rgba(230,207,201,0.5)]" />
+            <div className="h-px w-16 sm:w-20 md:w-24 lg:w-32 mx-auto bg-gradient-to-r from-transparent via-[#EAD4D9] to-transparent shadow-[0_0_12px_rgba(234,212,217,0.5)]" />
           </div>
 
           {/* Tagline with improved typography */}
@@ -358,22 +309,22 @@ export function Hero() {
                 href="#messages"
               className="group px-6 sm:px-8 md:px-10 py-2 sm:py-2.5 md:py-3 rounded-lg font-semibold transition-all duration-500 ease-out uppercase tracking-wider text-xs sm:text-sm whitespace-nowrap relative overflow-hidden border-2 backdrop-blur-sm"
               style={{
-                backgroundColor: "rgba(92, 31, 36, 0.9)",
-                borderColor: "rgba(230, 207, 201, 0.6)",
+                backgroundColor: "rgba(130, 29, 48, 0.9)",
+                borderColor: "rgba(234, 212, 217, 0.6)",
                 color: "#FFFFFF",
-                boxShadow: "0 4px 16px rgba(92, 31, 36, 0.4), 0 2px 6px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.1)",
+                boxShadow: "0 4px 16px rgba(130, 29, 48, 0.4), 0 2px 6px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.1)",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = "#5c1f24";
-                e.currentTarget.style.borderColor = "rgba(230, 207, 201, 0.9)";
+                e.currentTarget.style.backgroundColor = "#821D30";
+                e.currentTarget.style.borderColor = "rgba(234, 212, 217, 0.9)";
                 e.currentTarget.style.transform = "translateY(-2px) scale(1.02)";
-                e.currentTarget.style.boxShadow = "0 8px 24px rgba(92, 31, 36, 0.5), 0 4px 12px rgba(0,0,0,0.3), 0 0 16px rgba(230, 207, 201, 0.3)";
+                e.currentTarget.style.boxShadow = "0 8px 24px rgba(130, 29, 48, 0.5), 0 4px 12px rgba(0,0,0,0.3), 0 0 16px rgba(234, 212, 217, 0.3)";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = "rgba(92, 31, 36, 0.9)";
-                e.currentTarget.style.borderColor = "rgba(230, 207, 201, 0.6)";
+                e.currentTarget.style.backgroundColor = "rgba(130, 29, 48, 0.9)";
+                e.currentTarget.style.borderColor = "rgba(234, 212, 217, 0.6)";
                 e.currentTarget.style.transform = "translateY(0) scale(1)";
-                e.currentTarget.style.boxShadow = "0 4px 16px rgba(92, 31, 36, 0.4), 0 2px 6px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.1)";
+                e.currentTarget.style.boxShadow = "0 4px 16px rgba(130, 29, 48, 0.4), 0 2px 6px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.1)";
               }}
               onMouseDown={(e) => {
                 e.currentTarget.style.transform = "translateY(0) scale(0.98)";
@@ -393,22 +344,22 @@ export function Hero() {
               href="#guest-list"
               className="group px-6 sm:px-8 md:px-10 py-2 sm:py-2.5 md:py-3 rounded-lg font-semibold transition-all duration-500 ease-out uppercase tracking-wider text-xs sm:text-sm whitespace-nowrap relative overflow-hidden border-2 backdrop-blur-sm"
               style={{
-                backgroundColor: "rgba(230, 207, 201, 0.95)",
-                borderColor: "rgba(92, 31, 36, 0.6)",
-                color: "#5c1f24",
-                boxShadow: "0 4px 16px rgba(230, 207, 201, 0.4), 0 2px 6px rgba(0,0,0,0.2)",
+                backgroundColor: "rgba(234, 212, 217, 0.95)",
+                borderColor: "rgba(130, 29, 48, 0.6)",
+                color: "#821D30",
+                boxShadow: "0 4px 16px rgba(234, 212, 217, 0.4), 0 2px 6px rgba(0,0,0,0.2)",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = "#E6CFC9";
-                e.currentTarget.style.borderColor = "rgba(92, 31, 36, 0.9)";
+                e.currentTarget.style.backgroundColor = "#EAD4D9";
+                e.currentTarget.style.borderColor = "rgba(130, 29, 48, 0.9)";
                 e.currentTarget.style.transform = "translateY(-2px) scale(1.02)";
-                e.currentTarget.style.boxShadow = "0 8px 24px rgba(230, 207, 201, 0.5), 0 4px 12px rgba(0,0,0,0.3), 0 0 16px rgba(255, 255, 255, 0.3)";
+                e.currentTarget.style.boxShadow = "0 8px 24px rgba(234, 212, 217, 0.5), 0 4px 12px rgba(0,0,0,0.3), 0 0 16px rgba(255, 255, 255, 0.3)";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = "rgba(230, 207, 201, 0.95)";
-                e.currentTarget.style.borderColor = "rgba(92, 31, 36, 0.6)";
+                e.currentTarget.style.backgroundColor = "rgba(234, 212, 217, 0.95)";
+                e.currentTarget.style.borderColor = "rgba(130, 29, 48, 0.6)";
                 e.currentTarget.style.transform = "translateY(0) scale(1)";
-                e.currentTarget.style.boxShadow = "0 4px 16px rgba(230, 207, 201, 0.4), 0 2px 6px rgba(0,0,0,0.2)";
+                e.currentTarget.style.boxShadow = "0 4px 16px rgba(234, 212, 217, 0.4), 0 2px 6px rgba(0,0,0,0.2)";
               }}
               onMouseDown={(e) => {
                 e.currentTarget.style.transform = "translateY(0) scale(0.98)";
@@ -421,7 +372,7 @@ export function Hero() {
                 RSVP
               </span>
               <div 
-                className="absolute inset-0 bg-gradient-to-r from-transparent via-[#5c1f24]/15 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700 transform -skew-x-12 -translate-x-full group-hover:translate-x-full"
+                className="absolute inset-0 bg-gradient-to-r from-transparent via-[#821D30]/15 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700 transform -skew-x-12 -translate-x-full group-hover:translate-x-full"
               />
             </a>
           </div>

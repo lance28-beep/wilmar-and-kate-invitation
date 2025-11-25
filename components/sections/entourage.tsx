@@ -94,7 +94,7 @@ export function Entourage() {
     const textAlign =
       align === "right" ? "text-right" : align === "left" ? "text-left" : "text-center"
     return (
-      <h3 className={`text-[10px] sm:text-xs md:text-sm lg:text-base font-bold uppercase text-[#2E0B0F] mb-1.5 sm:mb-2 md:mb-3 tracking-[0.12em] ${textAlign} ${className} drop-shadow-sm`}>
+      <h3 className={`text-[10px] sm:text-xs md:text-sm lg:text-base font-bold uppercase text-[#5A1422] mb-1.5 sm:mb-2 md:mb-3 tracking-[0.12em] ${textAlign} ${className} drop-shadow-sm`}>
         {children}
       </h3>
     )
@@ -116,11 +116,11 @@ export function Entourage() {
       align === "right" ? "text-right" : align === "left" ? "text-left" : "text-center"
     return (
       <div className={`flex flex-col ${containerAlign} justify-center py-1.5 sm:py-2 md:py-2.5 leading-tight group/item transition-all duration-200 hover:scale-[1.02]`}>
-        <p className={`text-[#2E0B0F] text-xs sm:text-sm md:text-base font-semibold ${textAlign} group-hover/item:text-[#58171D] transition-colors duration-200`}>
+        <p className={`text-[#5A1422] text-xs sm:text-sm md:text-base font-semibold ${textAlign} group-hover/item:text-[#821D30] transition-colors duration-200`}>
           {member.Name}
         </p>
         {showRole && member.RoleTitle && (
-          <p className={`text-[#805640] text-[9px] sm:text-[10px] md:text-xs font-medium mt-0.5 leading-snug ${textAlign} tracking-wider uppercase`}>
+          <p className={`text-[#5A1422] text-[9px] sm:text-[10px] md:text-xs font-medium mt-0.5 leading-snug ${textAlign} tracking-wider uppercase`}>
             {member.RoleTitle}
           </p>
         )}
@@ -173,10 +173,39 @@ export function Entourage() {
   return (
     <section
       id="entourage"
-      className="relative min-h-screen py-8 sm:py-10 md:py-14 lg:py-16 xl:py-20 overflow-hidden bg-[#58171D]"
+      className="relative min-h-screen py-8 sm:py-10 md:py-14 lg:py-16 xl:py-20 overflow-hidden"
+      style={{
+        backgroundImage: 'url(/gallery/maroon-white-gradient-noisy-grain-background.avif)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
     >
-      {/* Flower decorations - bottom corners only */}
+      {/* Flower decorations */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        {/* Top right corner decoration */}
+        <div className="absolute -top-10 -right-6 sm:-top-14 sm:-right-8 md:-top-16 md:-right-10 z-0">
+          <Image
+            src="/decoration/top-right-corner-flower.png"
+            alt=""
+            width={280}
+            height={280}
+            className="w-48 sm:w-60 md:w-72 lg:w-80 xl:w-96 h-auto opacity-80"
+            priority={false}
+          />
+        </div>
+        {/* Top left corner decoration - mirrored */}
+        <div className="absolute -top-10 -left-6 sm:-top-14 sm:-left-8 md:-top-16 md:-left-10 z-0">
+          <Image
+            src="/decoration/top-right-corner-flower.png"
+            alt=""
+            width={280}
+            height={280}
+            className="w-48 sm:w-60 md:w-72 lg:w-80 xl:w-96 h-auto opacity-80 scale-x-[-1]"
+            priority={false}
+          />
+        </div>
+        
         {/* Bottom left corner decoration - flipped horizontally */}
         <div className="absolute bottom-0 left-0 z-0">
           <Image
@@ -214,12 +243,8 @@ export function Entourage() {
         </div>
         
         <h2 className="imperial-script-regular mb-2 sm:mb-3 md:mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-normal text-white drop-shadow-lg">
-          Wedding Entourage
+          Wilmar - Kate<br /><span className="font-playfair font-bold uppercase tracking-wider">Nuptials:</span>
         </h2>
-        
-        <p className="mx-auto max-w-xl text-xs sm:text-sm md:text-base lg:text-lg font-light leading-relaxed text-white/90 px-2">
-          The special people who will stand with us on our special day
-        </p>
         
         {/* Decorative element below subtitle */}
         <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4">
@@ -232,23 +257,20 @@ export function Entourage() {
       {/* Central Card Container */}
       <div className="relative z-10 px-3 sm:px-4 md:px-6 lg:px-8 mb-8 sm:mb-10 md:mb-12">
         <div className="mx-auto w-full max-w-5xl">
-          {/* Outer glow effect */}
-          <div className="absolute -inset-2 bg-white/20 rounded-[32px] sm:rounded-[36px] blur-2xl opacity-50" />
+          {/* Soft glow halo */}
+          <div className="absolute -inset-2 rounded-[32px] sm:rounded-[36px] bg-white/30 blur-3xl opacity-40" />
           
-          <div className="relative rounded-[24px] sm:rounded-[28px] md:rounded-[32px] border-2 border-white/20 bg-white/10 p-2 sm:p-2.5 md:p-3 shadow-[0_12px_48px_rgba(0,0,0,0.15)] backdrop-blur-xl">
-            {/* Decorative corner accents */}
-            <div className="absolute top-1 left-1 w-4 h-4 sm:w-5 sm:h-5 border-t-2 border-l-2 border-white/30 rounded-tl-2xl" />
-            <div className="absolute top-1 right-1 w-4 h-4 sm:w-5 sm:h-5 border-t-2 border-r-2 border-white/30 rounded-tr-2xl" />
-            <div className="absolute bottom-1 left-1 w-4 h-4 sm:w-5 sm:h-5 border-b-2 border-l-2 border-white/30 rounded-bl-2xl" />
-            <div className="absolute bottom-1 right-1 w-4 h-4 sm:w-5 sm:h-5 border-b-2 border-r-2 border-white/30 rounded-br-2xl" />
+          <div className="relative rounded-[24px] sm:rounded-[28px] md:rounded-[32px] bg-white/20 p-[3px] shadow-[0_18px_60px_rgba(0,0,0,0.18)] backdrop-blur-3xl overflow-hidden">
+            {/* Subtle light sheen */}
+            <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-white/5 to-transparent pointer-events-none" />
             
             {/* Card content */}
-            <div className="relative p-4 sm:p-5 md:p-7 lg:p-9 z-10 bg-white/95 rounded-[20px] sm:rounded-[24px] md:rounded-[28px]">
+            <div className="relative p-4 sm:p-5 md:p-7 lg:p-9 z-10 rounded-[20px] sm:rounded-[24px] md:rounded-[28px] bg-white/30 backdrop-blur-2xl">
             {isLoading ? (
               <div className="flex items-center justify-center py-16 sm:py-20 md:py-24">
                 <div className="flex flex-col items-center gap-3">
-                  <Loader2 className="h-8 w-8 sm:h-10 sm:w-10 animate-spin text-[#805640]" />
-                  <span className="text-[#2E0B0F]/70 text-sm sm:text-base">Loading entourage...</span>
+                  <Loader2 className="h-8 w-8 sm:h-10 sm:w-10 animate-spin text-[#5A1422]" />
+                  <span className="text-[#5A1422]/70 text-sm sm:text-base">Loading entourage...</span>
                 </div>
               </div>
             ) : error ? (
@@ -257,7 +279,7 @@ export function Entourage() {
                   <p className="text-red-600 text-sm sm:text-base mb-2">{error}</p>
                   <button
                     onClick={fetchEntourage}
-                    className="text-[#805640] hover:text-[#2E0B0F] text-sm underline transition-colors duration-200"
+                    className="text-[#5A1422] hover:text-[#821D30] text-sm underline transition-colors duration-200"
                   >
                     Try again
                   </button>
@@ -265,8 +287,8 @@ export function Entourage() {
               </div>
             ) : entourage.length === 0 ? (
               <div className="text-center py-16 sm:py-20 md:py-24">
-                <Users className="h-12 w-12 sm:h-14 sm:w-14 text-[#CCB595]/30 mx-auto mb-3" />
-                <p className="text-[#2E0B0F]/60 text-sm sm:text-base">No entourage members yet</p>
+                <Users className="h-12 w-12 sm:h-14 sm:w-14 text-[#EAD4D9]/30 mx-auto mb-3" />
+                <p className="text-[#5A1422]/60 text-sm sm:text-base">No entourage members yet</p>
               </div>
             ) : (
             <>
@@ -285,9 +307,9 @@ export function Entourage() {
                       {categoryIndex > 0 && (
                         <div className="flex justify-center py-2 sm:py-2.5 md:py-3 mb-3 sm:mb-4 md:mb-6">
                           <div className="flex items-center gap-1.5 w-full max-w-md">
-                            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#CCB595]/50 to-[#CCB595]"></div>
-                            <div className="w-1 h-1 bg-[#CCB595] rounded-full"></div>
-                            <div className="h-px flex-1 bg-gradient-to-l from-transparent via-[#CCB595]/50 to-[#CCB595]"></div>
+                            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#EAD4D9]/50 to-[#EAD4D9]"></div>
+                            <div className="w-1 h-1 bg-[#EAD4D9] rounded-full"></div>
+                            <div className="h-px flex-1 bg-gradient-to-l from-transparent via-[#EAD4D9]/50 to-[#EAD4D9]"></div>
                           </div>
                         </div>
                       )}

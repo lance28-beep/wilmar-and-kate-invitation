@@ -79,12 +79,12 @@ export function Navbar() {
   return (
     <nav className={`sticky top-0 z-50 transition-all duration-700 ease-out ${
       isScrolled 
-        ? 'bg-[#904945]/95 backdrop-blur-xl shadow-[0_8px_25px_rgba(46,11,15,0.35)] border-b border-[#E6CFC9]/60' 
-        : 'bg-[#904945]/85 backdrop-blur-lg border-b border-[#E6CFC9]/40'
+        ? 'bg-[#821D30]/95 backdrop-blur-xl shadow-[0_8px_25px_rgba(90,20,34,0.35)] border-b border-[#EAD4D9]/60' 
+        : 'bg-[#821D30]/85 backdrop-blur-lg border-b border-[#EAD4D9]/40'
     }`}>
       {/* Subtle romantic veil to keep text crisp */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#E6CFC9]/20 via-transparent to-[#E6CFC9]/15 pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#A1857A]/15 to-[#A1857A]/25 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#EAD4D9]/20 via-transparent to-[#EAD4D9]/15 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#B88A93]/15 to-[#B88A93]/25 pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8 relative">
         <div className="flex justify-between items-center h-12 sm:h-20">
@@ -99,15 +99,15 @@ export function Navbar() {
                 className="object-contain w-8 h-8 sm:w-10 sm:h-10 brightness-0 invert drop-shadow-[0_4px_12px_rgba(0,0,0,0.35)]"
               />
               <div className="flex flex-col">
-                <div className="alex-brush-regular text-lg sm:text-2xl md:text-3xl font-medium text-white tracking-wide transition-colors duration-500 group-hover:text-[#E6CFC9]">
+                <div className="alex-brush-regular text-lg sm:text-2xl md:text-3xl font-medium text-white tracking-wide transition-colors duration-500 group-hover:text-[#EAD4D9]">
                   {siteConfig.couple.groomNickname} & {siteConfig.couple.brideNickname}
                 </div>
-                <div className="text-[9px] sm:text-xs font-sans tracking-[0.18em] text-[#E6CFC9]/90 uppercase">
+                <div className="text-[9px] sm:text-xs font-sans tracking-[0.18em] text-[#EAD4D9]/90 uppercase">
                   {siteConfig.ceremony.date}
                 </div>
               </div>
             </div>
-            <div className="absolute -inset-x-6 bottom-0 h-px bg-gradient-to-r from-transparent via-[#E6CFC9]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute -inset-x-6 bottom-0 h-px bg-gradient-to-r from-transparent via-[#EAD4D9]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </Link>
 
           <div className="hidden md:flex gap-1 items-center">

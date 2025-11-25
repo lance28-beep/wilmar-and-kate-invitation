@@ -36,7 +36,7 @@ export function Gallery() {
   return (
     <Section
       id="gallery"
-      className="relative overflow-hidden bg-[#58171D] py-10 sm:py-12 md:py-16 lg:py-20"
+      className="relative overflow-hidden bg-[#5A1422] py-10 sm:py-12 md:py-16 lg:py-20"
     >
       {/* Flower decorations - bottom corners only */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
@@ -122,7 +122,7 @@ export function Gallery() {
       <div className="relative z-10 flex justify-center px-3 sm:px-4">
         <a
           href="/gallery"
-          className="group relative inline-flex items-center gap-2 sm:gap-2.5 whitespace-nowrap rounded-xl border-2 border-[#CCB595]/40 bg-[#805640] px-6 sm:px-8 md:px-10 lg:px-12 py-3 sm:py-3.5 md:py-4 text-xs sm:text-sm md:text-base font-bold uppercase tracking-[0.15em] text-white shadow-[0_8px_32px_rgba(128,86,64,0.4)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(128,86,64,0.6)] hover:scale-[1.03] hover:border-[#CCB595]/60 active:scale-[0.98] overflow-hidden"
+          className="group relative inline-flex items-center gap-2 sm:gap-2.5 whitespace-nowrap rounded-xl border-2 border-[#EAD4D9]/40 bg-[#821D30] px-6 sm:px-8 md:px-10 lg:px-12 py-3 sm:py-3.5 md:py-4 text-xs sm:text-sm md:text-base font-bold uppercase tracking-[0.15em] text-white shadow-[0_8px_32px_rgba(130,29,48,0.4)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(130,29,48,0.6)] hover:scale-[1.03] hover:border-[#EAD4D9]/60 active:scale-[0.98] overflow-hidden"
         >
           {/* Button shine effect */}
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />

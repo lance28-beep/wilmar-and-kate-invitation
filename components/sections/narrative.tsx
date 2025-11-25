@@ -8,18 +8,18 @@ import Image from "next/image"
 
 export function Narrative() {
   return (
-    <Section id="narrative" className="relative py-8 sm:py-12 md:py-20 overflow-hidden bg-[#5c1f24]">
+    <Section id="narrative" className="relative py-8 sm:py-12 md:py-20 overflow-hidden bg-[#821D30]">
       {/* Enhanced background elements - romantic and compact */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Soft gradient overlays with romantic pink tones */}
-        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-[#CCB595]/10 via-white/5 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#CCB595]/10 via-white/5 to-transparent" />
+        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-[#EAD4D9]/10 via-white/5 to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#EAD4D9]/10 via-white/5 to-transparent" />
         
         {/* Floating decorative circles - smaller for mobile */}
         <div className="absolute top-6 left-6 w-20 h-20 sm:w-32 sm:h-32 bg-white/8 rounded-full blur-2xl animate-pulse" />
-        <div className="absolute top-12 right-10 w-16 h-16 sm:w-24 sm:h-24 bg-[#CCB595]/10 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-12 right-10 w-16 h-16 sm:w-24 sm:h-24 bg-[#EAD4D9]/10 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }} />
         <div className="absolute bottom-12 left-12 w-20 h-20 sm:w-28 sm:h-28 bg-white/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
-        <div className="absolute bottom-16 right-8 w-14 h-14 sm:w-20 sm:h-20 bg-[#CCB595]/8 rounded-full blur-xl animate-pulse" style={{ animationDelay: '0.5s' }} />
+        <div className="absolute bottom-16 right-8 w-14 h-14 sm:w-20 sm:h-20 bg-[#EAD4D9]/8 rounded-full blur-xl animate-pulse" style={{ animationDelay: '0.5s' }} />
         
         {/* Romantic floating hearts - subtle animation */}
         {Array.from({ length: 4 }).map((_, i) => (
@@ -84,7 +84,7 @@ export function Narrative() {
         >
           <div className="w-6 sm:w-8 md:w-12 h-px bg-white/40" />
           <motion.svg 
-            className="w-3 h-3 sm:w-4 sm:h-4 text-[#CCB595]/80" 
+            className="w-3 h-3 sm:w-4 sm:h-4 text-[#EAD4D9]/80" 
             fill="currentColor" 
             viewBox="0 0 24 24"
             animate={{ scale: [1, 1.2, 1] }}
@@ -93,10 +93,10 @@ export function Narrative() {
             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
           </motion.svg>
           <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-white/60 rounded-full" />
-          <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-[#CCB595]/60 rounded-full" />
+          <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-[#EAD4D9]/60 rounded-full" />
           <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-white/60 rounded-full" />
           <motion.svg 
-            className="w-3 h-3 sm:w-4 sm:h-4 text-[#CCB595]/80" 
+            className="w-3 h-3 sm:w-4 sm:h-4 text-[#EAD4D9]/80" 
             fill="currentColor" 
             viewBox="0 0 24 24"
             animate={{ scale: [1, 1.2, 1] }}
@@ -126,7 +126,7 @@ export function Narrative() {
           transition={{ duration: 0.6 }}
         >
           <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-white/60 rounded-full" />
-          <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-[#CCB595]/60 rounded-full" />
+          <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-[#EAD4D9]/60 rounded-full" />
           <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-white/60 rounded-full" />
         </motion.div>
       </div>
@@ -148,7 +148,7 @@ export function Narrative() {
           <div className="flex justify-center">
             <div className="relative">
               {/* Enhanced glow effect - romantic pink/white glow */}
-              <div className="absolute inset-0 bg-[#CCB595]/15 rounded-full blur-3xl -z-10 w-full h-full max-w-[240px] sm:max-w-sm animate-pulse"></div>
+              <div className="absolute inset-0 bg-[#EAD4D9]/15 rounded-full blur-3xl -z-10 w-full h-full max-w-[240px] sm:max-w-sm animate-pulse"></div>
               <div className="absolute inset-0 bg-white/8 rounded-full blur-2xl -z-10 w-full h-full max-w-[240px] sm:max-w-sm"></div>
 
               <div className="scale-[0.75] sm:scale-90 md:scale-100">
@@ -222,10 +222,10 @@ export function Narrative() {
             </div>
             
             {/* Decorative corner accents - romantic hearts */}
-            <div className="absolute top-1 left-1 w-2 h-2 sm:w-3 sm:h-3 border-t-2 border-l-2 border-[#CCB595]/50 rounded-tl-lg" />
-            <div className="absolute top-1 right-1 w-2 h-2 sm:w-3 sm:h-3 border-t-2 border-r-2 border-[#CCB595]/50 rounded-tr-lg" />
-            <div className="absolute bottom-1 left-1 w-2 h-2 sm:w-3 sm:h-3 border-b-2 border-l-2 border-[#CCB595]/50 rounded-bl-lg" />
-            <div className="absolute bottom-1 right-1 w-2 h-2 sm:w-3 sm:h-3 border-b-2 border-r-2 border-[#CCB595]/50 rounded-br-lg" />
+            <div className="absolute top-1 left-1 w-2 h-2 sm:w-3 sm:h-3 border-t-2 border-l-2 border-[#EAD4D9]/50 rounded-tl-lg" />
+            <div className="absolute top-1 right-1 w-2 h-2 sm:w-3 sm:h-3 border-t-2 border-r-2 border-[#EAD4D9]/50 rounded-tr-lg" />
+            <div className="absolute bottom-1 left-1 w-2 h-2 sm:w-3 sm:h-3 border-b-2 border-l-2 border-[#EAD4D9]/50 rounded-bl-lg" />
+            <div className="absolute bottom-1 right-1 w-2 h-2 sm:w-3 sm:h-3 border-b-2 border-r-2 border-[#EAD4D9]/50 rounded-br-lg" />
           </div>
         </motion.div>
 
@@ -242,7 +242,7 @@ export function Narrative() {
               <div className="flex-1 h-px bg-white/40"></div>
               <div className="flex items-center gap-1 sm:gap-1.5">
                 <motion.svg 
-                  className="w-3 h-3 sm:w-4 sm:h-4 text-[#CCB595]/80" 
+                  className="w-3 h-3 sm:w-4 sm:h-4 text-[#EAD4D9]/80" 
                   fill="currentColor" 
                   viewBox="0 0 24 24"
                   animate={{ scale: [1, 1.15, 1] }}
@@ -252,7 +252,7 @@ export function Narrative() {
                 </motion.svg>
                 <div className="w-1 h-1 bg-white/70 rounded-full"></div>
                 <motion.svg 
-                  className="w-3 h-3 sm:w-4 sm:h-4 text-[#CCB595]/80" 
+                  className="w-3 h-3 sm:w-4 sm:h-4 text-[#EAD4D9]/80" 
                   fill="currentColor" 
                   viewBox="0 0 24 24"
                   animate={{ scale: [1, 1.15, 1] }}
@@ -268,7 +268,7 @@ export function Narrative() {
             <div className="flex justify-center">
               <motion.a
                 href="#guest-list"
-                className="group relative w-full sm:w-auto px-6 sm:px-8 md:px-12 py-3.5 sm:py-4 md:py-5 bg-gradient-to-r from-[#5c1f24] via-[#904945] to-[#805640] text-[#FFFFFF] font-sans font-bold text-sm sm:text-base md:text-lg lg:text-xl rounded-[1.5rem] sm:rounded-[2rem] transition-all duration-500 text-center overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-[#904945]/40 border-2 border-white/30 hover:border-white/50 hover:text-white"
+                className="group relative w-full sm:w-auto px-6 sm:px-8 md:px-12 py-3.5 sm:py-4 md:py-5 bg-gradient-to-r from-[#821D30] via-[#821D30] to-[#5A1422] text-[#FFFFFF] font-sans font-bold text-sm sm:text-base md:text-lg lg:text-xl rounded-[1.5rem] sm:rounded-[2rem] transition-all duration-500 text-center overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-[#821D30]/40 border-2 border-white/30 hover:border-white/50 hover:text-white"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -277,7 +277,7 @@ export function Narrative() {
               >
                 {/* Pulsing glow effect - refined colors */}
                 <motion.div 
-                  className="absolute inset-0 bg-[#904945]/40 rounded-[2rem] blur-2xl"
+                  className="absolute inset-0 bg-[#821D30]/40 rounded-[2rem] blur-2xl"
                   animate={{
                     opacity: [0.4, 0.7, 0.4],
                     scale: [1, 1.1, 1],

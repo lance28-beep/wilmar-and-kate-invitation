@@ -80,10 +80,10 @@ function CountdownSection() {
         {/* Main card - elegant and clean */}
         <div className="relative bg-white/98 backdrop-blur-md rounded-lg sm:rounded-xl md:rounded-2xl px-3 py-2.5 sm:px-4 sm:py-3.5 md:px-5 md:py-4 lg:px-6 lg:py-5 border-2 border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.18)] transition-all duration-300 hover:scale-[1.03] min-w-[52px] sm:min-w-[64px] md:min-w-[76px] lg:min-w-[88px]">
           {/* Decorative corner accents */}
-          <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-[#A1857A]/40 rounded-tl-lg" />
-          <div className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-[#A1857A]/40 rounded-tr-lg" />
-          <div className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-[#A1857A]/40 rounded-bl-lg" />
-          <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-[#A1857A]/40 rounded-br-lg" />
+          <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-[#B88A93]/40 rounded-tl-lg" />
+          <div className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-[#B88A93]/40 rounded-tr-lg" />
+          <div className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-[#B88A93]/40 rounded-bl-lg" />
+          <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-[#B88A93]/40 rounded-br-lg" />
           
           {/* Counter */}
           <div className="relative z-10 flex items-center justify-center">
@@ -93,12 +93,12 @@ function CountdownSection() {
               fontSize={36}
               padding={3}
               gap={2}
-              textColor="#904945"
+              textColor="#821D30"
               fontWeight={900}
               horizontalPadding={2}
               borderRadius={6}
               gradientHeight={6}
-              gradientFrom="rgba(144,73,69,0.08)"
+              gradientFrom="rgba(130,29,48,0.08)"
               gradientTo="transparent"
               containerStyle={{
                 display: "flex",
@@ -123,7 +123,7 @@ function CountdownSection() {
   return (
     <Section
       id="countdown"
-      className="relative bg-[#5c1f24] py-10 sm:py-12 md:py-16 lg:py-20 overflow-hidden"
+      className="relative bg-[#821D30] py-10 sm:py-12 md:py-16 lg:py-20 overflow-hidden"
     >
       {/* Enhanced background elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -136,29 +136,6 @@ function CountdownSection() {
         <div className="absolute top-20 right-16 w-24 h-24 bg-white/6 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }} />
         <div className="absolute bottom-16 left-20 w-28 h-28 bg-white/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
         <div className="absolute bottom-24 right-12 w-20 h-20 bg-white/8 rounded-full blur-xl animate-pulse" style={{ animationDelay: '0.5s' }} />
-        
-        {/* Top corner flower decorations */}
-        <div className="absolute top-0 left-0 z-0">
-          <Image
-            src="/decoration/top-left-corner flower.png"
-            alt=""
-            width={300}
-            height={300}
-            className="w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64 h-auto opacity-80"
-            priority={false}
-          />
-        </div>
-        
-        <div className="absolute top-0 right-0 z-0">
-          <Image
-            src="/decoration/top-left-corner flower.png"
-            alt=""
-            width={300}
-            height={300}
-            className="w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64 h-auto opacity-80 scale-x-[-1]"
-            priority={false}
-          />
-        </div>
         
         {/* Bottom corner flower decorations */}
         <div className="absolute bottom-0 left-0 z-0">
@@ -344,7 +321,7 @@ export default function Home() {
       {enableDecor && (
         <div className="fixed inset-0 z-0 pointer-events-none">
           <Suspense fallback={<div className="w-full h-full bg-gradient-to-b from-primary/10 to-secondary/5" />}>
-            <Silk speed={5} scale={1.1} color="#904945" noiseIntensity={0.8} rotation={0.3} />
+            <Silk speed={5} scale={1.1} color="#800020" noiseIntensity={0.8} rotation={0.3} />
           </Suspense>
         </div>
       )}
