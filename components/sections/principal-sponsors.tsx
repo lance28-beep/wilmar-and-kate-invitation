@@ -155,14 +155,27 @@ export function PrincipalSponsors() {
       </div>
 
       {/* Sponsors content */}
-      <div className="relative z-10 px-3 sm:px-4 md:px-6 lg:px-8 mb-8 sm:mb-10 md:mb-12">
-        <div className="mx-auto w-full max-w-5xl relative">
-          <div className="absolute -inset-2 rounded-[32px] sm:rounded-[36px] bg-white/30 blur-3xl opacity-40" />
-          
-          <div className="relative rounded-[24px] sm:rounded-[28px] md:rounded-[32px] bg-white/20 p-[3px] shadow-[0_18px_60px_rgba(0,0,0,0.18)] backdrop-blur-3xl overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-white/5 to-transparent pointer-events-none" />
-            
-            <div className="relative p-4 sm:p-5 md:p-7 lg:p-9 z-10 rounded-[20px] sm:rounded-[24px] md:rounded-[28px] bg-white/30 backdrop-blur-2xl">
+      <div className="relative z-10 px-2 sm:px-4">
+        <div className="flex justify-center">
+          <div className="max-w-4xl w-full">
+            <div className="relative">
+              {/* Layered glow effects */}
+              <div className="absolute -inset-4 bg-gradient-to-r from-[#B08981]/20 via-[#EFBFBB]/15 to-[#B08981]/20 rounded-3xl blur-2xl opacity-40 animate-pulse" />
+              <div className="absolute -inset-3 bg-gradient-to-r from-[#B08981]/30 via-[#EFBFBB]/20 to-[#B08981]/30 rounded-3xl blur-md opacity-50 animate-pulse" />
+
+              {/* Corner accents */}
+              <div className="absolute -top-2 -left-2 w-5 h-5 bg-gradient-to-br from-[#B08981] via-[#EFBFBB] to-[#FFE5E4] rounded-full blur-sm opacity-70 shadow-lg" />
+              <div className="absolute -top-2 -right-2 w-5 h-5 bg-gradient-to-bl from-[#B08981] via-[#EFBFBB] to-[#FFE5E4] rounded-full blur-sm opacity-70 shadow-lg" />
+              <div className="absolute -bottom-2 -left-2 w-5 h-5 bg-gradient-to-tr from-[#B08981] via-[#EFBFBB] to-[#FFE5E4] rounded-full blur-sm opacity-70 shadow-lg" />
+              <div className="absolute -bottom-2 -right-2 w-5 h-5 bg-gradient-to-tl from-[#B08981] via-[#EFBFBB] to-[#FFE5E4] rounded-full blur-sm opacity-70 shadow-lg" />
+
+              {/* Main card */}
+              <div className="relative bg-gradient-to-br from-[#FFE5E4] via-[#EFBFBB]/25 to-[#FFE5E4] backdrop-blur-md rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-10 border-2 border-[#B08981]/50 shadow-[0_8px_32px_rgba(102,105,86,0.25),0_0_0_1px_rgba(176,137,129,0.15)]">
+                <div className="absolute inset-1 sm:inset-2 border border-[#B08981]/40 rounded-xl sm:rounded-2xl" />
+                <div className="absolute inset-2 sm:inset-3 bg-gradient-to-br from-[#EFBFBB]/15 to-transparent rounded-xl sm:rounded-2xl" />
+
+                {/* Card content */}
+                <div className="relative p-1 sm:p-2 md:p-3 lg:p-4 z-10">
               {isLoading ? (
                 <div className="flex items-center justify-center py-16 sm:py-20 md:py-24">
                   <div className="flex flex-col items-center gap-3">
@@ -215,6 +228,13 @@ export function PrincipalSponsors() {
                   </div>
                 </div>
               )}
+                </div>
+
+                {/* Sparkle accents */}
+                <div className="absolute top-2 right-2 sm:top-3 sm:right-3 w-2 h-2 sm:w-3 sm:h-3 bg-[#EFBFBB] rounded-full animate-ping opacity-80 shadow-lg" />
+                <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#B08981] rounded-full animate-pulse opacity-70 shadow-md" />
+                <div className="absolute top-1/2 left-1 sm:left-2 w-1 h-1 sm:w-1.5 sm:h-1.5 bg-[#FFE5E4] rounded-full animate-pulse opacity-50" />
+              </div>
             </div>
           </div>
         </div>
