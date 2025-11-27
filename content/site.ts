@@ -53,11 +53,11 @@ export const siteConfig = {
     },
     note: "We would love to see you in formal attire following our color palette: Sage Green – Dusty Blue – Gray/Silver",
   },
-  narrative: `We’re incredibly excited to share with you the beautiful journey of how our love began — a story filled with small moments that grew into something truly meaningful. From the very first spark to the countless memories that followed, every chapter has shaped who we are today. We want this space to be a little window into our hearts, a place where you can feel the warmth, laughter, and magic that brought us together.
+  narrative: `Muñoz – Barchar Pamamanhikan
 
-Right now, we’re still putting the pieces together, choosing the words that best capture everything we’ve been through — the challenges we conquered, the joy we found in each other, and the love that continues to grow every single day. Hehehe, medyo kinikilig pa kami habang sinusulat!
+August 31, 2025
 
-Please stay tuned as we craft our full story. We can’t wait to share it with you soon. Something sweet, real, and beautiful is on its way. 💕✨`,
+A quick glimpse of the moments we captured—simple, genuine, and full of love.`,
   colors: {
     primary: "#821D30",
     secondary: "#5A1422",
