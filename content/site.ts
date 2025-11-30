@@ -53,11 +53,28 @@ export const siteConfig = {
     },
     note: "We would love to see you in formal attire following our color palette: Sage Green – Dusty Blue – Gray/Silver",
   },
-  narrative: `Muñoz – Barchar Pamamanhikan
+  narrative: `Every great love story begins with a spark — ours just happened to turn into something extraordinary.
+Sometimes, love arrives when you least expect it, and for us, it began entirely by chance. Our paths crossed in the most ordinary moment, yet neither of us knew that encounter would change our lives forever.
 
-August 31, 2025
+They say love always comes when you least expect it — and that’s exactly how our story began.
+We’d known each other for a long time, but if you ask me how it truly started… well, I didn’t like him at first. To me, he was just a “Kuya,” and honestly, I thought he was a playboy, so I never paid much attention to him.
 
-A quick glimpse of the moments we captured—simple, genuine, and full of love.`,
+But time has a funny way of changing things.
+Little by little, Kuya became a friend. And that friend became someone I looked forward to talking to. Then, the man I once couldn’t stand somehow became the man I can’t imagine life without.
+
+Of course, we can’t forget his nephew, Ian — the ultimate matchmaker. He would always tease his uncle about me, and it didn’t help that the “marites” kept insisting we were already a couple. We weren’t… but maybe all that teasing and linking pushed us closer together.
+So, For the marites: THANK YOU 
+
+We also experienced a long-distance relationship. I went to Dubai to fulfill my dreams while he stayed in the Philippines, patiently waiting for me. But I couldn’t stay miles away from him — that’s why I came back home, to be with him.
+
+As our connection grew, he became my support system, my partner, my safe place. He was thoughtful, genuine, and full of love. Together, we built a relationship that is simple, strong, and real — a love that feels perfect in all its imperfections.
+
+Then came August 30, 2024 — my birthday. What I thought was just a simple celebration turned into the most unforgettable moment of my life: the day he knelt down and asked me the question I didn’t even have to think twice about. I said “yes,” of course.
+
+On August 31, 2025, we had our pamamanhikan — another step closer to forever.
+
+And now, here we are, ready to continue this love story that started with annoyance, grew through friendship, survived distance and teasing, and ended with a “yes.”
+We stand here, surrounded by the people we love most — ready for a lifetime of growing, learning, and choosing each other every single day.`,
   colors: {
     primary: "#821D30",
     secondary: "#5A1422",

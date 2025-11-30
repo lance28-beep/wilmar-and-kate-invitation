@@ -159,25 +159,13 @@ export function Narrative() {
                   cardDimensions={{ width: 220, height: 260 }}
                   cardsData={[
                     { id: 1, img: "/Pamamanhikan/image (1).jpg" },
-                    { id: 2, img: "/Pamamanhikan/Image (2).jpg" },
-                    { id: 3, img: "/Pamamanhikan/Image (3).jpg" },
-                    { id: 4, img: "/Pamamanhikan/Image (4).jpg" },
-                    { id: 5, img: "/Pamamanhikan/image (5).jpg" },
-                    { id: 6, img: "/Pamamanhikan/image (6).jpg" },
-                    { id: 7, img: "/Pamamanhikan/image (7).jpg" },
-                    { id: 8, img: "/Pamamanhikan/image (9).jpg" },
-                    { id: 9, img: "/Pamamanhikan/image (11).jpg" },
-                    { id: 10, img: "/Pamamanhikan/image (12).jpg" },
-                    { id: 11, img: "/Pamamanhikan/image (14).jpg" },
-                    { id: 12, img: "/Pamamanhikan/image (15).jpg" },
-                    { id: 13, img: "/Pamamanhikan/image (16).jpg" },
-                    { id: 14, img: "/Pamamanhikan/image (17).jpg" },
-                    { id: 15, img: "/Pamamanhikan/image (18).jpg" },
-                    { id: 16, img: "/Pamamanhikan/image (20).jpg" },
-                    { id: 17, img: "/Pamamanhikan/image (24).jpg" },
+                   
                     { id: 18, img: "/Pamamanhikan/image (23).jpg" },
                     { id: 19, img: "/Pamamanhikan/image (22).jpg" },
                     { id: 20, img: "/Pamamanhikan/image (21).jpg" },
+                    { id: 22, img: "/gallery/new couple (4).jfif" },
+                    { id: 23, img: "/gallery/new couple (4).jfif" },
+
                 
                   ]}
                   animationConfig={{ stiffness: 260, damping: 20 }}

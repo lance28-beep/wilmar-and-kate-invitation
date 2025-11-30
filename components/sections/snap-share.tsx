@@ -185,7 +185,7 @@ export function SnapShare() {
                         <Image src="/mobile-background/couple (4).jpg" alt="Favorite moment 2" fill className="object-cover" />
                       </motion.div>
                       <motion.div className="relative col-span-2 aspect-[3/2] rounded-lg overflow-hidden shadow-md ring-1 ring-[#A1857A]/40" whileHover={{ scale: 1.02 }} transition={{ duration: 0.25 }}>
-                        <Image src="/desktop-background/couple (62).jpg" alt="Favorite moment 3" fill className="object-cover" />
+                        <Image src="/gallery/Screenshot 2025-11-30 171230.png" alt="Favorite moment 3" fill className="object-cover" />
                       </motion.div>
                     </div>
                     <p className="font-lora text-[#5A1422] text-[9px] sm:text-[10px] md:text-xs text-center mt-2 sm:mt-2.5 px-2">Share your photos using our hashtag to be featured here!</p>
