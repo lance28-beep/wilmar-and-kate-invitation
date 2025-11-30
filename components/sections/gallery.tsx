@@ -7,8 +7,8 @@ import { motion } from "motion/react"
 import NextImage from "next/image"
 
 const galleryItems = [
-  { image: "/mobile-background/couple (1).jpg", text: " " },
-  { image: "/mobile-background/couple (2).jpg", text: " " },
+  { image: "/Couple_img/1.jpg", text: " " },
+  { image: "/Couple_img/2.jpg", text: " " },
   { image: "/mobile-background/couple (3).jpg", text: " " },
   { image: "/mobile-background/couple (4).jpg", text: " " },
   { image: "/mobile-background/couple (5).jpg", text: " " },

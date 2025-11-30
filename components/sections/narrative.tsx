@@ -114,7 +114,7 @@ export function Narrative() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          The Pamamanhikan
+          The proposal and Pamamanhikan moments
         </motion.h2>
         
         {/* Decorative element below title - romantic */}
@@ -164,7 +164,7 @@ export function Narrative() {
                     { id: 19, img: "/Pamamanhikan/image (22).jpg" },
                     { id: 20, img: "/Pamamanhikan/image (21).jpg" },
                     { id: 22, img: "/gallery/new couple (4).jfif" },
-                    { id: 23, img: "/gallery/new couple (4).jfif" },
+                    { id: 23, img: "/gallery/new couple (5).jfif" },
 
                 
                   ]}

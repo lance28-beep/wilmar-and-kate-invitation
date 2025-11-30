@@ -5,6 +5,10 @@ import { siteConfig } from "@/content/site"
 // Decorative icons removed for a cleaner, more formal presentation
 
 const desktopImages = [
+  "/Couple_img/1.jpg",
+  "/Couple_img/2.jpg",
+  "/Couple_img/3.jpg",
+  "/Couple_img/4.jpg",
     "/desktop-background/couple (1).jpg",
     "/desktop-background/couple (2).jpg",
     "/desktop-background/couple (3).jpg",
@@ -88,6 +92,10 @@ const desktopImages = [
 ]
 
 const mobileImages = [
+  "/Couple_img/1.jpg",
+  "/Couple_img/2.jpg",
+  "/Couple_img/3.jpg",
+  "/Couple_img/4.jpg",
     "/mobile-background/couple (1).jpg",
     "/mobile-background/couple (2).jpg",
     "/mobile-background/couple (3).jpg",
