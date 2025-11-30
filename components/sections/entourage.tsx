@@ -23,6 +23,7 @@ const ROLE_CATEGORY_ORDER = [
   "Cord Sponsors",
   "Groomsmen",
   "Bridesmaids",
+  "Bridesman",
   "Flower Girls",
   "Ring/Coin Bearers",
 ]
