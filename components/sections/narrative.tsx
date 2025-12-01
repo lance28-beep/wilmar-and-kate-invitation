@@ -114,7 +114,7 @@ export function Narrative() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          The proposal and Pamamanhikan moments
+          The Proposal and Pamamanhikan Moments
         </motion.h2>
         
         {/* Decorative element below title - romantic */}

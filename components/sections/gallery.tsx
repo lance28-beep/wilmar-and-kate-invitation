@@ -7,12 +7,12 @@ import { motion } from "motion/react"
 import NextImage from "next/image"
 
 const galleryItems = [
-  { image: "/Couple_img/1.jpg", text: " " },
+  { image: "/Couple_img/add1.png", text: " " },
   { image: "/Couple_img/2.jpg", text: " " },
-  { image: "/mobile-background/couple (3).jpg", text: " " },
+  { image: "/Couple_img/add2.png", text: " " },
   { image: "/mobile-background/couple (4).jpg", text: " " },
   { image: "/mobile-background/couple (5).jpg", text: " " },
-  { image: "/mobile-background/couple (6).jpg", text: " " },
+  { image: "/Couple_img/Add3.png", text: " " },
 ]
 
 export function Gallery() {
