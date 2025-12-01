@@ -99,7 +99,7 @@ export function Navbar() {
                 className="object-contain w-8 h-8 sm:w-10 sm:h-10 brightness-0 invert drop-shadow-[0_4px_12px_rgba(0,0,0,0.35)]"
               />
               <div className="flex flex-col">
-                <div className="alex-brush-regular text-lg sm:text-2xl md:text-3xl font-medium text-white tracking-wide transition-colors duration-500 group-hover:text-[#EAD4D9]">
+                <div className="imperial-script-regular text-lg sm:text-2xl md:text-3xl font-medium text-white tracking-wide transition-colors duration-500 group-hover:text-[#EAD4D9]">
                   {siteConfig.couple.groomNickname} & {siteConfig.couple.brideNickname}
                 </div>
                 <div className="text-[9px] sm:text-xs font-sans tracking-[0.18em] text-[#EAD4D9]/90 uppercase">

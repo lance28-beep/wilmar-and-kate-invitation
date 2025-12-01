@@ -6,6 +6,7 @@ import {
   Great_Vibes,
   Imperial_Script,
   Inter,
+  Playfair_Display,
   WindSong,
 } from "next/font/google"
 import "./globals.css"
@@ -60,6 +61,7 @@ const greatVibes = Great_Vibes({ subsets: ["latin"], weight: "400", variable: "-
 const imperialScript = Imperial_Script({ subsets: ["latin"], weight: "400", variable: "--font-imperial-script" })
 const cormorantGaramond = Cormorant_Garamond({ subsets: ["latin"], weight: ["400", "500", "600"], variable: "--font-cormorant" })
 const windSong = WindSong({ subsets: ["latin"], weight: "400", variable: "--font-windsong" })
+const playfairDisplay = Playfair_Display({ subsets: ["latin"], weight: ["400", "700", "900"], variable: "--font-playfair" })
 
 export const metadata: Metadata = {
   title: eventTitle,
@@ -157,11 +159,12 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet" />
         <link rel="preload" as="image" href="/mobile-background/DSCF2614-min.jpg" media="(max-width: 767px)" />
         <link rel="preload" as="image" href="/desktop-background/DSCF2444-min.jpg" media="(min-width: 768px)" />
       </head>
       <body
-        className={`${inter.variable} ${greatVibes.variable} ${imperialScript.variable} ${cormorantGaramond.variable} ${windSong.variable} font-inter antialiased text-foreground`}
+        className={`${inter.variable} ${greatVibes.variable} ${imperialScript.variable} ${cormorantGaramond.variable} ${windSong.variable} ${playfairDisplay.variable} font-inter antialiased text-foreground`}
       >
         <Navbar />
         {children}

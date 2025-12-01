@@ -267,7 +267,7 @@ export function Hero() {
           {/* Couple names */}
           <div className="space-y-2 sm:space-y-3">
             <h1
-              className="alex-brush-regular text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-normal tracking-wide drop-shadow-2xl leading-tight"
+              className="imperial-script-regular text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-normal tracking-wide drop-shadow-2xl leading-tight"
               style={{
                 color: '#FFFFFF',
                 textShadow: "0 0 15px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.7), 0 0 45px rgba(255, 255, 255, 0.5), 0 4px 12px rgba(0, 0, 0, 0.4)",
@@ -285,14 +285,18 @@ export function Hero() {
             <div className="h-px w-16 sm:w-20 md:w-24 lg:w-32 mx-auto bg-gradient-to-r from-transparent via-[#EAD4D9] to-transparent shadow-[0_0_12px_rgba(234,212,217,0.5)]" />
           </div>
 
-          {/* Tagline with improved typography */}
+          {/* Biblical quote */}
           <div className="space-y-2 sm:space-y-3 pt-2 sm:pt-3">
             <p
-              className="alex-brush-regular text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-[#FFFFFF] tracking-wide"
+              className="tangerine-regular text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white italic"
               style={{ textShadow: softTextShadow }}
             >
-              {siteConfig.wedding.tagline}
+              I have found the one whom my soul loves. — <span className="tangerine-bold">Song of Solomon 3:4</span>
             </p>
+          </div>
+
+          {/* Tagline with improved typography */}
+          <div className="space-y-2 sm:space-y-3 pt-2 sm:pt-3">
 
             {/* Date and time information */}
             <div className="space-y-1.5 sm:space-y-2 pt-2">

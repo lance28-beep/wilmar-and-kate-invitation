@@ -222,7 +222,7 @@ export function Footer() {
                 <div className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 bg-white/20 rounded-full flex items-center justify-center border border-white/30 flex-shrink-0">
                   <Heart className="w-5 h-5 sm:w-5.5 sm:h-5.5 md:w-6 md:h-6 text-white" />
                 </div>
-                <h3 className="alex-brush-regular text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white">{siteConfig.couple.groomNickname} & {siteConfig.couple.brideNickname}</h3>
+                <h3 className="imperial-script-regular text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white">{siteConfig.couple.groomNickname} & {siteConfig.couple.brideNickname}</h3>
               </div>
               <div className="space-y-3 sm:space-y-3.5 md:space-y-4">
                 <div className="flex items-center gap-2 sm:gap-2.5 md:gap-3 font-lora text-white/95">
