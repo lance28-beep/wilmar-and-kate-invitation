@@ -1,34 +1,85 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Great_Vibes, Inter, Playfair_Display } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import {
+  Cormorant_Garamond,
+  Great_Vibes,
+  Imperial_Script,
+  Inter,
+  WindSong,
+} from "next/font/google"
 import "./globals.css"
 import { Navbar } from "@/components/navbar"
+import { siteConfig } from "@/content/site"
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://wilmar-and-kate-invitation.vercel.app/"
+const canonicalUrl = siteUrl.replace(/\/$/, "")
+const eventImagePath = "/desktop-background/couple (48).jpg"
+const eventImageUrl = `${canonicalUrl}${eventImagePath}`
+const eventTitle = `${siteConfig.couple.groom} & ${siteConfig.couple.bride} | Wedding 2025`
+const eventDescription = `You're invited to celebrate ${siteConfig.couple.groom} & ${siteConfig.couple.bride}'s wedding on ${siteConfig.wedding.date} at ${siteConfig.wedding.venue}. ${siteConfig.wedding.theme} with heartfelt stories, schedules, and RSVP details.`
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Event",
+  name: eventTitle,
+  startDate: "2025-12-21T16:00:00+08:00",
+  endDate: "2025-12-21T21:00:00+08:00",
+  eventStatus: "https://schema.org/EventScheduled",
+  eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+  location: [
+    {
+      "@type": "Place",
+      name: siteConfig.ceremony.location,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: siteConfig.ceremony.location,
+        addressLocality: "Dasmariñas",
+        addressRegion: "Cavite",
+        addressCountry: "PH",
+      },
+    },
+  ],
+  image: [eventImageUrl],
+  description: eventDescription,
+  organizer: {
+    "@type": "Person",
+    name: `${siteConfig.couple.groom} & ${siteConfig.couple.bride}`,
+  },
+  offers: {
+    "@type": "Offer",
+    url: canonicalUrl,
+    availability: "https://schema.org/InStock",
+    price: "0",
+    priceCurrency: "PHP",
+  },
+  eventHashtag: "#DediKATEdbyGodForWILMAR",
+}
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const greatVibes = Great_Vibes({ subsets: ["latin"], weight: "400", variable: "--font-serif" })
-const playfairDisplay = Playfair_Display({ subsets: ["latin"], weight: ["400", "700", "900"], variable: "--font-playfair" })
+const imperialScript = Imperial_Script({ subsets: ["latin"], weight: "400", variable: "--font-imperial-script" })
+const cormorantGaramond = Cormorant_Garamond({ subsets: ["latin"], weight: ["400", "500", "600"], variable: "--font-cormorant" })
+const windSong = WindSong({ subsets: ["latin"], weight: "400", variable: "--font-windsong" })
 
 export const metadata: Metadata = {
-  title: "Wilmar&Kate - Wedding Invitation",
-  description:
-    "Celebrate the simple andbeautiful wedding of Wilmar and Kate on December 21, 2025 at the Villa Anaya Resort and Events Place. RSVP, read the invitation, and get all event details online.",
+  title: eventTitle,
+  description: eventDescription,
   keywords:
     "Wilmar Kate wedding, Wilmar Kate wedding invitation, Villa Anaya Resort and Events Place, emerald green beige wedding, RSVP, wedding invitation website, 2025 weddings, Filipino wedding, wilmarkate25@gmail.com",
   authors: [
-    { name: "Wilmar" }, 
-    { name: "Kate" },  
+    { name: siteConfig.couple.groom },
+    { name: siteConfig.couple.bride },
   ],
-  creator: "Wilmar & Kate",
-  publisher: "Wilmar & Kate",
+  creator: `${siteConfig.couple.groom} & ${siteConfig.couple.bride}`,
+  publisher: `${siteConfig.couple.groom} & ${siteConfig.couple.bride}`,
   formatDetection: {
     email: false,
     address: false,
     telephone: true,
   },
-  metadataBase: new URL("https://wilmar-and-kate-invitation.vercel.app/"),
+  metadataBase: new URL(canonicalUrl),
   alternates: {
-    canonical: "https://wilmar-and-kate-invitation.vercel.app/",
+    canonical: canonicalUrl,
   },
   icons: {
     icon: [
@@ -50,28 +101,26 @@ export const metadata: Metadata = {
   },
   manifest: "/favicon_io/site.webmanifest",
   openGraph: {
-    title: "Wilmar & Kate Wedding | December 21, 2025",
-    description:
-      'Join Wilmar & Kate as they say "I do" on December 21, 2025 at the Villa Anaya Resort and Events Place. View the invitation, RSVP details, and schedule online.',
-    url: "https://wilmar-and-kate-invitation.vercel.app/",
-    siteName: "Wilmar and Kate Wedding",
+    title: eventTitle,
+    description: eventDescription,
+    url: canonicalUrl,
+    siteName: "Wilmar & Kate Wedding Invitation",
     locale: "en_PH",
     type: "website",
     images: [
       {
-        url: "https://wilmar-and-kate-invitation.vercel.app/desktop-background/couple (66).jpg",
+        url: eventImageUrl,
         width: 1200,
         height: 630,
-        alt: "Wilmar & Kate Wedding Invitation - December 21, 2025",
+        alt: "Invitation cover for Wilmar & Kate's wedding celebration",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wilmar & Kate Wedding Invitation",
-    description:
-      "You're invited to the wedding of Wilmar & Kate on December 21, 2025 at the Villa Anaya Resort and Events Place. RSVP and view the details online. #WilmarAndKate",
-    images: ["https://wilmar-and-kate-invitation.vercel.app/desktop-background/couple (66).jpg"],
+    title: eventTitle,
+    description: eventDescription,
+    images: [eventImageUrl],
     creator: "@wilmarkate25",
   },
   robots: {
@@ -89,31 +138,8 @@ export const metadata: Metadata = {
     google: "your-google-site-verification",
   },
   other: {
-    "application/ld+json": JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Event",
-      name: "Jay & Cha Wedding",  
-      startDate: "2026-01-13T04:00:00+08:00",
-      endDate: "2026-01-13T06:00:00+08:00",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      location: "Farm Hills Garden Tagaytay",
-      image: ["https://wilmar-and-kate-invitation.vercel.app/desktop-background/couple (66).jpg"],
-      description:
-        "In honor and gratitude to God who brought them together, Wilmar & Kate invite you to witness their simple wedding on December 21, 2025 at the Villa Anaya Resort and Events Place. RSVP details and schedule are available online.",
-      organizer: {
-        "@type": "Person",
-        name: "Wilmar & Kate",
-      },
-      offers: {
-        "@type": "Offer",
-        url: "https://wilmar-and-kate-invitation.vercel.app/",
-        availability: "https://schema.org/InStock",
-        price: "0",
-        priceCurrency: "PHP",
-      },
-      eventHashtag: "#DediKATEdbyGodForWILMAR",
-    }),
+    "application/ld+json": JSON.stringify(jsonLd),
+    image: eventImageUrl,
   },
 }
 
@@ -125,18 +151,18 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="theme-color" content="#821D30" />
+        <meta name="theme-color" content={siteConfig.colors.primary} />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet" />
         <link rel="preload" as="image" href="/mobile-background/DSCF2614-min.jpg" media="(max-width: 767px)" />
         <link rel="preload" as="image" href="/desktop-background/DSCF2444-min.jpg" media="(min-width: 768px)" />
       </head>
-      <body className={`${inter.variable} ${greatVibes.variable} ${playfairDisplay.variable} font-inter antialiased text-foreground`}>
+      <body
+        className={`${inter.variable} ${greatVibes.variable} ${imperialScript.variable} ${cormorantGaramond.variable} ${windSong.variable} font-inter antialiased text-foreground`}
+      >
         <Navbar />
         {children}
         <Analytics />
