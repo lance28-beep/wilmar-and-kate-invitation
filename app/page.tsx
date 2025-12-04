@@ -18,8 +18,9 @@ import { Registry } from "@/components/sections/registry"
 import { FAQ } from "@/components/sections/faq"
 import { SnapShare } from "@/components/sections/snap-share"
 import { Footer } from "@/components/sections/footer"
-import BackgroundMusic from "@/components/background-music"
+import { AudioProvider } from "@/contexts/audio-context"
 import { Narrative } from "@/components/sections/narrative"
+import { CoupleVideo } from "@/components/sections/couple-video"
 
 const Silk = dynamic(() => import("@/components/silk"), { ssr: false })
 const GuestList = dynamic(() => import("@/components/sections/guest-list").then(mod => ({ default: mod.GuestList })), { ssr: false })
@@ -315,34 +316,36 @@ export default function Home() {
   const enableDecor = process.env.NEXT_PUBLIC_ENABLE_DECOR !== 'false'
 
   return (
-    <main className="relative">
-      {enableDecor && <BackgroundMusic />}
-      {/* Silk Background Animation */}
-      {enableDecor && (
-        <div className="fixed inset-0 z-0 pointer-events-none">
-          <Suspense fallback={<div className="w-full h-full bg-gradient-to-b from-primary/10 to-secondary/5" />}>
-            <Silk speed={5} scale={1.1} color="#800020" noiseIntensity={0.8} rotation={0.3} />
-          </Suspense>
-        </div>
-      )}
+    <AudioProvider enabled={enableDecor}>
+      <main className="relative">
+        {/* Silk Background Animation */}
+        {enableDecor && (
+          <div className="fixed inset-0 z-0 pointer-events-none">
+            <Suspense fallback={<div className="w-full h-full bg-gradient-to-b from-primary/10 to-secondary/5" />}>
+              <Silk speed={5} scale={1.1} color="#800020" noiseIntensity={0.8} rotation={0.3} />
+            </Suspense>
+          </div>
+        )}
 
-      {/* Content */}
-      <div className="relative z-10">
-        <Hero />
-        <CountdownSection />
-        <Narrative /> 
-        <Gallery />
-        <Messages />
-        <Details />
-        <Entourage />
-        <PrincipalSponsors />
-        <GuestList />
-        <BookOfGuests />
-        <Registry />
-        <FAQ />
-        <SnapShare />
-        <Footer />
-      </div>
-    </main>
+        {/* Content */}
+        <div className="relative z-10">
+          <Hero />
+          <CoupleVideo />
+          <CountdownSection />
+          <Narrative />
+          <Gallery />
+          <Messages />
+          <Details />
+          <Entourage />
+          <PrincipalSponsors />
+          <GuestList />
+          <BookOfGuests />
+          <Registry />
+          <FAQ />
+          <SnapShare />
+          <Footer />
+        </div>
+      </main>
+    </AudioProvider>
   )
 }

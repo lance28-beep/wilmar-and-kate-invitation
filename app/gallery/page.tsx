@@ -8,33 +8,11 @@ import { Download, Copy, Check, Share2, ArrowLeft, Upload } from "lucide-react"
 import { QRCodeCanvas } from "qrcode.react"
 import { siteConfig } from "@/content/site"
 
-// This will be replaced with dynamic image loading
-const images = [
-  { src: "/desktop-background/couple (1).jpg", category: "desktop" as const },
-  { src: "/desktop-background/couple (2).jpg", category: "desktop" as const },
-  { src: "/desktop-background/couple (3).jpg", category: "desktop" as const },
-  { src: "/desktop-background/couple (4).jpg", category: "desktop" as const },
-  { src: "/mobile-background/couple (1).jpg", category: "mobile" as const },
-  { src: "/mobile-background/couple (2).jpg", category: "mobile" as const },
-  { src: "/mobile-background/couple (3).jpg", category: "mobile" as const },
-  { src: "/mobile-background/couple (4).jpg", category: "mobile" as const },
-  { src: "/mobile-background/couple (5).jpg", category: "mobile" as const },
-  { src: "/mobile-background/couple (6).jpg", category: "mobile" as const },
-  { src: "/mobile-background/couple (7).jpg", category: "mobile" as const },
-  { src: "/mobile-background/couple (8).jpg", category: "mobile" as const },
-  { src: "/mobile-background/couple (9).jpg", category: "mobile" as const },
-  { src: "/mobile-background/couple (10).jpg", category: "mobile" as const },
-  { src: "/mobile-background/couple (11).jpg", category: "mobile" as const },
-  { src: "/mobile-background/couple (12).jpg", category: "mobile" as const },
-  { src: "/mobile-background/couple (13).jpg", category: "mobile" as const },
-  { src: "/desktop-background/couple (5).jpg", category: "desktop" as const },
-  { src: "/desktop-background/couple (6).jpg", category: "desktop" as const },
-  { src: "/desktop-background/couple (7).jpg", category: "desktop" as const },
-  { src: "/desktop-background/couple (8).jpg", category: "desktop" as const },
-  { src: "/desktop-background/couple (9).jpg", category: "desktop" as const },
-  { src: "/desktop-background/couple (10).jpg", category: "desktop" as const },
-  { src: "/desktop-background/couple (11).jpg", category: "desktop" as const },
-]
+// Dynamically build the desktop gallery so only `public/desktop-background` assets show up
+const DESKTOP_IMAGE_COUNT = 81
+const images = Array.from({ length: DESKTOP_IMAGE_COUNT }, (_, index) => ({
+  src: `/desktop-background/couple (${index + 1}).jpg`,
+}))
 
 export default function GalleryPage() {
   const [isMobile, setIsMobile] = useState(false)
