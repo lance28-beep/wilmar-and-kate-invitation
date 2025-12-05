@@ -13,6 +13,10 @@ const galleryItems = [
   { image: "/galleryyouwant/4.jpg", text: " " },
   { image: "/galleryyouwant/5.jpg", text: " " },
   { image: "/galleryyouwant/6.jpg", text: " " },
+  { image: "/galleryyouwant/10.jpg", text: " " },
+  { image: "/galleryyouwant/11.jpg", text: " " },
+  { image: "/galleryyouwant/12.jpg", text: " " },
+  { image: "/galleryyouwant/13.jpg", text: " " },
 ]
 
 export function Gallery() {

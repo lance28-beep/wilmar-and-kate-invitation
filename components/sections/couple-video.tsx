@@ -116,11 +116,11 @@ export function CoupleVideo() {
           </div>
 
           <h2 className="imperial-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-[#FDECEF] mb-2 drop-shadow-lg">
-            A Glimpse of Our Love
+            Save the date video
           </h2>
 
           <p className="text-xs sm:text-sm md:text-base text-[#F5E5D9]/90 font-light max-w-xl mx-auto px-2">
-            Watch the journey that brought our hearts together
+            A Glimpse of Our Love
           </p>
         </div>
 
